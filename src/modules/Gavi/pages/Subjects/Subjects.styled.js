@@ -1,5 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { SubjectBadgeWrapper } from '@gavi/components/SubjectBadge/SubjectBadge.styled';
+import { breakpoints } from '@styles/mediaQueries';
 
 export const NavigationWrapper = styled.div`
     width: 50%;
@@ -9,6 +10,12 @@ export const NavigationWrapper = styled.div`
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
+
+    ${breakpoints.tablet(css`
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    `)}
 `;
 
 export const SubjectsGrid = styled.div`

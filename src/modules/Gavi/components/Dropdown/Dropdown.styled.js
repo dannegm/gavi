@@ -45,6 +45,7 @@ export const DropdownList = styled.div`
     margin-top: 0.25rem;
     overflow: scroll;
     max-height: 190px;
+    z-index: 1;
 `;
 
 export const DropdownItemWrapper = styled.button`

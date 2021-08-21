@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { breakpoints } from '@styles/mediaQueries';
 
 export const PageSectionWrapper = styled.div`
     display: block;
@@ -16,11 +17,18 @@ export const PageSectionTitle = styled.h1`
     & b {
         color: ${({ theme }) => theme.colors.main};
     }
+
+    ${breakpoints.tablet(css`
+        font-size: 36px;
+    `)}
+    ${breakpoints.mobile(css`
+        font-size: 30px;
+    `)}
 `;
 
 export const PageSectionGrid = styled.div`
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
 `;

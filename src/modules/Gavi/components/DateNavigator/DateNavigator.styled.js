@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import colors from '@styles/colors';
+import { breakpoints } from '@styles/mediaQueries';
 
 import normalArrowLeft from '@assets/images/arrow_left.png';
 import normalArrowRight from '@assets/images/arrow_right.png';
@@ -20,7 +21,6 @@ export const NavigatorWrapper = styled.div`
     gap: 4rem;
 `;
 
-const iconSize = 128;
 export const ArrowButton = styled.button.attrs({
     type: 'button',
 })`
@@ -28,19 +28,29 @@ export const ArrowButton = styled.button.attrs({
     background-color: transparent;
     border: 0;
     color: ${colors.white};
-    width: ${iconSize}px;
-    height: ${iconSize}px;
+    width: 128px;
+    height: 128px;
+
+    ${breakpoints.tablet(css`
+        width: 80px;
+        height: 80px;
+    `)}
 `;
 
 export const ArrowIcon = styled.div`
     display: block;
-    width: ${iconSize}px;
-    height: ${iconSize}px;
+    width: 128px;
+    height: 128px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.2s;
     cursor: pointer;
+
+    ${breakpoints.tablet(css`
+        width: 80px;
+        height: 80px;
+    `)}
 
     ${({ left }) =>
         left &&

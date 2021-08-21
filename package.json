@@ -2,6 +2,7 @@
     "name": "gavi",
     "version": "2.1.0",
     "private": true,
+    "homepage": "/",
     "scripts": {
         "dev": "ESLINT_NO_DEV_ERRORS=true craco start",
         "build": "craco build",

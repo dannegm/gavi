@@ -1,5 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import colors from '@styles/colors';
+import { breakpoints } from '@styles/mediaQueries';
 
 export const MaterialCardWrapper = styled.div`
     display: flex;
@@ -13,11 +14,21 @@ export const MaterialCardWrapper = styled.div`
     padding-top: 3rem;
     padding-bottom: 3rem;
     gap: 3rem;
+
+    ${breakpoints.tablet(css`
+        flex-direction: row;
+        justify-content: space-between;
+    `)}
 `;
 
 export const MaterialCardLogo = styled.img`
     width: 60%;
     display: block;
+
+    ${breakpoints.tablet(css`
+        width: 140px;
+        padding-left: 3rem;
+    `)}
 `;
 
 export const MaterialCardPages = styled.p`
@@ -30,4 +41,8 @@ export const MaterialCardPages = styled.p`
     & b {
         color: ${({ theme }) => theme.colors.main};
     }
+
+    ${breakpoints.tablet(css`
+        flex: 1;
+    `)}
 `;

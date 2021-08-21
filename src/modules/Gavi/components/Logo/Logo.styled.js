@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { breakpoints } from '@styles/mediaQueries';
 
 export const LogoWrapper = styled.div`
     display: flex;
@@ -9,4 +10,14 @@ export const LogoWrapper = styled.div`
 
 export const LogoElement = styled.img`
     width: 250px;
+
+    ${breakpoints.desktop(css`
+        width: 150px;
+    `)}
+    ${breakpoints.tablet(css`
+        width: 150px;
+    `)}
+    ${breakpoints.mobile(css`
+        width: 150px;
+    `)}
 `;
