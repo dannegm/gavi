@@ -1,11 +1,15 @@
-/* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {} from './Jumbotron.styled';
+import { JumbotronWrapper, JumbotronTitle, JumbotronContent } from './Jumbotron.styled';
 
-const Jumbotron = ({ ...props }) => {
-    return <>{/* TODO: Content */}</>;
+const Jumbotron = ({ title, content }) => {
+    return (
+        <JumbotronWrapper>
+            <JumbotronTitle>{title}</JumbotronTitle>
+            <JumbotronContent>{content}</JumbotronContent>
+        </JumbotronWrapper>
+    );
 };
 
 Jumbotron.propTypes = {

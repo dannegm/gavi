@@ -5,12 +5,9 @@ import { ThemeProvider } from 'styled-components';
 
 import themes from '@styles/themes';
 
-import { PageWrapper } from './Page.styled';
+import { getGradeString } from '@gavi/helpers/utils';
 
-const getGradeString = (grade) => {
-    const grades = ['none', 'grade1', 'grade2', 'grade3', 'grade4', 'grade5', 'grade6'];
-    return grades[grade];
-};
+import { PageWrapper } from './Page.styled';
 
 const Page = ({ grade, title, children }) => {
     const helmetOptions = {

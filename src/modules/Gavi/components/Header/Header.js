@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import gaviLogo from '@assets/images/gavi.png';
 
+import SubjectBadge from '../SubjectBadge';
+
 import {
     HeaderWrapper,
     HeaderBackground,
@@ -28,7 +30,11 @@ const Header = ({ title, subtitle, content, subject }) => {
                             {subtitle && <Subtitle>{subtitle}</Subtitle>}
                         </HeaderTitleWrapper>
                     </HeaderTitleRow>
-                    {subject && <SubjectWrapper />}
+                    {subject && (
+                        <SubjectWrapper>
+                            <SubjectBadge code={subject} />
+                        </SubjectWrapper>
+                    )}
                     {content && <ContentWrapper>{content}</ContentWrapper>}
                 </HeaderContent>
             </HeaderBackground>

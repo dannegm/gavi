@@ -1,15 +1,33 @@
-/* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {} from './SubjectBadge.styled';
+import subjects from '@assets/data/subjects';
 
-const SubjectBadge = ({ ...props }) => {
-    return <>{/* TODO: Content */}</>;
+import { SubjectBadgeWrapper, SubjectBadgeIcon, SubjectBadgeLabel } from './SubjectBadge.styled';
+
+const SubjectBadge = ({ code, onClick }) => {
+    const { name, color, icon } = subjects[code];
+
+    const handleClick = (ev) => {
+        ev.preventDefault();
+        onClick?.(code);
+    };
+
+    return (
+        <SubjectBadgeWrapper color={color} onClick={handleClick}>
+            <SubjectBadgeIcon src={icon} />
+            <SubjectBadgeLabel>{name}</SubjectBadgeLabel>
+        </SubjectBadgeWrapper>
+    );
 };
 
 SubjectBadge.propTypes = {
-    name: PropTypes.string.isRequired,
+    code: PropTypes.string.isRequired,
+    onClick: PropTypes.func,
+};
+
+SubjectBadge.defaultProps = {
+    onClick: () => null,
 };
 
 export default SubjectBadge;

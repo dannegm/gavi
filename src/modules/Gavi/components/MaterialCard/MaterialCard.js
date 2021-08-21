@@ -1,11 +1,18 @@
-/* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {} from './MaterialCard.styled';
+import { MaterialCardWrapper, MaterialCardLogo, MaterialCardPages } from './MaterialCard.styled';
 
-const MaterialCard = ({ ...props }) => {
-    return <>{/* TODO: Content */}</>;
+const MaterialCard = ({ image, from, to }) => {
+    return (
+        <MaterialCardWrapper>
+            <MaterialCardLogo src={image} />
+            <MaterialCardPages>
+                Páginas <br />
+                <b>{from}</b> a <b>{to}</b>
+            </MaterialCardPages>
+        </MaterialCardWrapper>
+    );
 };
 
 MaterialCard.propTypes = {

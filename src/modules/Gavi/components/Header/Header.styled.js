@@ -65,7 +65,11 @@ export const Subtitle = styled.h2`
     font-size: 3vw;
 `;
 
-export const SubjectWrapper = styled.div``;
+export const SubjectWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
 
 export const ContentWrapper = styled.div`
     display: block;

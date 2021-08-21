@@ -1,19 +1,11 @@
-/* eslint-disable */
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import {} from './PageCard.styled';
+import placeholderPage from '@assets/images/imagen.png';
 
-const PageCard = ({ ...props }) => {
-    return <>{/* TODO: Content */}</>;
-};
+import { PageCardImage } from './PageCard.styled';
 
-PageCard.propTypes = {
-    pageId: PropTypes.string,
-};
-
-PageCard.defaultProps = {
-    pageId: undefined,
+const PageCard = () => {
+    return <PageCardImage src={placeholderPage} />;
 };
 
 export default PageCard;

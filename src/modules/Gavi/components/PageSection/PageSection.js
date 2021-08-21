@@ -1,15 +1,25 @@
-/* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {} from './PageSection.styled';
+import List from '@components/List';
 
-const PageSection = ({ ...props }) => {
-    return <>{/* TODO: Content */}</>;
+import PageCard from '../PageCard';
+
+import { PageSectionWrapper, PageSectionTitle, PageSectionGrid } from './PageSection.styled';
+
+const PageSection = ({ title, pages }) => {
+    return (
+        <PageSectionWrapper>
+            <PageSectionTitle>{title}</PageSectionTitle>
+            <PageSectionGrid>
+                <List items={pages} component={PageCard} />
+            </PageSectionGrid>
+        </PageSectionWrapper>
+    );
 };
 
 PageSection.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.node.isRequired,
     pages: PropTypes.arrayOf([PropTypes.string]),
 };
 

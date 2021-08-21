@@ -20,7 +20,7 @@ const routes = [
     },
     {
         name: 'gavi.resources',
-        path: '/material/:grade',
+        path: '/material/:grade/:year/:month/:day/:subject',
         component: Resources,
         exact: true,
     },

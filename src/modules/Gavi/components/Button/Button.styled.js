@@ -33,7 +33,7 @@ export const ButtonLabel = styled.div`
     font-family: 'Antipasto', sans-serif;
     font-size: 1.286rem;
     text-align: center;
-    color: white;
+    color: ${colors.white};
     padding: 0.8rem 2rem;
     padding-top: 1.2rem;
 `;
