@@ -9,17 +9,10 @@ import {
     formatDate,
 } from '@helpers/dateHelpers';
 
-const useNavigationDate = () => {
+const useNavigationDate = (handleNext) => {
     const { grade, year, month, day } = useParams();
 
     const today = buildDate(year, month, day);
-
-    useEffect(() => {
-        if (isWeekend(today)) {
-            const nextWorkingDay = getNextWorkingDay(today);
-            handleNext(nextWorkingDay);
-        }
-    }, [today]);
 
     return {
         formatedDate: formatDate(today, FORMAT_COMMON),
