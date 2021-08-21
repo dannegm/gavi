@@ -5,32 +5,30 @@ const Subjects = lazy(() => import('./pages/Subjects'));
 const Resources = lazy(() => import('./pages/Resources'));
 const Downloadables = lazy(() => import('./pages/Downloadables'));
 
-const exact = true;
-
 const routes = [
     {
         name: 'gavi.home',
-        path: '/',
+        path: '/:grade',
         component: Home,
-        exact,
+        exact: true,
     },
     {
         name: 'gavi.subjects',
-        path: '/materias',
+        path: '/materias/:grade/:year/:month/:day',
         component: Subjects,
-        exact,
+        exact: true,
     },
     {
         name: 'gavi.resources',
-        path: '/material',
+        path: '/material/:grade',
         component: Resources,
-        exact,
+        exact: true,
     },
     {
         name: 'gavi.downloadables',
-        path: '/descargables',
+        path: '/descargables/:grade',
         component: Downloadables,
-        exact,
+        exact: true,
     },
 ];
 

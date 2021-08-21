@@ -1,22 +1,26 @@
 import { createGlobalStyle } from 'styled-components';
-import { normalize } from 'styled-normalize';
+import { AntipastoFont, Centrale } from './fonts';
 
 const GlobalStyle = createGlobalStyle`
-    ${normalize}
+    ${AntipastoFont}
+    ${Centrale}
 
     html {
         box-sizing: border-box;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     *,
     *::before,
     *::after {
         box-sizing: inherit;
+        margin: 0;
+        padding: 0;
     }
 
     body {
         font-family: Helvetica, Arial, sans-serif;
+        color: #666666;
     }
 
     a {

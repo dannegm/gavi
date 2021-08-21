@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@assets/*": ["./src/assets/*"],
+            "@components/*": ["./src/shared/components/*"],
+            "@helpers/*": ["./src/shared/helpers/*"],
+            "@hooks/*": ["./src/shared/hooks/*"],
+            "@styles/*": ["./src/shared/styles/*"],
+            "@gavi/*": ["./src/modules/Gavi/*"]
+        }
+    },
+    "exclude": ["node_modules", "public", "build"]
+}

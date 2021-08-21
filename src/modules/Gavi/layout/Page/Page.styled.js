@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
 export const PageWrapper = styled.div`
-    margin: 2rem;
+    margin: 0;
+    padding: 0;
 `;

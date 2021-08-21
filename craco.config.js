@@ -6,11 +6,8 @@ module.exports = {
         {
             plugin: CracoAlias,
             options: {
-                source: 'options',
+                source: 'jsconfig',
                 baseUrl: './',
-                aliases: {
-                    '@': './src',
-                },
             },
         },
     ],
