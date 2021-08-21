@@ -17,6 +17,7 @@ export const Centrale = css`
         font-weight: normal;
         src: url(${CentraleSansBook}) format('opentype');
     }
+
     @font-face {
         font-family: 'Centrale';
         font-weight: bold;

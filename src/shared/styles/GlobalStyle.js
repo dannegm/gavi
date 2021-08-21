@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { AntipastoFont, Centrale } from './fonts';
+import colors from './colors';
 
 const GlobalStyle = createGlobalStyle`
     ${AntipastoFont}
@@ -20,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: Helvetica, Arial, sans-serif;
-        color: #666666;
+        color: ${colors.gray};
     }
 
     a {

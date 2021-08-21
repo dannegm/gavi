@@ -10,7 +10,7 @@ export const DatePickerWrapper = styled.div`
 
 export const Description = styled.div`
     flex: 1;
-    font-family: 'Centrale';
+    font-family: 'Centrale', sans-serif;
     font-size: 1.2rem;
     text-align: center;
     margin-top: 3rem;

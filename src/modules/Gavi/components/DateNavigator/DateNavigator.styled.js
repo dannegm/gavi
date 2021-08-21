@@ -75,7 +75,7 @@ export const LogoWrapper = styled.div`
 `;
 
 export const DateWrapper = styled.p`
-    font-family: 'Centrale';
+    font-family: 'Centrale', sans-serif;
     font-size: 2.2rem;
     font-weight: bold;
     text-align: center;

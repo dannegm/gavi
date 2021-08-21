@@ -71,7 +71,7 @@ export const ContentWrapper = styled.div`
     display: block;
     flex: 1;
     font-size: 1.32vw;
-    font-family: 'Centrale';
+    font-family: 'Centrale', sans-serif;
 
     & p {
         display: block;

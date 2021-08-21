@@ -21,7 +21,6 @@ import { NavigationWrapper } from './Subjects.styled';
 const Subjects = () => {
     const history = useHistory();
     const { grade, year, month, day } = useParams();
-    console.log({ grade });
 
     const today = buildDate(year, month, day);
 

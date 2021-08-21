@@ -14,7 +14,7 @@ export const DropdownTrigger = styled.button`
     width: 100%;
     padding: 0.5rem 1rem;
     padding-top: 0.6rem;
-    font-family: 'Centrale';
+    font-family: 'Centrale', sans-serif;
     font-size: 1.2rem;
     text-align: left;
     background-color: ${colors.white};
@@ -22,7 +22,7 @@ export const DropdownTrigger = styled.button`
     border-radius: 2rem;
     cursor: pointer;
 
-    &:after {
+    &::after {
         content: ' ';
         display: block;
         width: 0;
@@ -51,7 +51,7 @@ export const DropdownItemWrapper = styled.button`
     display: block;
     width: 100%;
     padding: 0.5rem 1rem;
-    font-family: 'Centrale';
+    font-family: 'Centrale', sans-serif;
     font-size: 1.2rem;
     text-align: left;
     background: transparent;
