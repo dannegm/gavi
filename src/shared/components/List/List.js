@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 
@@ -6,7 +6,7 @@ const List = ({ component: Component, items }) => {
     return (
         <>
             {items.map((item, index) => {
-                const [hash] = useState(nanoid);
+                const hash = nanoid();
                 if (typeof item === 'object') {
                     return <Component key={hash} hash={hash} index={index} {...item} />;
                 }

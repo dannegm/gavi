@@ -13,12 +13,15 @@ export const MONTHS_SHORT = 'Ene Feb Mar Abr May Jun Jul Ago Sep Oct Nov Dic'.sp
 export const DAY_OF_WEEKS = 'Domingo Lunes Martes Miércoles Jueves Viernes Sábado'.split(' ');
 export const DAY_OF_WEEKS_SHORT = 'Dom Lun Mar Mié Jue Vie Sab'.split(' ');
 
-export const YEARS = [2020, 2021];
+export const YEARS = process.env.REACT_APP_YEAR_LIST.split(',');
 
 export const MONTHS_MODEL = MONTHS.map((m, index) => ({ label: m, value: index + 1 }));
 
 export const FORMAT_COMMON = 'YYYY/MM/DD';
 export const FORMAT_HUMAN = "DDDD, MMMM DD, 'YY";
+
+export const MIN_ALLOWED_DATE = new Date(process.env.REACT_APP_MIN_ALLOWED_DATE);
+export const MAX_ALLOWED_DATE = new Date(process.env.REACT_APP_MAX_ALLOWED_DATE);
 
 export const isValidDate = (d) => {
     return d instanceof Date && d.toString() !== 'Invalid Date';

@@ -1,11 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 
-import themes from '@styles/themes';
-
-import { FORMAT_COMMON, isWeekend, getNextWorkingDay, formatDate } from '@helpers/dateHelpers';
-
-import { getGradeString } from '@gavi/helpers/utils';
+import { buildRoute, renderTemplate } from '@gavi/helpers/utils';
 import useNavigationDate from '@gavi/hooks/useNavigationDate';
 
 import Header from '@gavi/components/Header';
@@ -18,50 +14,53 @@ import Footer from '@gavi/components/Footer';
 
 import Page from '@gavi/layout/Page';
 
-import subjects from '@assets/data/subjects';
-import logoGratuitos from '@assets/images/gratuitos.png';
-import logoDetectives from '@assets/images/detectives.png';
+// Data
+import resources from '@assets/data/resources.json';
 
 import { NavigationWrapper, MaterialCardGrid } from './Resources.styled';
 
-const material = {
-    santillana: {
-        from: 10,
-        to: 13,
-    },
-    gratuitos: {
-        from: 101,
-        to: 103,
-    },
-    detectives: {
-        from: 23,
-        to: 24,
-    },
-};
+const ROUTE_TEMPLATE = '/material/{grade}/{date}/{subject}';
+const PAGE_URL_TEMPLATE = process.env.REACT_APP_PAGE_URL_TEMPLATE;
 
 const Resources = () => {
     const history = useHistory();
     const { subject } = useParams();
-    const { grade, today, formatedDate } = useNavigationDate();
 
-    const handleNext = (date) => {
-        history.push(`/material/${grade}/${formatDate(date, FORMAT_COMMON)}/${subject}`);
-    };
+    const {
+        // breakline
+        grade,
+        today,
+        formatedDate,
+        year,
+        month,
+        day,
+        handleNext,
+        handlePrev,
+    } = useNavigationDate(ROUTE_TEMPLATE);
 
-    const handlePrev = (date) => {
-        history.push(`/material/${grade}/${formatDate(date, FORMAT_COMMON)}/${subject}`);
-    };
+    const [resourceData, setResourceData] = useState(null);
 
     const handleBack = () => {
         history.push(`/materias/${grade}/${formatedDate}`);
     };
 
+    const getPageUrl = (book, page) => {
+        const getRoute = buildRoute({
+            grade,
+            subject,
+            routeTemplate: PAGE_URL_TEMPLATE,
+        });
+        return renderTemplate(getRoute(today), { book, page });
+    };
+
     useEffect(() => {
-        if (isWeekend(today)) {
-            const nextWorkingDay = getNextWorkingDay(today);
-            handleNext(nextWorkingDay);
+        const resourcePath = resources?.[year]?.[month]?.[day]?.[grade]?.[subject];
+        if (!resourcePath) {
+            setResourceData(null);
+        } else {
+            setResourceData(resourcePath);
         }
-    }, [today]);
+    }, [grade, subject, today]);
 
     return (
         <Page grade={grade} title={`Material - ${grade}º GAVI`}>
@@ -71,61 +70,36 @@ const Resources = () => {
             </NavigationWrapper>
             <DateNavigator date={today} onNext={handleNext} onPrev={handlePrev} />
 
-            <MaterialCardGrid>
-                <MaterialCard
-                    image={themes[getGradeString(grade)].logo}
-                    from={material.santillana.from}
-                    to={material.santillana.to}
+            {!resourceData ? (
+                <Jumbotron
+                    title='Sin material disponible'
+                    content='No se ha encontrado material disponible para el día de hoy'
                 />
-                <MaterialCard
-                    image={logoGratuitos}
-                    from={material.gratuitos.from}
-                    to={material.gratuitos.to}
-                />
-                <MaterialCard
-                    image={logoDetectives}
-                    from={material.detectives.from}
-                    to={material.detectives.to}
-                />
-            </MaterialCardGrid>
+            ) : (
+                <>
+                    <MaterialCardGrid>
+                        {resourceData.books.map((book) => (
+                            <MaterialCard
+                                key={`book_${book.type}`}
+                                type={book.type}
+                                pages={book.pages}
+                            />
+                        ))}
+                    </MaterialCardGrid>
 
-            <Jumbotron
-                title='Aprendizaje esperado'
-                content={
-                    <>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed modi, in at
-                        ullam id quam omnis facere totam repellat dolore et voluptate nemo minus,
-                        autem distinctio debitis.
-                    </>
-                }
-            />
+                    <Jumbotron title='Aprendizaje esperado' content={resourceData.learn} />
 
-            <PageSection
-                title={
-                    <>
-                        La <b>Guía</b> Santillana <b>{grade}</b>:
-                    </>
-                }
-                pages={[1, 2, 3, 4]}
-            />
-
-            <PageSection
-                title={
-                    <>
-                        Libro <b>de</b> Texto <b>Gratuito</b>:
-                    </>
-                }
-                pages={[1, 2, 3]}
-            />
-
-            <PageSection
-                title={
-                    <>
-                        Detectives <b>{subjects[subject].name}</b>:
-                    </>
-                }
-                pages={[1, 2, 3]}
-            />
+                    {resourceData.books.map((book) => (
+                        <PageSection
+                            key={`pages_${book.type}`}
+                            title={book.name}
+                            book={book.type}
+                            pages={book.pages}
+                            getPageUrl={getPageUrl}
+                        />
+                    ))}
+                </>
+            )}
 
             <Footer />
         </Page>

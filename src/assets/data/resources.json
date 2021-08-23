@@ -1,0 +1,92 @@
+{
+    "2021": {
+        "08": {
+            "24": {
+                "1": {
+                    "mat": {
+                        "learn": "Identifica y describe figuras geométricas por el número y la forma de sus lados.",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La Guía Santillana 1",
+                                "pages": [80, 81]
+                            },
+                            {
+                                "type": "gratuito",
+                                "name": "Libro de Texto Gratuito",
+                                "pages": [51, 52, 53, 55, 56]
+                            }
+                        ]
+                    }
+                }
+            },
+            "25": {
+                "1": {
+                    "mat": {
+                        "learn": "Recolecta, registra y lee datos en tablas.",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La Guía Santillana 1",
+                                "pages": [208, 209]
+                            },
+                            {
+                                "type": "gratuito",
+                                "name": "Libro de Texto Gratuito",
+                                "pages": [122, 123, 124, 125, 126, 127]
+                            }
+                        ]
+                    }
+                }
+            },
+            "26": {
+                "1": {
+                    "mat": {
+                        "learn": "Resuelve problemas de suma con números naturales menores que cien.",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La Guía Santillana 1",
+                                "pages": [86, 87]
+                            },
+                            {
+                                "type": "gratuito",
+                                "name": "Libro de Texto Gratuito",
+                                "pages": [16, 17]
+                            },
+                            {
+                                "type": "detectives",
+                                "name": "Detectives Matemáticos",
+                                "pages": [38, 39]
+                            }
+                        ]
+                    }
+                }
+            },
+            "27": {
+                "1": {
+                    "mat": {
+                        "learn": "Estima y compara pesos y capacidades de manera directa.",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La Guía Santillana 1",
+                                "pages": [212, 213, 214, 215]
+                            },
+                            {
+                                "type": "gratuito",
+                                "name": "Libro de Texto Gratuito",
+                                "pages": [51]
+                            },
+                            {
+                                "type": "detectives",
+                                "name": "Detectives Matemáticos",
+                                "pages": [138, 139]
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

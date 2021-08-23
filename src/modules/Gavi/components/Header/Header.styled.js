@@ -123,6 +123,8 @@ export const ContentWrapper = styled.div`
     flex: 1;
     font-size: 1.32vw;
     font-family: 'Centrale', sans-serif;
+    width: 50%;
+    margin: auto;
 
     & p {
         display: block;
@@ -134,5 +136,6 @@ export const ContentWrapper = styled.div`
 
     ${breakpoints.desktop(css`
         font-size: 3vw;
+        width: initial;
     `)}
 `;

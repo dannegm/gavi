@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 import useNavigationDate from '@gavi/hooks/useNavigationDate';
-
-import { FORMAT_COMMON, isWeekend, getNextWorkingDay, formatDate } from '@helpers/dateHelpers';
 
 import Header from '@gavi/components/Header';
 import Button from '@gavi/components/Button';
@@ -15,17 +13,12 @@ import Page from '@gavi/layout/Page';
 
 import { NavigationWrapper, SubjectsGrid } from './Subjects.styled';
 
+const ROUTE_TEMPLATE = '/materias/{grade}/{date}';
+
 const Subjects = () => {
     const history = useHistory();
-    const { grade, today, formatedDate } = useNavigationDate();
-
-    const handleNext = (date) => {
-        history.push(`/materias/${grade}/${formatDate(date, FORMAT_COMMON)}`);
-    };
-
-    const handlePrev = (date) => {
-        history.push(`/materias/${grade}/${formatDate(date, FORMAT_COMMON)}`);
-    };
+    const { grade, today, formatedDate, handleNext, handlePrev } =
+        useNavigationDate(ROUTE_TEMPLATE);
 
     const handleBack = () => {
         history.push(`/${grade}`);
@@ -34,13 +27,6 @@ const Subjects = () => {
     const handleBadgeClick = (subjectCode) => {
         history.push(`/material/${grade}/${formatedDate}/${subjectCode}`);
     };
-
-    useEffect(() => {
-        if (isWeekend(today)) {
-            const nextWorkingDay = getNextWorkingDay(today);
-            handleNext(nextWorkingDay);
-        }
-    }, [today]);
 
     return (
         <Page grade={grade} title={`Materias - ${grade}º GAVI`}>
