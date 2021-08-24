@@ -48,7 +48,7 @@ En el campo `name` se especificará el título del libro, este puede tener forma
 
 En el campo `pages` se definirán las páginas disponibles del material. Puede ser solamente una página o más. La aplicación mostrará automáticamente el texto aducuado según el número de páginas.
 
-```json
+```js
 {
     "2021": { /* año */
         "08": { /* mes */
@@ -56,14 +56,14 @@ En el campo `pages` se definirán las páginas disponibles del material. Puede s
                 "1": { /* grado */
                     "mat": { /* código de materia */
                         "learn": "lorem impsum...",
-                        "books": {
+                        "books": [
                             {
                                 "type": "santillana",
                                 "name": "La <b>Guía</b> Santillana <b>1</b>",
                                 "pages": [80, 81, ...]
                             }
                             ...
-                        }
+                        ]
                     }
                     ...
                 }
