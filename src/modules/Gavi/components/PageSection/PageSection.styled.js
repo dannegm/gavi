@@ -31,4 +31,5 @@ export const PageSectionGrid = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
 `;

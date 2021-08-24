@@ -2,8 +2,9 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeContext } from 'styled-components';
 
-import logoGratuitos from '@assets/images/gratuitos.png';
-import logoDetectives from '@assets/images/detectives.png';
+import DangerouslyHtml from '@components/DangerouslyHtml';
+
+import booksLogos from '@assets/data/books';
 
 import { MaterialCardWrapper, MaterialCardLogo, MaterialCardPages } from './MaterialCard.styled';
 
@@ -11,23 +12,23 @@ const MaterialCard = ({ type, pages }) => {
     const theme = useContext(ThemeContext);
 
     const books = {
+        ...booksLogos,
         santillana: theme.logo,
-        gratuito: logoGratuitos,
-        detectives: logoDetectives,
     };
 
     const getPagesCaption = (p) => {
-        if (p.length > 1) {
-            return `Páginas ${p[0]} a ${p[p.length - 1]}`;
+        if (p.length < 2) {
+            return `Página <b>${p[0]}</b>`;
         }
-
-        return `Página ${p[0]}`;
+        return `Páginas <br /><b>${p[0]}</b> a <b>${p[p.length - 1]}</b>`;
     };
 
     return (
         <MaterialCardWrapper>
             <MaterialCardLogo src={books[type]} />
-            <MaterialCardPages>{getPagesCaption(pages)}</MaterialCardPages>
+            <MaterialCardPages>
+                <DangerouslyHtml>{getPagesCaption(pages)}</DangerouslyHtml>
+            </MaterialCardPages>
         </MaterialCardWrapper>
     );
 };

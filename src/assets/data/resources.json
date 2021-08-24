@@ -8,12 +8,12 @@
                         "books": [
                             {
                                 "type": "santillana",
-                                "name": "La Guía Santillana 1",
+                                "name": "La <b>Guía</b> Santillana <b>1</b>",
                                 "pages": [80, 81]
                             },
                             {
-                                "type": "gratuito",
-                                "name": "Libro de Texto Gratuito",
+                                "type": "conaliteg",
+                                "name": "Libro <b>de</b> Texto <b>Gratuito</b>",
                                 "pages": [51, 52, 53, 55, 56]
                             }
                         ]
@@ -27,12 +27,12 @@
                         "books": [
                             {
                                 "type": "santillana",
-                                "name": "La Guía Santillana 1",
+                                "name": "La <b>Guía</b> Santillana <b>1</b>",
                                 "pages": [208, 209]
                             },
                             {
-                                "type": "gratuito",
-                                "name": "Libro de Texto Gratuito",
+                                "type": "conaliteg",
+                                "name": "Libro <b>de</b> Texto <b>Gratuito</b>",
                                 "pages": [122, 123, 124, 125, 126, 127]
                             }
                         ]
@@ -46,17 +46,39 @@
                         "books": [
                             {
                                 "type": "santillana",
-                                "name": "La Guía Santillana 1",
+                                "name": "La <b>Guía</b> Santillana <b>1</b>",
                                 "pages": [86, 87]
                             },
                             {
-                                "type": "gratuito",
-                                "name": "Libro de Texto Gratuito",
+                                "type": "conaliteg",
+                                "name": "Libro <b>de</b> Texto <b>Gratuito</b>",
                                 "pages": [16, 17]
                             },
                             {
                                 "type": "detectives",
-                                "name": "Detectives Matemáticos",
+                                "name": "Detectives <b>Matemáticos</b>",
+                                "pages": [38, 39]
+                            }
+                        ]
+                    }
+                },
+                "2": {
+                    "mat": {
+                        "learn": "Resuelve problemas de suma con números naturales menores que cien.",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana <b>1</b>",
+                                "pages": [86, 87]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "Libro <b>de</b> Texto <b>Gratuito</b>",
+                                "pages": [16, 17]
+                            },
+                            {
+                                "type": "detectives",
+                                "name": "Detectives <b>Matemáticos</b>",
                                 "pages": [38, 39]
                             }
                         ]
@@ -70,17 +92,17 @@
                         "books": [
                             {
                                 "type": "santillana",
-                                "name": "La Guía Santillana 1",
+                                "name": "La <b>Guía</b> Santillana <b>1</b>",
                                 "pages": [212, 213, 214, 215]
                             },
                             {
-                                "type": "gratuito",
-                                "name": "Libro de Texto Gratuito",
+                                "type": "conaliteg",
+                                "name": "Libro <b>de</b> Texto <b>Gratuito</b>",
                                 "pages": [51]
                             },
                             {
                                 "type": "detectives",
-                                "name": "Detectives Matemáticos",
+                                "name": "Detectives <b>Matemáticos</b>",
                                 "pages": [138, 139]
                             }
                         ]

@@ -24,10 +24,11 @@ export const MaterialCardGrid = styled.div`
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: nowrap;
     margin-top: 4rem;
+    gap: 2rem;
 
     & ${MaterialCardWrapper} {
         width: 30%;

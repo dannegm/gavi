@@ -39,7 +39,7 @@ export const JumbotronTitle = styled.h1`
 export const JumbotronContent = styled.div`
     font-family: 'Centrale', sans-serif;
     font-size: 1.5vw;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 2rem;
 
     ${breakpoints.tablet(css`

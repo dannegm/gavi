@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import List from '@components/List';
+import DangerouslyHtml from '@components/DangerouslyHtml';
 
 import PageCard from '../PageCard';
 
@@ -9,12 +10,14 @@ import { PageSectionWrapper, PageSectionTitle, PageSectionGrid } from './PageSec
 
 const PageSection = ({ title, book, pages, getPageUrl }) => {
     const pagesPayload = pages.map((page) => ({
-        src: getPageUrl({ book, page }),
+        src: getPageUrl(book, page),
     }));
 
     return (
         <PageSectionWrapper>
-            <PageSectionTitle>{title}</PageSectionTitle>
+            <PageSectionTitle>
+                <DangerouslyHtml>{title}</DangerouslyHtml>
+            </PageSectionTitle>
             <PageSectionGrid>
                 <List items={pagesPayload} component={PageCard} />
             </PageSectionGrid>
