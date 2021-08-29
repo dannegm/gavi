@@ -58,7 +58,7 @@ const useNavigationDate = (routeTemplate) => {
         formatedDate: formatDate(today, FORMAT_COMMON),
         year: today.getFullYear(),
         month: (today.getMonth() + 1).toString().padStart(2, '0'),
-        day: today.getDate(),
+        day: today.getDate().toString().padStart(2, '0'),
     };
 };
 

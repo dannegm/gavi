@@ -34,6 +34,10 @@ export const MaterialCardGrid = styled.div`
         width: 30%;
     }
 
+    ${breakpoints.desktop(css`
+        width: 80%;
+    `)}
+
     ${breakpoints.tablet(css`
         width: 90%;
         flex-direction: column;

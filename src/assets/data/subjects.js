@@ -41,6 +41,12 @@ export default {
         color: '#00a4e0',
         icon: esp,
     },
+    lm: {
+        code: 'lm',
+        name: 'Lengua materna',
+        color: '#00a4e0',
+        icon: esp,
+    },
     fce_dia: {
         code: 'fce_dia',
         name: 'Cívica y Ética en diálogo',

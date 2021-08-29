@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
+import { flattenDeep } from 'lodash';
 
 import { buildRoute, renderTemplate } from '@gavi/helpers/utils';
 import useNavigationDate from '@gavi/hooks/useNavigationDate';
@@ -77,29 +78,32 @@ const Resources = () => {
                 />
             ) : (
                 <>
-                    <MaterialCardGrid>
-                        {resourceData.books.map((book) => (
-                            <MaterialCard
-                                key={`book_${book.type}`}
-                                type={book.type}
-                                pages={book.pages}
-                            />
-                        ))}
-                    </MaterialCardGrid>
+                    {Boolean(resourceData?.books) && (
+                        <MaterialCardGrid>
+                            {resourceData.books.map((book) => (
+                                <MaterialCard
+                                    key={`book_${book.type}`}
+                                    type={book.type}
+                                    pages={book.pages}
+                                />
+                            ))}
+                        </MaterialCardGrid>
+                    )}
 
                     <Jumbotron title='Aprendizaje esperado' content={resourceData.learn} />
 
-                    {resourceData.books.map((book) => (
-                        <PageSection
-                            key={`pages_${book.type}`}
-                            title={book.name}
-                            book={book.type}
-                            folder={book.folder}
-                            identifier={book.identifier}
-                            pages={book.pages}
-                            getPageUrl={getPageUrl}
-                        />
-                    ))}
+                    {Boolean(resourceData?.books) &&
+                        resourceData.books.map((book) => (
+                            <PageSection
+                                key={`pages_${book.type}`}
+                                title={book.name}
+                                book={book.type}
+                                folder={book.folder}
+                                identifier={book.identifier}
+                                pages={flattenDeep(book.pages)}
+                                getPageUrl={getPageUrl}
+                            />
+                        ))}
                 </>
             )}
 

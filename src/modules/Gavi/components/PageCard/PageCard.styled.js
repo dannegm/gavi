@@ -5,6 +5,7 @@ import { breakpoints } from '@styles/mediaQueries';
 export const PageCardImage = styled.img`
     width: 22%;
     aspect-ratio: 1 / 1.4142;
+    object-fit: cover;
     display: block;
     margin-bottom: 4rem;
     background-color: ${({ theme }) => lighten(0.5, theme.colors.main)};

@@ -37,6 +37,8 @@ export const MaterialCardPages = styled.p`
     font-family: 'Centrale', sans-serif;
     font-weight: bold;
     text-align: center;
+    padding: 0 2rem;
+    overflow: hidden;
 
     & b {
         color: ${({ theme }) => theme.colors.main};
@@ -44,5 +46,6 @@ export const MaterialCardPages = styled.p`
 
     ${breakpoints.tablet(css`
         flex: 1;
+        font-size: 1.5rem;
     `)}
 `;

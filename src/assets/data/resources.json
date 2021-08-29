@@ -8,10 +8,332 @@
                         "books": [
                             {
                                 "type": "socio",
+                                "name": "Educación <b>socioemicional</b> 2",
                                 "folder": "socioemocional-la",
                                 "identifier": "es1la",
+                                "pages": [[10], [11]]
+                            }
+                        ]
+                    },
+                    "art": {
+                        "learn": "Reconoce las cualidades de los sonidos escuchados con atención: volumen (fuerte, medio o quedo), tono (grave o agudo), timbre (cualidad que permite diferenciar un sonido del otro) y la duración (largo, corto o muy corto)"
+                    },
+                    "con": {
+                        "learn": "Reconoce que los objetos se mueven y deforman al empujarlos y jalarlos",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-cm-la",
+                                "identifier": "gs1la",
+                                "pages": [[374], [375]]
+                            }
+                        ]
+                    },
+                    "lm": {
+                        "learn": "Escribe textos sencillos para describir personas, animales, plantas u objetos de su entorno",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-lm-la",
+                                "identifier": "gs1la",
+                                "pages": [[307], [308]]
+                            },
+                            {
+                                "type": "alas",
+                                "name": "Alas de <b>Papel</b>",
+                                "folder": "alas-la",
+                                "identifier": "gs1la",
+                                "pages": [[26, 27, 28, 29]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "Lengua <b>Materna</b>",
+                                "folder": "sep-lm",
+                                "identifier": "seplm1-",
+                                "pages": [[150, 151], [154, 155, 156], [159], [161]]
+                            }
+                        ]
+                    },
+                    "fce": {
+                        "learn": "Identidad y pertenencia",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-fcye-la",
+                                "identifier": "lgsfcye1la",
+                                "pages": [[130], [131]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "Formación <b>Cívica</b> y <b>Ética</b>",
+                                "folder": "sep-fcye",
+                                "identifier": "sepfcye1-",
+                                "pages": [[18, 19, 20, 21, 22, 23, 24, 25]]
+                            }
+                        ]
+                    }
+                }
+            },
+            "31": {
+                "1": {
+                    "mat": {
+                        "learn": "Identifica y describe figuras geométricas por el número y la forma de sus lados",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-mat-la",
+                                "identifier": "gs1la",
+                                "pages": [[82], [83]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "<b>Matemáticas</b>",
+                                "folder": "sep-mat",
+                                "identifier": "sepmat1-",
+                                "pages": [[96, 97, 98, 99, 100]]
+                            }
+                        ]
+                    },
+                    "edu": {
+                        "learn": "Elabora alternativas de solución ante retos y problemas que se presentan en actividades y juegos para cumplir con la meta que se plantea."
+                    },
+                    "lm": {
+                        "learn": "Aprende el significado de diferentes expresiones utilizadas por personas pertenecientes a diversos grupos de edad o de procedencia distinta.",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-lm-la",
+                                "identifier": "gs1la",
+                                "pages": [[316], [317]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "Lengua <b>Materna</b>",
+                                "folder": "sep-lm",
+                                "identifier": "seplm1-",
+                                "pages": [[168]]
+                            }
+                        ]
+                    },
+                    "art": {
+                        "learn": "Improvisa movimientos al escuchar canciones infantiles"
+                    }
+                }
+            }
+        },
+        "09": {
+            "01": {
+                "1": {
+                    "con": {
+                        "learn": "Escucha con atención distintos sonidos de su entorno, los producidos con su cuerpo así como los provenientes de música para niños para identificar diferentes cualidades"
+                    },
+                    "mat": {
+                        "learn": "Recolecta, registra y lee datos en tablas",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-mat-la",
+                                "identifier": "gs1la",
+                                "pages": [[236], [237]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "<b>Matemáticas</b>",
+                                "folder": "sep-mat",
+                                "identifier": "sepmat1-",
+                                "pages": [[123]]
+                            }
+                        ]
+                    },
+                    "lm": {
+                        "learn": "Disfruta obras de teatro infantil y participa en juegos dramáticos de su imaginación",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-lm-la",
+                                "identifier": "gs1la",
+                                "pages": [[170], [171]]
+                            },
+                            {
+                                "type": "alas",
+                                "name": "Alas de <b>Papel</b>",
+                                "folder": "alas-la",
+                                "identifier": "gs1la",
+                                "pages": [[20, 21, 22, 23]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "Lengua <b>Materna</b>",
+                                "folder": "sep-lm",
+                                "identifier": "seplm1-",
+                                "pages": [[83]]
+                            }
+                        ]
+                    },
+                    "edu": {
+                        "learn": "Explora diversas combinaciones que puede hacer de sus patrones básicos de movimiento en las actividades y juegos.",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-ef-la",
+                                "identifier": "gs1la",
+                                "pages": [[296], [297]]
+                            }
+                        ]
+                    }
+                }
+            },
+            "02": {
+                "1": {
+                    "lm": {
+                        "learn": "Lee notas informativas sencillas sobre temas de su interés",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-lm-la",
+                                "identifier": "gs1la",
+                                "pages": [[200], [201]]
+                            },
+                            {
+                                "type": "alas",
+                                "name": "Alas de <b>Papel</b>",
+                                "folder": "alas-la",
+                                "identifier": "gs1la",
+                                "pages": [[38], [39]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "Lengua <b>Materna</b>",
+                                "folder": "sep-lm",
+                                "identifier": "seplm1-",
+                                "pages": [[121]]
+                            }
+                        ]
+                    },
+                    "art": {
+                        "learn": "Selecciona y escucha música del interés del grupo e investiga sus orígenes y diferencias"
+                    },
+                    "con": {
+                        "learn": "Clasifica animales, plantas y materiales a partir de características que identifica con sus sentidos",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-cm-la",
+                                "identifier": "gs1la",
+                                "pages": [[122], [123]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "<b>Conocimiento</b> del Medio",
+                                "folder": "sep-cm",
+                                "identifier": "sepcm1-",
+                                "pages": [[46, 47, 48, 49, 50, 51, 52, 53]]
+                            }
+                        ]
+                    },
+                    "mat": {
+                        "learn": "Resuelve problemas de suma con números naturales menores que cien",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-mat-la",
+                                "identifier": "gs1la",
+                                "pages": [[88], [89]]
+                            },
+                            {
+                                "type": "detectives",
+                                "name": "Detectives <b>Matemáticos</b>",
+                                "folder": "detectives-la",
+                                "identifier": "detectives1la",
+                                "pages": [[16], [17]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "<b>Matemáticas</b>",
+                                "folder": "sep-mat",
+                                "identifier": "sepmat1-",
+                                "pages": [[113], [146]]
+                            }
+                        ]
+                    },
+                    "edu": {
+                        "learn": ""
+                    }
+                }
+            },
+            "03": {
+                "1": {
+                    "mat": {
+                        "learn": "Estima y compara pesos y capacidades de manera directa",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-mat-la",
+                                "identifier": "gs1la",
+                                "pages": [
+                                    [224, 225],
+                                    [342, 343]
+                                ]
+                            },
+                            {
+                                "type": "detectives",
+                                "name": "Detectives <b>Matemáticos</b>",
+                                "folder": "detectives-la",
+                                "identifier": "detectives1la",
+                                "pages": [[51]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "<b>Matemáticas</b>",
+                                "folder": "sep-mat",
+                                "identifier": "sepmat1-",
+                                "pages": [[138], [186]]
+                            }
+                        ]
+                    },
+                    "con": {
+                        "learn": "Describe tradiciones, costumbres, celebraciones del lugar donde vive y cómo han cambiado con el paso del tiempo.",
+                        "books": [
+                            {
+                                "type": "santillana",
+                                "name": "La <b>Guía</b> Santillana",
+                                "folder": "la-guia-santillana-cm-la",
+                                "identifier": "gs1la",
+                                "pages": [[240]]
+                            },
+                            {
+                                "type": "conaliteg",
+                                "name": "<b>Conocimiento</b> del Medio",
+                                "folder": "sep-cm",
+                                "identifier": "sepcm1-",
+                                "pages": [[150]]
+                            }
+                        ]
+                    },
+                    "socio": {
+                        "learn": "Identifica fortalezas para estar en calma, aprender y convivir con otros e identifica dificultades y pide apoyo cuando lo necesita",
+                        "books": [
+                            {
+                                "type": "socio",
                                 "name": "Educación <b>socioemicional</b> 2",
-                                "pages": [10, 11]
+                                "folder": "socioemocional-la",
+                                "identifier": "es1la",
+                                "pages": [
+                                    [10, 11],
+                                    [28, 29]
+                                ]
                             }
                         ]
                     }
