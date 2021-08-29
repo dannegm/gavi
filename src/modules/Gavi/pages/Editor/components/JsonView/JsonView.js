@@ -16,7 +16,7 @@ const JsonTree = Loadable({
 });
 
 const downloadJson = (data, name = 'file.json') => {
-    const jsonBlob = new Blob([JSON.stringify(data, null, 4)]);
+    const jsonBlob = new Blob([JSON.stringify(data)]);
     const blobUrl = URL.createObjectURL(jsonBlob);
 
     const link = document.createElement('a');
@@ -56,7 +56,7 @@ const JsonView = ({ name, expanded, data }) => {
             <Panel
                 className='json-view'
                 header={<Header />}
-                expanded={expanded}
+                defaultExpanded={expanded}
                 collapsible
                 bordered
             >

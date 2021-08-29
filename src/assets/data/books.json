@@ -75,8 +75,16 @@
         {
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
-            "serieCode": "socio",
+            "serieCode": "santillana",
             "serieName": "La Guía Santillana",
+            "folder": "socioemocional-la",
+            "identifier": "es1la"
+        },
+        {
+            "subjectCode": "es",
+            "subjectName": "Educación Socioemocional",
+            "serieCode": "socio",
+            "serieName": "Educación Socioemocional",
             "folder": "socioemocional-la",
             "identifier": "es1la"
         },
@@ -221,8 +229,16 @@
         {
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
-            "serieCode": "socio",
+            "serieCode": "santillana",
             "serieName": "La Guía Santillana",
+            "folder": "socioemocional-la",
+            "identifier": "es2la"
+        },
+        {
+            "subjectCode": "es",
+            "subjectName": "Educación Socioemocional",
+            "serieCode": "socio",
+            "serieName": "Educación Socioemocional",
             "folder": "socioemocional-la",
             "identifier": "es2la"
         },
@@ -367,8 +383,16 @@
         {
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
-            "serieCode": "socio",
+            "serieCode": "santillana",
             "serieName": "La Guía Santillana",
+            "folder": "socioemocional-la",
+            "identifier": "es3la"
+        },
+        {
+            "subjectCode": "es",
+            "subjectName": "Educación Socioemocional",
+            "serieCode": "socio",
+            "serieName": "Educación Socioemocional",
             "folder": "socioemocional-la",
             "identifier": "es3la"
         },
@@ -427,6 +451,14 @@
             "serieName": "Libro de texto gratuito",
             "folder": "sep-cie",
             "identifier": "sepcie3-"
+        },
+        {
+            "subjectCode": "cm",
+            "subjectName": "Conocimiento del medio",
+            "serieCode": "sep",
+            "serieName": "Libro de texto gratuito",
+            "folder": "sep-cm",
+            "identifier": "sepcm3-"
         },
         {
             "subjectCode": "mat",
@@ -745,8 +777,16 @@
         {
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
-            "serieCode": "socio",
+            "serieCode": "santillana",
             "serieName": "La Guía Santillana",
+            "folder": "socioemocional-la",
+            "identifier": "es4la"
+        },
+        {
+            "subjectCode": "es",
+            "subjectName": "Educación Socioemocional",
+            "serieCode": "socio",
+            "serieName": "Educación Socioemocional",
             "folder": "socioemocional-la",
             "identifier": "es4la"
         },
@@ -939,8 +979,16 @@
         {
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
-            "serieCode": "socio",
+            "serieCode": "santillana",
             "serieName": "La Guía Santillana",
+            "folder": "socioemocional-la",
+            "identifier": "es5la"
+        },
+        {
+            "subjectCode": "es",
+            "subjectName": "Educación Socioemocional",
+            "serieCode": "socio",
+            "serieName": "Educación Socioemocional",
             "folder": "socioemocional-la",
             "identifier": "es5la"
         },
@@ -1133,8 +1181,16 @@
         {
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
-            "serieCode": "socio",
+            "serieCode": "santillana",
             "serieName": "La Guía Santillana",
+            "folder": "socioemocional-la",
+            "identifier": "es6la"
+        },
+        {
+            "subjectCode": "es",
+            "subjectName": "Educación Socioemocional",
+            "serieCode": "socio",
+            "serieName": "Educación Socioemocional",
             "folder": "socioemocional-la",
             "identifier": "es6la"
         },

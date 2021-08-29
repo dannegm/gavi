@@ -14,13 +14,13 @@ export default {
     art: {
         code: 'art',
         name: 'Artes',
-        color: '#e83c7f',
+        color: '#a44cd6',
         icon: art,
     },
     artm: {
         code: 'artm',
         name: 'Artes. Música',
-        color: '#e83c7f',
+        color: '#a44cd6',
         icon: art,
     },
     cm: {

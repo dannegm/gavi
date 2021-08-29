@@ -1,75 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Content, Divider, FlexboxGrid, Icon } from 'rsuite';
 
+import { getStoredData, buildResources, GAVI_CLASSES_LS_KEY } from '@gavi/helpers/utils';
+
 import JsonView from './components/JsonView';
 import ClassForm from './components/ClassForm';
 
 import { PageWrapper, Title, ClassFormWrapper, Spacer } from './Editor.styled';
 
-const mapBooks = ({ serieCode, serieName, folder, identifier, pages }) => {
-    return {
-        serie: serieCode,
-        name: serieName,
-        folder,
-        identifier,
-        pages: pages.map((p) => p.map((pp) => Number(pp))),
-    };
-};
+const useClassesData = (initialData = []) => {
+    const [classes, setClasses] = useState(getStoredData(initialData));
+    const [resourcesData, setResourcesData] = useState(null);
 
-const mapSubjects = ({ learn, subject, books }) => {
-    return {
-        learn,
-        code: subject.code,
-        books: books.map(mapBooks),
-    };
-};
-
-const mapClass = ({ date, grade, subjects }) => {
-    const year = date.getFullYear();
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const day = date.getDate().toString().padStart(2, '0');
+    useEffect(() => {
+        localStorage.setItem(GAVI_CLASSES_LS_KEY, JSON.stringify(classes));
+        setResourcesData(buildResources(classes));
+    }, [classes]);
 
     return {
-        year,
-        month,
-        day,
-        grade,
-        subjects: subjects.map(mapSubjects),
+        classes,
+        setClasses,
+        resourcesData,
     };
-};
-
-const buildResources = (classes) => {
-    const data = {};
-
-    classes.map(mapClass).forEach((c) => {
-        if (data[c.year] === undefined) {
-            data[c.year] = {};
-        }
-        if (data[c.year][c.month] === undefined) {
-            data[c.year][c.month] = {};
-        }
-        if (data[c.year][c.month][c.day] === undefined) {
-            data[c.year][c.month][c.day] = {};
-        }
-        if (data[c.year][c.month][c.day][c.grade] === undefined) {
-            data[c.year][c.month][c.day][c.grade] = {};
-        }
-
-        c.subjects.forEach((s) => {
-            data[c.year][c.month][c.day][c.grade][s.code] = {
-                learn: s.learn,
-                books: s.books,
-            };
-        });
-    });
-
-    return data;
 };
 
 const Editor = () => {
-    const [classes, setClasses] = useState([]);
-    const [resourcesData, setResourcesData] = useState(null);
-
+    const { resourcesData, classes, setClasses } = useClassesData([]);
     const [showClassForm, setShowClassForm] = useState(false);
 
     const handleClassCreate = (newClass) => {
@@ -82,10 +38,6 @@ const Editor = () => {
     const handleClassCancel = () => {
         setShowClassForm(false);
     };
-
-    useEffect(() => {
-        setResourcesData(buildResources(classes));
-    }, [classes]);
 
     return (
         <PageWrapper>
@@ -100,6 +52,7 @@ const Editor = () => {
                     </FlexboxGrid>
 
                     <JsonView name='resources.json' data={resourcesData} expanded />
+                    <JsonView name='classes.json' data={classes} />
 
                     {showClassForm && (
                         <ClassFormWrapper>

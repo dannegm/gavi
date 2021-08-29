@@ -4,6 +4,8 @@ import { nanoid } from 'nanoid';
 
 import { FlexboxGrid, Divider, Panel, Button, ButtonGroup, DatePicker, Icon } from 'rsuite';
 
+import { FORMAT_COMMON, formatDate } from '@helpers/dateHelpers';
+
 import SubjectForm from '../SubjectForm';
 import SubjectItem from '../SubjectItem';
 
@@ -46,7 +48,7 @@ const ClassForm = ({ onCancel, onCreate }) => {
         onCreate({
             subjects,
             grade: selectedGrade,
-            date: selectedDate,
+            date: formatDate(selectedDate, FORMAT_COMMON),
         });
     };
 
@@ -65,7 +67,7 @@ const ClassForm = ({ onCancel, onCreate }) => {
     }, [selectedGrade, selectedDate, subjects]);
 
     return (
-        <Panel header='Creando clase' bordered>
+        <Panel header='Creando clase' bordered style={{ borderTop: '4px solid #334750' }}>
             <FlexboxGrid>
                 <FlexboxGrid.Item colspan={6}>
                     <FormControl>

@@ -39,7 +39,7 @@ const SubjectForm = ({ grade, onCancel, onCreate }) => {
     };
 
     const handleRemoveBook = (book) => {
-        const filteredBooks = books.filter((b) => b.id === book.id);
+        const filteredBooks = books.filter((b) => b.id !== book.id);
         setBooks(filteredBooks);
     };
 
@@ -66,7 +66,14 @@ const SubjectForm = ({ grade, onCancel, onCreate }) => {
     }, [subject]);
 
     return (
-        <Panel header='Materia' bordered>
+        <Panel
+            header='Materia'
+            bordered
+            style={{
+                borderTop: '4px solid #07222c',
+                borderBottom: '4px solid #07222c',
+            }}
+        >
             <FlexboxGrid>
                 <FlexboxGrid.Item colspan={24}>
                     <SelectPicker

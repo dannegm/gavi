@@ -7,7 +7,7 @@ import BookItem from '../BookItem';
 
 const SubjectItem = ({ subject, learn, books, onRemove }) => {
     return (
-        <Panel bordered>
+        <Panel bordered style={{ borderTop: '4px solid #dedede' }}>
             <FlexboxGrid>
                 <FlexboxGrid.Item colspan={24}>
                     <h5>{subject.label}</h5>

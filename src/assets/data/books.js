@@ -1,9 +1,9 @@
 /* eslint-disable camelcase */
-import alas from '../images/logos/alas.png';
-import sep from '../images/logos/sep.png';
-import detectives from '../images/logos/detectives.png';
-import vidasaludable from '../images/logos/vidasaludable.png';
-import socio from '../images/logos/socio.png';
+import alas from '../images/logos/alas.jpg';
+import sep from '../images/logos/sep.jpg';
+import detectives from '../images/logos/detectives.jpg';
+import vidasaludable from '../images/logos/vidasaludable.jpg';
+import socio from '../images/logos/socio.jpg';
 
 export { default as books } from './books.json';
 

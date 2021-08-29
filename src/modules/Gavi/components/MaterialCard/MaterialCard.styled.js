@@ -4,6 +4,7 @@ import { breakpoints } from '@styles/mediaQueries';
 
 export const MaterialCardWrapper = styled.div`
     display: flex;
+    width: 260px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -18,11 +19,15 @@ export const MaterialCardWrapper = styled.div`
     ${breakpoints.tablet(css`
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
     `)}
 `;
 
 export const MaterialCardLogo = styled.img`
-    width: 60%;
+    width: 180px;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
     display: block;
 
     ${breakpoints.tablet(css`
