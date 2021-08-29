@@ -30,6 +30,7 @@ export const ButtonWrapper = styled.button.attrs({
 `;
 
 export const ButtonLabel = styled.div`
+    flex: 1;
     font-family: 'Antipasto', sans-serif;
     font-size: 1.286rem;
     text-align: center;

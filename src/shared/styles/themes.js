@@ -64,7 +64,7 @@ const grade1 = {
 
 const grade2 = {
     colors: {
-        main: '#622879',
+        main: '#434da0',
     },
     logo: grade2Logo,
     header: {

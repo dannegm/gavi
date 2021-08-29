@@ -1,11 +1,18 @@
 import { lazy } from 'react';
 
+const Root = lazy(() => import('./pages/Root'));
 const Home = lazy(() => import('./pages/Home'));
 const Subjects = lazy(() => import('./pages/Subjects'));
 const Resources = lazy(() => import('./pages/Resources'));
 const Downloadables = lazy(() => import('./pages/Downloadables'));
 
 const routes = [
+    {
+        name: 'gavi.root',
+        path: '/',
+        component: Root,
+        exact: true,
+    },
     {
         name: 'gavi.home',
         path: '/:grade',
