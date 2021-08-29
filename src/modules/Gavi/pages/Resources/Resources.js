@@ -23,6 +23,8 @@ import { NavigationWrapper, MaterialCardGrid } from './Resources.styled';
 const ROUTE_TEMPLATE = '/material/{grade}/{date}/{subject}';
 const PAGE_URL_TEMPLATE = process.env.REACT_APP_PAGE_URL_TEMPLATE;
 
+const gradeTitles = ['none', 'Primer', 'Segundo', 'Tercer', 'Cuarto', 'Quinto', 'Sexto'];
+
 const Resources = () => {
     const history = useHistory();
     const { subject } = useParams();
@@ -65,7 +67,7 @@ const Resources = () => {
 
     return (
         <Page grade={grade} title={`Material - ${grade}º GAVI`}>
-            <Header title='Primer Grado' subject={subject} />
+            <Header title={`${gradeTitles[grade]} Grado`} subject={subject} />
             <NavigationWrapper>
                 <Button icon='chevron-left' label='Regresar' onClick={handleBack} />
             </NavigationWrapper>
@@ -82,8 +84,8 @@ const Resources = () => {
                         <MaterialCardGrid>
                             {resourceData.books.map((book) => (
                                 <MaterialCard
-                                    key={`book_${book.type}`}
-                                    type={book.type}
+                                    key={`book_${book.serie}`}
+                                    type={book.serie}
                                     pages={book.pages}
                                 />
                             ))}
@@ -95,9 +97,9 @@ const Resources = () => {
                     {Boolean(resourceData?.books) &&
                         resourceData.books.map((book) => (
                             <PageSection
-                                key={`pages_${book.type}`}
+                                key={`pages_${book.serie}`}
                                 title={book.name}
-                                book={book.type}
+                                book={book.serie}
                                 folder={book.folder}
                                 identifier={book.identifier}
                                 pages={flattenDeep(book.pages)}

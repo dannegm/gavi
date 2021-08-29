@@ -13,10 +13,17 @@ const PageSection = ({ title, folder, identifier, pages, getPageUrl }) => {
         src: getPageUrl(folder, identifier, page),
     }));
 
+    const formattedTitle = title
+        .split(' ')
+        .map((word, index) => {
+            return index % 2 === 0 ? word : `<b>${word}</b>`;
+        })
+        .join(' ');
+
     return (
         <PageSectionWrapper>
             <PageSectionTitle>
-                <DangerouslyHtml>{title}</DangerouslyHtml>
+                <DangerouslyHtml>{formattedTitle}</DangerouslyHtml>
             </PageSectionTitle>
             <PageSectionGrid>
                 <List items={pagesPayload} component={PageCard} />

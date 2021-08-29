@@ -2,6 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 import { AntipastoFont, Centrale } from './fonts';
 import colors from './colors';
 
+// eslint-disable-next-line import/no-extraneous-dependencies
+import 'rsuite/dist/styles/rsuite-default.css';
+
 const GlobalStyle = createGlobalStyle`
     ${AntipastoFont}
     ${Centrale}

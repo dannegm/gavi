@@ -19,6 +19,8 @@ import { NavigationWrapper, SubjectsGrid } from './Subjects.styled';
 
 const ROUTE_TEMPLATE = '/materias/{grade}/{date}';
 
+const gradeTitles = ['none', 'Primer', 'Segundo', 'Tercer', 'Cuarto', 'Quinto', 'Sexto'];
+
 const Subjects = () => {
     const history = useHistory();
     const {
@@ -54,7 +56,7 @@ const Subjects = () => {
 
     return (
         <Page grade={grade} title={`Materias - ${grade}º GAVI`}>
-            <Header title='Primer Grado' />
+            <Header title={`${gradeTitles[grade]} Grado`} />
             <NavigationWrapper>
                 <Button icon='chevron-left' label='Regresar' onClick={handleBack} />
             </NavigationWrapper>

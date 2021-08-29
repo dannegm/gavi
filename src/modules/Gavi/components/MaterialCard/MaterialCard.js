@@ -5,7 +5,7 @@ import { flattenDeep } from 'lodash';
 
 import DangerouslyHtml from '@components/DangerouslyHtml';
 
-import booksLogos from '@assets/data/books';
+import { series } from '@assets/data/books';
 
 import { MaterialCardWrapper, MaterialCardLogo, MaterialCardPages } from './MaterialCard.styled';
 
@@ -36,8 +36,11 @@ const MaterialCard = ({ type, pages }) => {
     const theme = useContext(ThemeContext);
 
     const books = {
-        ...booksLogos,
-        santillana: theme.logo,
+        ...series,
+        santillana: {
+            ...series.santillana,
+            logo: theme.logo,
+        },
     };
 
     const getPagesCaption = (p) => {
@@ -52,7 +55,7 @@ const MaterialCard = ({ type, pages }) => {
 
     return (
         <MaterialCardWrapper>
-            <MaterialCardLogo src={books[type]} />
+            <MaterialCardLogo src={books[type].logo} />
             <MaterialCardPages>
                 <DangerouslyHtml>{getPagesCaption(pages)}</DangerouslyHtml>
             </MaterialCardPages>

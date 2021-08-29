@@ -17,23 +17,77 @@ export default {
         color: '#e83c7f',
         icon: art,
     },
-    con: {
-        code: 'con',
-        name: 'Conocimiento del Medio',
+    artm: {
+        code: 'artm',
+        name: 'Artes. Música',
+        color: '#e83c7f',
+        icon: art,
+    },
+    cm: {
+        code: 'cm',
+        name: 'Conocimiento del medio',
         color: '#f7be00',
         icon: cie,
     },
-    cie: {
-        code: 'cie',
-        name: 'Ciencias Naturales',
+    ef: {
+        code: 'ef',
+        name: 'Educación física',
+        color: '#f7be00',
+        icon: edu,
+    },
+    lm: {
+        code: 'lm',
+        name: 'Lengua Materna. Español',
+        color: '#00a4e0',
+        icon: esp,
+    },
+    lmb: {
+        code: 'lmb',
+        name: 'Lengua Materna. Español (clase bilingüe)',
+        color: '#da0093',
+        icon: lec,
+    },
+    fcye: {
+        code: 'fcye',
+        name: 'Formación Cívica y Ética',
+        color: '#8447ae',
+        icon: fce,
+    },
+    ced: {
+        code: 'ced',
+        name: 'Cívica y Ética en diálogo',
+        color: '#8447ae',
+        icon: fce,
+    },
+    es: {
+        code: 'es',
+        name: 'Educación Socioemocional',
+        color: '#ff7300',
+        icon: socio,
+    },
+    vs: {
+        code: 'vs',
+        name: 'Vida Saludable (de Educación Socioemocional)',
+        color: '#f7be00',
+        icon: vid,
+    },
+    mat: {
+        code: 'mat',
+        name: 'Matemáticas',
+        color: '#f3c000',
+        icon: mat,
+    },
+    cn: {
+        code: 'cn',
+        name: 'Ciencias naturales',
         color: '#8dbf00',
         icon: cie,
     },
-    edu: {
-        code: 'edu',
-        name: 'Educación Física',
-        color: '#f7be00',
-        icon: edu,
+    edv: {
+        code: 'edv',
+        name: 'La entidad en donde vivo',
+        color: '#00b8be',
+        icon: geo,
     },
     esp: {
         code: 'esp',
@@ -41,23 +95,11 @@ export default {
         color: '#00a4e0',
         icon: esp,
     },
-    lm: {
-        code: 'lm',
-        name: 'Lengua materna',
+    espb: {
+        code: 'espb',
+        name: 'Español (clase bilingüe)',
         color: '#00a4e0',
         icon: esp,
-    },
-    fce_dia: {
-        code: 'fce_dia',
-        name: 'Cívica y Ética en diálogo',
-        color: '#8447ae',
-        icon: fce,
-    },
-    fce: {
-        code: 'fce',
-        name: 'Formación Cívica y Ética',
-        color: '#8447ae',
-        icon: fce,
     },
     geo: {
         code: 'geo',
@@ -70,35 +112,5 @@ export default {
         name: 'Historia',
         color: '#fc7700',
         icon: hist,
-    },
-    ing: {
-        code: 'ing',
-        name: 'Inglés',
-        color: '#e83c7f',
-        icon: lec,
-    },
-    mat: {
-        code: 'mat',
-        name: 'Matemáticas',
-        color: '#f3c000',
-        icon: mat,
-    },
-    mus: {
-        code: 'mus',
-        name: 'Artes, Música',
-        color: '#e83c7f',
-        icon: art,
-    },
-    socio: {
-        code: 'socio',
-        name: 'Educación Socioemocional',
-        color: '#8447ae',
-        icon: socio,
-    },
-    vid: {
-        code: 'vid',
-        name: 'Vida Saludable',
-        color: '#f7be00',
-        icon: vid,
     },
 };
