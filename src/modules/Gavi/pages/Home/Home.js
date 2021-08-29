@@ -33,7 +33,7 @@ const Home = () => {
     const { grade } = useParams();
 
     const handleSelectDate = (date) => {
-        history.push(`/materias/${grade}/${date}`);
+        history.push(`/aprende${grade}/materias/${date}`);
     };
 
     return (

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Container, Content, Divider, FlexboxGrid, Icon } from 'rsuite';
+import { Button, Container, Content, Divider, FlexboxGrid, Icon, IconButton } from 'rsuite';
 
 import { getStoredData, buildResources, GAVI_CLASSES_LS_KEY } from '@gavi/helpers/utils';
 
@@ -43,12 +43,24 @@ const Editor = () => {
         <PageWrapper>
             <Container>
                 <Content>
-                    <FlexboxGrid>
-                        <Title>GAVI Editor</Title>
+                    <FlexboxGrid align='middle'>
+                        <FlexboxGrid.Item style={{ marginRight: 5 }}>
+                            <IconButton
+                                size='sm'
+                                icon={<Icon icon='external-link-square' />}
+                                href='./'
+                                target='_blank'
+                            />
+                        </FlexboxGrid.Item>
+                        <FlexboxGrid.Item>
+                            <Title>GAVI Editor</Title>
+                        </FlexboxGrid.Item>
                         <Spacer />
-                        <Button onClick={() => setShowClassForm(true)}>
-                            <Icon icon='plus' /> Agregar clase
-                        </Button>
+                        <FlexboxGrid.Item>
+                            <Button onClick={() => setShowClassForm(true)}>
+                                <Icon icon='plus' /> Agregar clase
+                            </Button>
+                        </FlexboxGrid.Item>
                     </FlexboxGrid>
 
                     <JsonView name='resources.json' data={resourcesData} expanded />

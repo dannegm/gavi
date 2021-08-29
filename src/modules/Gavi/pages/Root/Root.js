@@ -18,7 +18,7 @@ const Root = () => {
     const history = useHistory();
 
     const go = (grade) => {
-        history.push(`/${grade}`);
+        history.push(`/aprende${grade}`);
     };
 
     return (

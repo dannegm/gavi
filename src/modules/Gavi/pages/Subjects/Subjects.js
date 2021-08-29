@@ -17,7 +17,7 @@ import resources from '@assets/data/resources.json';
 
 import { NavigationWrapper, SubjectsGrid } from './Subjects.styled';
 
-const ROUTE_TEMPLATE = '/materias/{grade}/{date}';
+const ROUTE_TEMPLATE = '/aprende{grade}/materias/{date}';
 
 const gradeTitles = ['none', 'Primer', 'Segundo', 'Tercer', 'Cuarto', 'Quinto', 'Sexto'];
 
@@ -38,11 +38,11 @@ const Subjects = () => {
     const [resourceData, setResourceData] = useState(null);
 
     const handleBack = () => {
-        history.push(`/${grade}`);
+        history.push(`/aprende${grade}`);
     };
 
     const handleBadgeClick = (subjectCode) => {
-        history.push(`/material/${grade}/${formatedDate}/${subjectCode}`);
+        history.push(`/aprende${grade}/material/${formatedDate}/${subjectCode}`);
     };
 
     useEffect(() => {

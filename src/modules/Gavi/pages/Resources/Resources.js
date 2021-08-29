@@ -20,7 +20,7 @@ import resources from '@assets/data/resources.json';
 
 import { NavigationWrapper, MaterialCardGrid } from './Resources.styled';
 
-const ROUTE_TEMPLATE = '/material/{grade}/{date}/{subject}';
+const ROUTE_TEMPLATE = '/aprende{grade}/material/{date}/{subject}';
 const PAGE_URL_TEMPLATE = process.env.REACT_APP_PAGE_URL_TEMPLATE;
 
 const gradeTitles = ['none', 'Primer', 'Segundo', 'Tercer', 'Cuarto', 'Quinto', 'Sexto'];
@@ -44,7 +44,7 @@ const Resources = () => {
     const [resourceData, setResourceData] = useState(null);
 
     const handleBack = () => {
-        history.push(`/materias/${grade}/${formatedDate}`);
+        history.push(`/aprende${grade}/materias/${formatedDate}`);
     };
 
     const getPageUrl = (folder, identifier, page) => {
