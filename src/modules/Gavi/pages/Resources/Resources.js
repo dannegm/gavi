@@ -44,13 +44,13 @@ const Resources = () => {
         history.push(`/materias/${grade}/${formatedDate}`);
     };
 
-    const getPageUrl = (book, page) => {
+    const getPageUrl = (folder, identifier, page) => {
         const getRoute = buildRoute({
             grade,
             subject,
             routeTemplate: PAGE_URL_TEMPLATE,
         });
-        return renderTemplate(getRoute(today), { book, page });
+        return renderTemplate(getRoute(today), { folder, identifier, page });
     };
 
     useEffect(() => {
@@ -94,6 +94,8 @@ const Resources = () => {
                             key={`pages_${book.type}`}
                             title={book.name}
                             book={book.type}
+                            folder={book.folder}
+                            identifier={book.identifier}
                             pages={book.pages}
                             getPageUrl={getPageUrl}
                         />

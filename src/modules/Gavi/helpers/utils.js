@@ -23,7 +23,7 @@ export const buildRoute = ({ routeTemplate, grade, subject = '' }) => {
             subject,
             date: formatDate(date, FORMAT_COMMON),
             year: date.getFullYear(),
-            month: date.getMonth(),
+            month: date.getMonth() + 1,
             day: date.getDate(),
         };
 

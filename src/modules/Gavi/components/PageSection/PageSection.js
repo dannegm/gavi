@@ -8,9 +8,9 @@ import PageCard from '../PageCard';
 
 import { PageSectionWrapper, PageSectionTitle, PageSectionGrid } from './PageSection.styled';
 
-const PageSection = ({ title, book, pages, getPageUrl }) => {
+const PageSection = ({ title, folder, identifier, pages, getPageUrl }) => {
     const pagesPayload = pages.map((page) => ({
-        src: getPageUrl(book, page),
+        src: getPageUrl(folder, identifier, page),
     }));
 
     return (
@@ -27,7 +27,8 @@ const PageSection = ({ title, book, pages, getPageUrl }) => {
 
 PageSection.propTypes = {
     title: PropTypes.node.isRequired,
-    book: PropTypes.string.isRequired,
+    folder: PropTypes.string.isRequired,
+    identifier: PropTypes.string.isRequired,
     pages: PropTypes.arrayOf(PropTypes.number),
     getPageUrl: PropTypes.func.isRequired,
 };
