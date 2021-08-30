@@ -25,13 +25,13 @@ export default {
     },
     cm: {
         code: 'cm',
-        name: 'Conocimiento del medio',
+        name: 'Conocimiento del Medio',
         color: '#f7be00',
         icon: cie,
     },
     ef: {
         code: 'ef',
-        name: 'Educación física',
+        name: 'Educación Física',
         color: '#f7be00',
         icon: edu,
     },
@@ -79,7 +79,7 @@ export default {
     },
     cn: {
         code: 'cn',
-        name: 'Ciencias naturales',
+        name: 'Ciencias Naturales',
         color: '#8dbf00',
         icon: cie,
     },

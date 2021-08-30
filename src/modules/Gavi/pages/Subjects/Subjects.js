@@ -56,7 +56,7 @@ const Subjects = () => {
 
     return (
         <Page grade={grade} title={`Materias - ${grade}º GAVI`}>
-            <Header title={`${gradeTitles[grade]} Grado`} />
+            <Header title={`${gradeTitles[grade]} grado`} />
             <NavigationWrapper>
                 <Button icon='chevron-left' label='Regresar' onClick={handleBack} />
             </NavigationWrapper>

@@ -4,7 +4,7 @@
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs1la"
         },
@@ -12,23 +12,23 @@
             "subjectCode": "artm",
             "subjectName": "Artes. Música",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs1la"
         },
         {
             "subjectCode": "cm",
-            "subjectName": "Conocimiento del medio",
+            "subjectName": "Conocimiento del Medio",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-cm-la",
             "identifier": "gs1la"
         },
         {
             "subjectCode": "ef",
-            "subjectName": "Educación física",
+            "subjectName": "Educación Física",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-ef-la",
             "identifier": "gs1la"
         },
@@ -36,7 +36,7 @@
             "subjectCode": "lm",
             "subjectName": "Lengua Materna. Español",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs1la"
         },
@@ -44,7 +44,7 @@
             "subjectCode": "lmb",
             "subjectName": "Lengua Materna. Español (clase bilingüe)",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs1la"
         },
@@ -52,7 +52,7 @@
             "subjectCode": "lm",
             "subjectName": "Lengua Materna. Español",
             "serieCode": "alas",
-            "serieName": "Alas de papel",
+            "serieName": "Alas de papel 1",
             "folder": "alas-la",
             "identifier": "alas1"
         },
@@ -60,7 +60,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-fcye-la",
             "identifier": "lgsfcye1la"
         },
@@ -68,7 +68,7 @@
             "subjectCode": "ced",
             "subjectName": "Cívica y Ética en diálogo",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "dialogo-la",
             "identifier": "gs1la"
         },
@@ -76,7 +76,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "socioemocional-la",
             "identifier": "es1la"
         },
@@ -84,7 +84,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "socio",
-            "serieName": "Educación Socioemocional",
+            "serieName": "Educación Socioemocional 1",
             "folder": "socioemocional-la",
             "identifier": "es1la"
         },
@@ -92,7 +92,7 @@
             "subjectCode": "vs",
             "subjectName": "Vida Saludable (de Educación Socioemocional)",
             "serieCode": "vidasaludable",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "socioemocional-vs",
             "identifier": "es1vs"
         },
@@ -100,7 +100,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-mat-la",
             "identifier": "gs1la"
         },
@@ -108,7 +108,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "detectives",
-            "serieName": "Detectives matemáticos",
+            "serieName": "Detectives matemáticos 1",
             "folder": "detectives-la",
             "identifier": "detectives1la"
         },
@@ -116,7 +116,7 @@
             "subjectCode": "lm",
             "subjectName": "Lengua Materna. Español",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de primer grado",
             "folder": "sep-lm",
             "identifier": "seplm1-"
         },
@@ -124,15 +124,15 @@
             "subjectCode": "lm",
             "subjectName": "Lengua Materna. Español, Lecturas",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de primer grado",
             "folder": "sep-lml",
             "identifier": "seplml1-"
         },
         {
             "subjectCode": "cm",
-            "subjectName": "Conocimiento del medio",
+            "subjectName": "Conocimiento del Medio",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de primer grado",
             "folder": "sep-cm",
             "identifier": "sepcm1-"
         },
@@ -140,7 +140,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de primer grado",
             "folder": "sep-mat",
             "identifier": "sepmat1-"
         },
@@ -148,7 +148,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de primer grado",
             "folder": "sep-fcye",
             "identifier": "sepfcye1-"
         }
@@ -158,7 +158,7 @@
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs2la"
         },
@@ -166,23 +166,23 @@
             "subjectCode": "artm",
             "subjectName": "Artes. Música",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs2la"
         },
         {
             "subjectCode": "cm",
-            "subjectName": "Conocimiento del medio",
+            "subjectName": "Conocimiento del Medio",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-cm-la",
             "identifier": "gs2la"
         },
         {
             "subjectCode": "ef",
-            "subjectName": "Educación física",
+            "subjectName": "Educación Física",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-ef-la",
             "identifier": "gs2la"
         },
@@ -190,7 +190,7 @@
             "subjectCode": "lm",
             "subjectName": "Lengua Materna. Español",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs2la"
         },
@@ -198,7 +198,7 @@
             "subjectCode": "lmb",
             "subjectName": "Lengua Materna. Español (clase bilingüe)",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs2la"
         },
@@ -206,7 +206,7 @@
             "subjectCode": "lm",
             "subjectName": "Lengua Materna. Español",
             "serieCode": "alas",
-            "serieName": "Alas de papel",
+            "serieName": "Alas de papel 2",
             "folder": "alas-la",
             "identifier": "alas2"
         },
@@ -214,7 +214,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-fcye-la",
             "identifier": "lgsfcye2la"
         },
@@ -222,7 +222,7 @@
             "subjectCode": "ced",
             "subjectName": "Cívica y Ética en diálogo",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "dialogo-la",
             "identifier": "gs2la"
         },
@@ -230,7 +230,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "socioemocional-la",
             "identifier": "es2la"
         },
@@ -238,7 +238,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "socio",
-            "serieName": "Educación Socioemocional",
+            "serieName": "Educación Socioemocional 2",
             "folder": "socioemocional-la",
             "identifier": "es2la"
         },
@@ -246,7 +246,7 @@
             "subjectCode": "vs",
             "subjectName": "Vida Saludable (de Educación Socioemocional)",
             "serieCode": "vidasaludable",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "socioemocional-vs",
             "identifier": "es2vs"
         },
@@ -254,7 +254,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-mat-la",
             "identifier": "gs2la"
         },
@@ -262,7 +262,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "detectives",
-            "serieName": "Detectives matemáticos",
+            "serieName": "Detectives matemáticos 2",
             "folder": "detectives-la",
             "identifier": "detectives2la"
         },
@@ -270,7 +270,7 @@
             "subjectCode": "lm",
             "subjectName": "Lengua Materna. Español",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de segundo grado",
             "folder": "sep-lm",
             "identifier": "seplm2-"
         },
@@ -278,15 +278,15 @@
             "subjectCode": "m",
             "subjectName": "Lengua Materna. Español, Lecturas",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de segundo grado",
             "folder": "sep-lml",
             "identifier": "seplml2-"
         },
         {
             "subjectCode": "cm",
-            "subjectName": "Conocimiento del medio",
+            "subjectName": "Conocimiento del Medio",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de segundo grado",
             "folder": "sep-cm",
             "identifier": "sepcm2-"
         },
@@ -294,7 +294,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de segundo grado",
             "folder": "sep-mat",
             "identifier": "sepmat2-"
         },
@@ -302,7 +302,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de segundo grado",
             "folder": "sep-fcye",
             "identifier": "sepfcye2-"
         }
@@ -312,7 +312,7 @@
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs3la"
         },
@@ -320,23 +320,23 @@
             "subjectCode": "artm",
             "subjectName": "Artes. Música",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs3la"
         },
         {
             "subjectCode": "cn",
-            "subjectName": "Ciencias naturales",
+            "subjectName": "Ciencias Naturales",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-cn-la",
             "identifier": "gs3la"
         },
         {
             "subjectCode": "ef",
-            "subjectName": "Educación física",
+            "subjectName": "Educación Física",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-ef-la",
             "identifier": "gs3la"
         },
@@ -344,7 +344,7 @@
             "subjectCode": "lm",
             "subjectName": "Lengua Materna. Español",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs3la"
         },
@@ -352,7 +352,7 @@
             "subjectCode": "lmb",
             "subjectName": "Lengua Materna. Español (clase bilingüe)",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs3la"
         },
@@ -368,7 +368,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-fcye-la",
             "identifier": "lgsfcye3la"
         },
@@ -376,7 +376,7 @@
             "subjectCode": "ced",
             "subjectName": "Cívica y Ética en diálogo",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "dialogo-la",
             "identifier": "gs3la"
         },
@@ -384,7 +384,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "socioemocional-la",
             "identifier": "es3la"
         },
@@ -392,7 +392,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "socio",
-            "serieName": "Educación Socioemocional",
+            "serieName": "Educación Socioemocional 3",
             "folder": "socioemocional-la",
             "identifier": "es3la"
         },
@@ -400,7 +400,7 @@
             "subjectCode": "vs",
             "subjectName": "Vida Saludable (de Educación Socioemocional)",
             "serieCode": "vidasaludable",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "socioemocional-vs",
             "identifier": "es3vs"
         },
@@ -408,7 +408,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-mat-la",
             "identifier": "gs3la"
         },
@@ -416,7 +416,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "detectives",
-            "serieName": "Detectives matemáticos",
+            "serieName": "Detectives matemáticos 3",
             "folder": "detectives-la",
             "identifier": "detectives3la"
         },
@@ -424,7 +424,7 @@
             "subjectCode": "edv",
             "subjectName": "La entidad en donde vivo",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-edv-la",
             "identifier": "gs3la"
         },
@@ -432,7 +432,7 @@
             "subjectCode": "esp",
             "subjectName": "Español",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-esp",
             "identifier": "sepesp3-"
         },
@@ -440,7 +440,7 @@
             "subjectCode": "esp",
             "subjectName": "Español. Libro de lectura",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-esl",
             "identifier": "sepesl3-"
         },
@@ -448,15 +448,15 @@
             "subjectCode": "cn",
             "subjectName": "Ciencias Naturales",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-cie",
             "identifier": "sepcie3-"
         },
         {
             "subjectCode": "cm",
-            "subjectName": "Conocimiento del medio",
+            "subjectName": "Conocimiento del Medio",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-cm",
             "identifier": "sepcm3-"
         },
@@ -464,7 +464,7 @@
             "subjectCode": "mat",
             "subjectName": "Desafíos Matemáticos",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-mat",
             "identifier": "sepmat3-"
         },
@@ -472,7 +472,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-fcye",
             "identifier": "sepfcye3-"
         },
@@ -480,7 +480,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Aguascalientes",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-ags-"
         },
@@ -488,7 +488,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Baja California",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-bc-"
         },
@@ -496,7 +496,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Baja California Sur",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-bcs-"
         },
@@ -504,7 +504,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Campeche",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-cam-"
         },
@@ -512,7 +512,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Chiapas",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-chp-"
         },
@@ -520,7 +520,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Chihuahua",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-chi-"
         },
@@ -528,7 +528,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo CDMX",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-cdm-"
         },
@@ -536,7 +536,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Coahuila",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-coa-"
         },
@@ -544,7 +544,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Colima",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-col-"
         },
@@ -552,7 +552,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Durango",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-dur-"
         },
@@ -560,7 +560,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Guanajuato",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-gua-"
         },
@@ -568,7 +568,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Hidalgo",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-hid-"
         },
@@ -576,7 +576,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Jalisco",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-jal-"
         },
@@ -584,7 +584,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo México",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-mex-"
         },
@@ -592,7 +592,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Michoacán",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-mic-"
         },
@@ -600,7 +600,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Nayarit",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-nay-"
         },
@@ -608,7 +608,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Nuevo León",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-nue-"
         },
@@ -616,7 +616,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Oaxaca",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-oax-"
         },
@@ -624,7 +624,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Querétaro",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-que-"
         },
@@ -632,7 +632,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Quintana Roo",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-qui-"
         },
@@ -640,7 +640,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo San Luís Potosí",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-slp-"
         },
@@ -648,7 +648,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Sinaloa",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-sin-"
         },
@@ -656,7 +656,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Sonora",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-son-"
         },
@@ -664,7 +664,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Tabasco",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-tab-"
         },
@@ -672,7 +672,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Tamaulipas",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-tam-"
         },
@@ -680,7 +680,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Veracruz",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-ver-"
         },
@@ -688,7 +688,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Yucatán",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-yuc-"
         },
@@ -696,7 +696,7 @@
             "subjectCode": "edv",
             "subjectName": "La Entidad en donde vivo Zacatecas",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
             "identifier": "sepent3-zac-"
         }
@@ -706,7 +706,7 @@
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs4la"
         },
@@ -714,23 +714,23 @@
             "subjectCode": "artm",
             "subjectName": "Artes. Música",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs4la"
         },
         {
             "subjectCode": "cn",
-            "subjectName": "Ciencias naturales",
+            "subjectName": "Ciencias Naturales",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-cn-la",
             "identifier": "gs4la"
         },
         {
             "subjectCode": "ef",
-            "subjectName": "Educación física",
+            "subjectName": "Educación Física",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-ef-la",
             "identifier": "gs4la"
         },
@@ -738,7 +738,7 @@
             "subjectCode": "esp",
             "subjectName": "Español",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs4la"
         },
@@ -746,7 +746,7 @@
             "subjectCode": "espb",
             "subjectName": "Español (clase bilingüe)",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs4la"
         },
@@ -754,7 +754,7 @@
             "subjectCode": "esp",
             "subjectName": "Español",
             "serieCode": "alas",
-            "serieName": "Alas de papel",
+            "serieName": "Alas de papel 4",
             "folder": "alas-la",
             "identifier": "alas4"
         },
@@ -762,7 +762,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-fcye-la",
             "identifier": "lgsfcye4la"
         },
@@ -770,7 +770,7 @@
             "subjectCode": "ced",
             "subjectName": "Cívica y Ética en diálogo",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "dialogo-la",
             "identifier": "gs4la"
         },
@@ -778,7 +778,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "socioemocional-la",
             "identifier": "es4la"
         },
@@ -786,7 +786,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "socio",
-            "serieName": "Educación Socioemocional",
+            "serieName": "Educación Socioemocional 4",
             "folder": "socioemocional-la",
             "identifier": "es4la"
         },
@@ -794,7 +794,7 @@
             "subjectCode": "vs",
             "subjectName": "Vida Saludable (de Educación Socioemocional)",
             "serieCode": "vidasaludable",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "socioemocional-vs",
             "identifier": "es4vs"
         },
@@ -802,7 +802,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-mat-la",
             "identifier": "gs4la"
         },
@@ -810,7 +810,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "detectives",
-            "serieName": "Detectives matemáticos",
+            "serieName": "Detectives matemáticos 4",
             "folder": "detectives-la",
             "identifier": "detectives4la"
         },
@@ -818,7 +818,7 @@
             "subjectCode": "geo",
             "subjectName": "Geografía",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-g-la",
             "identifier": "gs4la"
         },
@@ -826,7 +826,7 @@
             "subjectCode": "hist",
             "subjectName": "Historia",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-h-la",
             "identifier": "gs4la"
         },
@@ -834,7 +834,7 @@
             "subjectCode": "esp",
             "subjectName": "Español",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-esp",
             "identifier": "sepesp4-"
         },
@@ -842,7 +842,7 @@
             "subjectCode": "esp",
             "subjectName": "Español. Libro de lectura",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-esl",
             "identifier": "sepesl4-"
         },
@@ -850,7 +850,7 @@
             "subjectCode": "cn",
             "subjectName": "Ciencias Naturales",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-cie",
             "identifier": "sepcie4-"
         },
@@ -858,7 +858,7 @@
             "subjectCode": "mat",
             "subjectName": "Desafíos Matemáticos",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-mat",
             "identifier": "sepmat4-"
         },
@@ -866,7 +866,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-fcye",
             "identifier": "sepfcye4-"
         },
@@ -874,7 +874,7 @@
             "subjectCode": "hist",
             "subjectName": "Historia",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-his",
             "identifier": "sephis4-"
         },
@@ -882,7 +882,7 @@
             "subjectCode": "geo",
             "subjectName": "Geografía",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-geo",
             "identifier": "sepgeo4-"
         },
@@ -890,7 +890,7 @@
             "subjectCode": "geo",
             "subjectName": "Atlas de México",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-atl",
             "identifier": "sepatl4-"
         },
@@ -898,7 +898,7 @@
             "subjectCode": "fcye",
             "subjectName": "Conoce nuestra Constitución",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-con",
             "identifier": "sepcon4-"
         }
@@ -908,7 +908,7 @@
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs5la"
         },
@@ -916,23 +916,23 @@
             "subjectCode": "artm",
             "subjectName": "Artes. Música",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs5la"
         },
         {
             "subjectCode": "cn",
-            "subjectName": "Ciencias naturales",
+            "subjectName": "Ciencias Naturales",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-cn-la",
             "identifier": "gs5la"
         },
         {
             "subjectCode": "ef",
-            "subjectName": "Educación física",
+            "subjectName": "Educación Física",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-ef-la",
             "identifier": "gs5la"
         },
@@ -940,7 +940,7 @@
             "subjectCode": "esp",
             "subjectName": "Español",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs5la"
         },
@@ -948,7 +948,7 @@
             "subjectCode": "espb",
             "subjectName": "Español (clase bilingüe)",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs5la"
         },
@@ -956,7 +956,7 @@
             "subjectCode": "esp",
             "subjectName": "Español",
             "serieCode": "alas",
-            "serieName": "Alas de papel",
+            "serieName": "Alas de papel 5",
             "folder": "alas-la",
             "identifier": "alas5"
         },
@@ -964,7 +964,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-fcye-la",
             "identifier": "lgsfcye5la"
         },
@@ -972,7 +972,7 @@
             "subjectCode": "ced",
             "subjectName": "Cívica y Ética en diálogo",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "dialogo-la",
             "identifier": "gs5la"
         },
@@ -980,7 +980,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "socioemocional-la",
             "identifier": "es5la"
         },
@@ -988,7 +988,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "socio",
-            "serieName": "Educación Socioemocional",
+            "serieName": "Educación Socioemocional 5",
             "folder": "socioemocional-la",
             "identifier": "es5la"
         },
@@ -996,7 +996,7 @@
             "subjectCode": "vs",
             "subjectName": "Vida Saludable (de Educación Socioemocional)",
             "serieCode": "vidasaludable",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "socioemocional-vs",
             "identifier": "es5vs"
         },
@@ -1004,7 +1004,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-mat-la",
             "identifier": "gs5la"
         },
@@ -1012,7 +1012,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "detectives",
-            "serieName": "Detectives matemáticos",
+            "serieName": "Detectives matemáticos 5",
             "folder": "detectives-la",
             "identifier": "detectives5la"
         },
@@ -1020,7 +1020,7 @@
             "subjectCode": "geo",
             "subjectName": "Geografía",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-g-la",
             "identifier": "gs5la"
         },
@@ -1028,7 +1028,7 @@
             "subjectCode": "hist",
             "subjectName": "Historia",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-h-la",
             "identifier": "gs5la"
         },
@@ -1036,7 +1036,7 @@
             "subjectCode": "esp",
             "subjectName": "Español",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-esp",
             "identifier": "sepesp5-"
         },
@@ -1044,7 +1044,7 @@
             "subjectCode": "esp",
             "subjectName": "Español. Libro de lectura",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-esl",
             "identifier": "sepesl5-"
         },
@@ -1052,7 +1052,7 @@
             "subjectCode": "cn",
             "subjectName": "Ciencias Naturales",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-cie",
             "identifier": "sepcie5-"
         },
@@ -1060,7 +1060,7 @@
             "subjectCode": "mat",
             "subjectName": "Desafíos Matemáticos",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-mat",
             "identifier": "sepmat5-"
         },
@@ -1068,7 +1068,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-fcye",
             "identifier": "sepfcye5-"
         },
@@ -1076,7 +1076,7 @@
             "subjectCode": "hist",
             "subjectName": "Historia",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-his",
             "identifier": "sephis5-"
         },
@@ -1084,7 +1084,7 @@
             "subjectCode": "geo",
             "subjectName": "Geografía",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-geo",
             "identifier": "sepgeo5-"
         },
@@ -1092,7 +1092,7 @@
             "subjectCode": "geo",
             "subjectName": "Atlas de Geografía del Mundo",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-atl",
             "identifier": "sepatl5-"
         },
@@ -1100,7 +1100,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética. Cuaderno de aprendizaje",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-fcca",
             "identifier": "sepfcca5-"
         }
@@ -1110,7 +1110,7 @@
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs6la"
         },
@@ -1118,23 +1118,23 @@
             "subjectCode": "artm",
             "subjectName": "Artes. Música",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-a-la",
             "identifier": "gs6la"
         },
         {
             "subjectCode": "cn",
-            "subjectName": "Ciencias naturales",
+            "subjectName": "Ciencias Naturales",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-cn-la",
             "identifier": "gs6la"
         },
         {
             "subjectCode": "ef",
-            "subjectName": "Educación física",
+            "subjectName": "Educación Física",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-ef-la",
             "identifier": "gs6la"
         },
@@ -1142,7 +1142,7 @@
             "subjectCode": "esp",
             "subjectName": "Español",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs6la"
         },
@@ -1150,7 +1150,7 @@
             "subjectCode": "espb",
             "subjectName": "Español (clase bilingüe)",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-lm-la",
             "identifier": "gs6la"
         },
@@ -1158,7 +1158,7 @@
             "subjectCode": "esp",
             "subjectName": "Español",
             "serieCode": "alas",
-            "serieName": "Alas de papel",
+            "serieName": "Alas de papel 6",
             "folder": "alas-la",
             "identifier": "alas6"
         },
@@ -1166,7 +1166,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-fcye-la",
             "identifier": "lgsfcye6la"
         },
@@ -1174,7 +1174,7 @@
             "subjectCode": "ced",
             "subjectName": "Cívica y Ética en diálogo",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "dialogo-la",
             "identifier": "gs6la"
         },
@@ -1182,7 +1182,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "socioemocional-la",
             "identifier": "es6la"
         },
@@ -1190,7 +1190,7 @@
             "subjectCode": "es",
             "subjectName": "Educación Socioemocional",
             "serieCode": "socio",
-            "serieName": "Educación Socioemocional",
+            "serieName": "Educación Socioemocional 6",
             "folder": "socioemocional-la",
             "identifier": "es6la"
         },
@@ -1198,7 +1198,7 @@
             "subjectCode": "vs",
             "subjectName": "Vida Saludable (de Educación Socioemocional)",
             "serieCode": "vidasaludable",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "socioemocional-vs",
             "identifier": "es6vs"
         },
@@ -1206,7 +1206,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-mat-la",
             "identifier": "gs6la"
         },
@@ -1214,7 +1214,7 @@
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "detectives",
-            "serieName": "Detectives matemáticos",
+            "serieName": "Detectives matemáticos 6",
             "folder": "detectives-la",
             "identifier": "detectives6la"
         },
@@ -1222,7 +1222,7 @@
             "subjectCode": "geo",
             "subjectName": "Geografía",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-g-la",
             "identifier": "gs6la"
         },
@@ -1230,7 +1230,7 @@
             "subjectCode": "hist",
             "subjectName": "Historia",
             "serieCode": "santillana",
-            "serieName": "La Guía Santillana",
+            "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-h-la",
             "identifier": "gs6la"
         },
@@ -1238,7 +1238,7 @@
             "subjectCode": "esp",
             "subjectName": "Español",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-esp",
             "identifier": "sepesp6-"
         },
@@ -1246,7 +1246,7 @@
             "subjectCode": "esp",
             "subjectName": "Español. Libro de lectura",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-esl",
             "identifier": "sepesl6-"
         },
@@ -1254,7 +1254,7 @@
             "subjectCode": "cn",
             "subjectName": "Ciencias Naturales",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-cie",
             "identifier": "sepcie6-"
         },
@@ -1262,7 +1262,7 @@
             "subjectCode": "mat",
             "subjectName": "Desafíos Matemáticos",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-mat",
             "identifier": "sepmat6-"
         },
@@ -1270,7 +1270,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-fcye",
             "identifier": "sepfcye6-"
         },
@@ -1278,7 +1278,7 @@
             "subjectCode": "hist",
             "subjectName": "Historia",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-his",
             "identifier": "sephis6-"
         },
@@ -1286,7 +1286,7 @@
             "subjectCode": "geo",
             "subjectName": "Geografía",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-geo",
             "identifier": "sepgeo6-"
         },
@@ -1294,7 +1294,7 @@
             "subjectCode": "geo",
             "subjectName": "Geografía. Cuaderno de Actividades",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-gca",
             "identifier": "sepgca6-"
         },
@@ -1302,7 +1302,7 @@
             "subjectCode": "fcye",
             "subjectName": "Formación Cívica y Ética. Cuaderno de aprendizaje",
             "serieCode": "sep",
-            "serieName": "Libro de texto gratuito",
+            "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-fcca",
             "identifier": "sepfcca6-"
         }

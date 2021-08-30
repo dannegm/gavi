@@ -67,7 +67,7 @@ const Resources = () => {
 
     return (
         <Page grade={grade} title={`Material - ${grade}º GAVI`}>
-            <Header title={`${gradeTitles[grade]} Grado`} subject={subject} />
+            <Header title={`${gradeTitles[grade]} grado`} subject={subject} />
             <NavigationWrapper>
                 <Button icon='chevron-left' label='Regresar' onClick={handleBack} />
             </NavigationWrapper>

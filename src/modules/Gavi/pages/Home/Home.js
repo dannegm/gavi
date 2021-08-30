@@ -38,7 +38,7 @@ const Home = () => {
 
     return (
         <Page grade={grade} title={`${grade}º GAVI`}>
-            <Header subtitle={`${gradeTitles[grade]} Grado`} content={<HeaderContent />} />
+            <Header subtitle={`${gradeTitles[grade]} grado`} content={<HeaderContent />} />
             <Logo />
             <Headline>
                 <b>¡Aprendamos</b> juntos!
