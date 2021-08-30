@@ -603,10 +603,7 @@
                                 "name": "Libro de texto gratuito de segundo grado",
                                 "folder": "sep-mat",
                                 "identifier": "sepmat2-",
-                                "pages": [
-                                    [96, 97, 98, 99, 100],
-                                    [112, 113, 114]
-                                ]
+                                "pages": [[112, 113, 114]]
                             }
                         ]
                     },
@@ -1052,7 +1049,7 @@
                                 "name": "Libro de texto gratuito de segundo grado",
                                 "folder": "sep-lm",
                                 "identifier": "seplm2-",
-                                "pages": [[83], [174]]
+                                "pages": [[83]]
                             }
                         ]
                     },
@@ -1078,7 +1075,7 @@
                                 "name": "Libro de texto gratuito de segundo grado",
                                 "folder": "sep-mat",
                                 "identifier": "sepmat2-",
-                                "pages": [[123], [36]]
+                                "pages": [[36]]
                             }
                         ]
                     }
@@ -1497,7 +1494,7 @@
                 },
                 "2": {
                     "fcye": {
-                        "learn": "",
+                        "learn": "Reconoce sus derechos para la satisfacción de necesidades básicas.",
                         "books": [
                             {
                                 "serie": "santillana",
@@ -1520,7 +1517,7 @@
                         "books": []
                     },
                     "mat": {
-                        "learn": "Resuelve problemas de suma con números naturales menores que cien",
+                        "learn": "Resuelve problemas de suma con números naturales menores que cien.",
                         "books": [
                             {
                                 "serie": "santillana",
@@ -1546,7 +1543,7 @@
                         ]
                     },
                     "cm": {
-                        "learn": "Clasifica animales, plantas y materiales a partir de características que identifica con sus sentidos",
+                        "learn": "Clasifica animales, plantas y materiales a partir de características que identifica con sus sentidos.",
                         "books": [
                             {
                                 "serie": "santillana",
@@ -1565,7 +1562,7 @@
                         ]
                     },
                     "lm": {
-                        "learn": "Lee notas informativas sencillas sobre temas de su interés",
+                        "learn": "Lee notas informativas sencillas sobre temas de su interés.",
                         "books": [
                             {
                                 "serie": "santillana",
@@ -1579,7 +1576,7 @@
                                 "name": "Libro de texto gratuito de segundo grado",
                                 "folder": "sep-lm",
                                 "identifier": "seplm2-",
-                                "pages": [[121], [50]]
+                                "pages": [[121, 122, 123]]
                             }
                         ]
                     }
@@ -2063,7 +2060,7 @@
                                 "name": "Libro de texto gratuito de segundo grado",
                                 "folder": "sep-mat",
                                 "identifier": "sepmat2-",
-                                "pages": [[138], [186], [95], [96]]
+                                "pages": [[95], [96]]
                             }
                         ]
                     },
@@ -2082,7 +2079,7 @@
                                 "name": "Libro de texto gratuito de segundo grado",
                                 "folder": "sep-cm",
                                 "identifier": "sepcm2-",
-                                "pages": [[150], [82, 83, 84, 85, 86, 87, 88, 89, 90, 91]]
+                                "pages": [[82, 83, 84, 85, 86, 87, 88, 89, 90, 91]]
                             }
                         ]
                     },

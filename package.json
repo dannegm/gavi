@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "ESLINT_NO_DEV_ERRORS=true craco start",
         "build": "craco build",
+        "build:exportables": "sh ./scripts/buildDownloadables.sh",
         "eject": "react-scripts eject",
         "serve": "yarn build && npx serve ./build",
         "lint": "yarn lint:js && yarn lint:css",
