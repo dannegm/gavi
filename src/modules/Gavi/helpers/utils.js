@@ -1,6 +1,8 @@
 import { nanoid } from 'nanoid';
 import { FORMAT_COMMON, formatDate } from '@helpers/dateHelpers';
 
+import { books as booksDB } from '@assets/data/books';
+
 export const getGradeString = (grade) => {
     const grades = ['none', 'grade1', 'grade2', 'grade3', 'grade4', 'grade5', 'grade6'];
     return grades[grade];
@@ -130,7 +132,7 @@ export const mapStoreToState = (stored) => {
                     rows.push({
                         grade,
                         subjects,
-                        date: `${year}-${month}-${day}`,
+                        date: `${year}/${month}/${day}`,
                     });
                 });
             });
@@ -138,4 +140,67 @@ export const mapStoreToState = (stored) => {
     });
 
     return rows;
+};
+
+export const mapSubjectToSimple = (originalSubjects) => {
+    const subjects = {};
+    originalSubjects.forEach((sub) => {
+        subjects[sub.subject.code] = {
+            learn: sub.learn,
+            books: sub.books,
+        };
+    });
+    return subjects;
+};
+
+export const mapClassToGrade = (classes, grade = 1) => {
+    const data = {};
+    classes
+        .filter((item) => item.grade === `${grade}`)
+        .forEach((item) => {
+            data[item.date] = mapSubjectToSimple(item.subjects);
+        });
+
+    return data;
+};
+
+export const mapImportedData = (rawData, grade = '1') => {
+    const items = {};
+
+    Object.entries(rawData).forEach(([year, months]) => {
+        Object.entries(months).forEach(([month, days]) => {
+            Object.entries(days).forEach(([day, grades]) => {
+                const subjectsItems = grades[grade];
+                items[`${year}/${month}/${day}`] = {};
+
+                Object.entries(subjectsItems).forEach(([subjectCode, subject]) => {
+                    items[`${year}/${month}/${day}`][subjectCode] = {
+                        learn: subject.learn,
+                        books: subject.books.map(({ serie, name, folder, identifier, pages }) => {
+                            const [bookGrade] = identifier.match(/[0-9]/g);
+                            const bookData = booksDB[bookGrade].find(
+                                (b) => b.folder === folder && b.identifier === identifier
+                            );
+                            const { subjectName } = bookData;
+
+                            return {
+                                id: nanoid(),
+                                subjectCode,
+                                subjectName,
+                                serieCode: serie,
+                                serieName: name,
+                                folder,
+                                identifier,
+                                label: `${serie} - ${subjectName} ${bookGrade}`,
+                                pages,
+                                type: 'book',
+                            };
+                        }),
+                    };
+                });
+            });
+        });
+    });
+
+    return items;
 };

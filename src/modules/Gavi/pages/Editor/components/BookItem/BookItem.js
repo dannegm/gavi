@@ -7,7 +7,7 @@ const BookItem = ({ book, canRemove, onRemove }) => {
     const pages = book.pages.map((p) => p.join(', '));
     return (
         <FlexboxGrid style={{ gap: 16 }} align='middle'>
-            <FlexboxGrid.Item colspan={10}>{book.label}</FlexboxGrid.Item>
+            <FlexboxGrid.Item colspan={12}>{book.label}</FlexboxGrid.Item>
             <FlexboxGrid.Item style={{ flex: 1 }}>
                 {pages.map((page) => (
                     <Tag key={`page_${page}`}>{page}</Tag>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import useNavigationDate from '@gavi/hooks/useNavigationDate';
+import useImportGradeData from '@gavi/hooks/useImportGradeData';
 
 import Header from '@gavi/components/Header';
 import Button from '@gavi/components/Button';
@@ -11,9 +12,6 @@ import SubjectBadge from '@gavi/components/SubjectBadge';
 import Footer from '@gavi/components/Footer';
 
 import Page from '@gavi/layout/Page';
-
-// Data
-import resources from '@assets/data/resources.json';
 
 import { NavigationWrapper, SubjectsGrid } from './Subjects.styled';
 
@@ -37,6 +35,8 @@ const Subjects = () => {
 
     const [resourceData, setResourceData] = useState(null);
 
+    const [gradeData] = useImportGradeData(grade);
+
     const handleBack = () => {
         history.push(`/aprende${grade}`);
     };
@@ -46,13 +46,13 @@ const Subjects = () => {
     };
 
     useEffect(() => {
-        const resourcePath = resources?.[year]?.[month]?.[day]?.[grade];
+        const resourcePath = gradeData?.[`${year}/${month}/${day}`];
         if (!resourcePath) {
             setResourceData(null);
         } else {
             setResourceData(Object.keys(resourcePath));
         }
-    }, [grade, today]);
+    }, [today]);
 
     return (
         <Page grade={grade} title={`Materias - ${grade}º GAVI`}>

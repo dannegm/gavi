@@ -1,3 +1,4 @@
+import moment from 'moment';
 import { range } from 'lodash';
 
 export const SUNDAY = 0;
@@ -94,4 +95,15 @@ export const getPrevWorkingDay = (d) => {
     }
 
     return date;
+};
+
+export const getWeekDays = (weekNumber) => {
+    const $initialDate = moment(MIN_ALLOWED_DATE);
+    const $selectedWeek = $initialDate.add(weekNumber - 1, 'weeks');
+    $selectedWeek.startOf('week');
+
+    const weekDays = [1, 2, 3, 4, 5].map((d) => {
+        return moment($selectedWeek).add(d, 'days').format('YYYY/MM/DD');
+    });
+    return weekDays;
 };

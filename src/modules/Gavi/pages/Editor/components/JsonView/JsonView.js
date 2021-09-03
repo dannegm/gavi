@@ -4,6 +4,8 @@ import Loadable from 'react-loadable';
 
 import { Panel, Icon, IconButton, Tooltip, Whisper } from 'rsuite';
 
+import { downloadJson } from '@helpers/utils';
+
 import { JsonViewWrapper, HeaderWrapper } from './JsonView.styled';
 
 const Loader = () => {
@@ -14,28 +16,6 @@ const JsonTree = Loadable({
     loader: () => import('react-json-tree'),
     loading: Loader,
 });
-
-const downloadJson = (data, name = 'file.json') => {
-    const jsonBlob = new Blob([JSON.stringify(data)]);
-    const blobUrl = URL.createObjectURL(jsonBlob);
-
-    const link = document.createElement('a');
-
-    link.href = blobUrl;
-    link.download = name;
-
-    document.body.appendChild(link);
-
-    link.dispatchEvent(
-        new MouseEvent('click', {
-            bubbles: true,
-            cancelable: true,
-            view: window,
-        })
-    );
-
-    document.body.removeChild(link);
-};
 
 const JsonView = ({ name, expanded, data }) => {
     const handleExport = (ev) => {

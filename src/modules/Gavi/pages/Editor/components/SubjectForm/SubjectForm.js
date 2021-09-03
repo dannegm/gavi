@@ -14,7 +14,7 @@ const mappedSubjects = Object.values(subjects).map((subject) => ({
     label: `${subject.code} - ${subject.name}`,
 }));
 
-const SubjectForm = ({ grade, onCancel, onCreate }) => {
+const SubjectForm = ({ grade, onCancel, onCreate, style }) => {
     const [subject, setSubject] = useState(null);
     const [learn, setLearn] = useState('');
     const [books, setBooks] = useState([]);
@@ -70,6 +70,7 @@ const SubjectForm = ({ grade, onCancel, onCreate }) => {
             header='Materia'
             bordered
             style={{
+                ...style,
                 borderTop: '4px solid #07222c',
                 borderBottom: '4px solid #07222c',
             }}
@@ -122,14 +123,20 @@ const SubjectForm = ({ grade, onCancel, onCreate }) => {
                 </List>
             )}
 
-            <FlexboxGrid justify='end' style={{ marginTop: 16, gap: 16 }}>
-                <FlexboxGrid.Item colspan={6}>
-                    <Button block appearance='subtle' onClick={handleCancel}>
+            <FlexboxGrid justify='space-between' style={{ marginTop: 16 }}>
+                <FlexboxGrid.Item colspan={11}>
+                    <Button block size='sm' appearance='subtle' onClick={handleCancel}>
                         Cancelar
                     </Button>
                 </FlexboxGrid.Item>
-                <FlexboxGrid.Item colspan={6}>
-                    <Button block appearance='primary' disabled={!canCreate} onClick={handleCreate}>
+                <FlexboxGrid.Item colspan={11}>
+                    <Button
+                        block
+                        size='sm'
+                        appearance='primary'
+                        disabled={!canCreate}
+                        onClick={handleCreate}
+                    >
                         <Icon icon='save' /> Guardar
                     </Button>
                 </FlexboxGrid.Item>
@@ -142,9 +149,12 @@ SubjectForm.propTypes = {
     grade: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
     onCancel: PropTypes.func,
     onCreate: PropTypes.func,
+    // eslint-disable-next-line react/forbid-prop-types
+    style: PropTypes.any,
 };
 
 SubjectForm.defaultProps = {
+    style: {},
     grade: 1,
     onCancel: () => null,
     onCreate: () => null,

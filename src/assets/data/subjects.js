@@ -113,4 +113,10 @@ export default {
         color: '#fc7700',
         icon: hist,
     },
+    ing: {
+        code: 'ing',
+        name: 'Inglés',
+        color: '#00a4e0',
+        icon: esp,
+    },
 };

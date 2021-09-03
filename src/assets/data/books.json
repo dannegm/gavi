@@ -1,12 +1,20 @@
 {
     "1": [
         {
+            "subjectCode": "ing",
+            "subjectName": "Inglés",
+            "serieCode": "none",
+            "serieName": "Inglés (Ciclo 1)",
+            "type": "none"
+        },
+        {
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs1la"
+            "identifier": "gs1la",
+            "type": "book"
         },
         {
             "subjectCode": "artm",
@@ -14,7 +22,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs1la"
+            "identifier": "gs1la",
+            "type": "book"
         },
         {
             "subjectCode": "cm",
@@ -22,7 +31,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-cm-la",
-            "identifier": "gs1la"
+            "identifier": "gs1la",
+            "type": "book"
         },
         {
             "subjectCode": "ef",
@@ -30,7 +40,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-ef-la",
-            "identifier": "gs1la"
+            "identifier": "gs1la",
+            "type": "book"
         },
         {
             "subjectCode": "lm",
@@ -38,7 +49,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs1la"
+            "identifier": "gs1la",
+            "type": "book"
         },
         {
             "subjectCode": "lmb",
@@ -46,7 +58,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs1la"
+            "identifier": "gs1la",
+            "type": "book"
         },
         {
             "subjectCode": "lm",
@@ -54,7 +67,8 @@
             "serieCode": "alas",
             "serieName": "Alas de papel 1",
             "folder": "alas-la",
-            "identifier": "alas1"
+            "identifier": "alas1",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -62,7 +76,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-fcye-la",
-            "identifier": "lgsfcye1la"
+            "identifier": "lgsfcye1la",
+            "type": "book"
         },
         {
             "subjectCode": "ced",
@@ -70,7 +85,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "dialogo-la",
-            "identifier": "gs1la"
+            "identifier": "gs1la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -78,7 +94,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "socioemocional-la",
-            "identifier": "es1la"
+            "identifier": "es1la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -86,7 +103,8 @@
             "serieCode": "socio",
             "serieName": "Educación Socioemocional 1",
             "folder": "socioemocional-la",
-            "identifier": "es1la"
+            "identifier": "es1la",
+            "type": "book"
         },
         {
             "subjectCode": "vs",
@@ -94,7 +112,8 @@
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 1",
             "folder": "socioemocional-vs",
-            "identifier": "es1vs"
+            "identifier": "es1vs",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -102,7 +121,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-mat-la",
-            "identifier": "gs1la"
+            "identifier": "gs1la",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -110,7 +130,8 @@
             "serieCode": "detectives",
             "serieName": "Detectives matemáticos 1",
             "folder": "detectives-la",
-            "identifier": "detectives1la"
+            "identifier": "detectives1la",
+            "type": "book"
         },
         {
             "subjectCode": "lm",
@@ -118,7 +139,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de primer grado",
             "folder": "sep-lm",
-            "identifier": "seplm1-"
+            "identifier": "seplm1-",
+            "type": "book"
         },
         {
             "subjectCode": "lm",
@@ -126,7 +148,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de primer grado",
             "folder": "sep-lml",
-            "identifier": "seplml1-"
+            "identifier": "seplml1-",
+            "type": "book"
         },
         {
             "subjectCode": "cm",
@@ -134,7 +157,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de primer grado",
             "folder": "sep-cm",
-            "identifier": "sepcm1-"
+            "identifier": "sepcm1-",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -142,7 +166,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de primer grado",
             "folder": "sep-mat",
-            "identifier": "sepmat1-"
+            "identifier": "sepmat1-",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -150,17 +175,26 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de primer grado",
             "folder": "sep-fcye",
-            "identifier": "sepfcye1-"
+            "identifier": "sepfcye1-",
+            "type": "book"
         }
     ],
     "2": [
+        {
+            "subjectCode": "ing",
+            "subjectName": "Inglés",
+            "serieCode": "none",
+            "serieName": "Inglés (Ciclo 2)",
+            "type": "none"
+        },
         {
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs2la"
+            "identifier": "gs2la",
+            "type": "book"
         },
         {
             "subjectCode": "artm",
@@ -168,7 +202,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs2la"
+            "identifier": "gs2la",
+            "type": "book"
         },
         {
             "subjectCode": "cm",
@@ -176,7 +211,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-cm-la",
-            "identifier": "gs2la"
+            "identifier": "gs2la",
+            "type": "book"
         },
         {
             "subjectCode": "ef",
@@ -184,7 +220,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-ef-la",
-            "identifier": "gs2la"
+            "identifier": "gs2la",
+            "type": "book"
         },
         {
             "subjectCode": "lm",
@@ -192,7 +229,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs2la"
+            "identifier": "gs2la",
+            "type": "book"
         },
         {
             "subjectCode": "lmb",
@@ -200,7 +238,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs2la"
+            "identifier": "gs2la",
+            "type": "book"
         },
         {
             "subjectCode": "lm",
@@ -208,7 +247,8 @@
             "serieCode": "alas",
             "serieName": "Alas de papel 2",
             "folder": "alas-la",
-            "identifier": "alas2"
+            "identifier": "alas2",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -216,7 +256,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-fcye-la",
-            "identifier": "lgsfcye2la"
+            "identifier": "lgsfcye2la",
+            "type": "book"
         },
         {
             "subjectCode": "ced",
@@ -224,7 +265,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "dialogo-la",
-            "identifier": "gs2la"
+            "identifier": "gs2la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -232,7 +274,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "socioemocional-la",
-            "identifier": "es2la"
+            "identifier": "es2la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -240,7 +283,8 @@
             "serieCode": "socio",
             "serieName": "Educación Socioemocional 2",
             "folder": "socioemocional-la",
-            "identifier": "es2la"
+            "identifier": "es2la",
+            "type": "book"
         },
         {
             "subjectCode": "vs",
@@ -248,7 +292,15 @@
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 2",
             "folder": "socioemocional-vs",
-            "identifier": "es2vs"
+            "identifier": "es2vs",
+            "type": "book"
+        },
+        {
+            "subjectCode": "vs",
+            "subjectName": "Vida Saludable (interactivo)",
+            "serieCode": "vidasaludable",
+            "serieName": "La Guía Santillana 2",
+            "type": "interactive"
         },
         {
             "subjectCode": "mat",
@@ -256,7 +308,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-mat-la",
-            "identifier": "gs2la"
+            "identifier": "gs2la",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -264,7 +317,8 @@
             "serieCode": "detectives",
             "serieName": "Detectives matemáticos 2",
             "folder": "detectives-la",
-            "identifier": "detectives2la"
+            "identifier": "detectives2la",
+            "type": "book"
         },
         {
             "subjectCode": "lm",
@@ -272,7 +326,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de segundo grado",
             "folder": "sep-lm",
-            "identifier": "seplm2-"
+            "identifier": "seplm2-",
+            "type": "book"
         },
         {
             "subjectCode": "m",
@@ -280,7 +335,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de segundo grado",
             "folder": "sep-lml",
-            "identifier": "seplml2-"
+            "identifier": "seplml2-",
+            "type": "book"
         },
         {
             "subjectCode": "cm",
@@ -288,7 +344,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de segundo grado",
             "folder": "sep-cm",
-            "identifier": "sepcm2-"
+            "identifier": "sepcm2-",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -296,7 +353,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de segundo grado",
             "folder": "sep-mat",
-            "identifier": "sepmat2-"
+            "identifier": "sepmat2-",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -304,17 +362,26 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de segundo grado",
             "folder": "sep-fcye",
-            "identifier": "sepfcye2-"
+            "identifier": "sepfcye2-",
+            "type": "book"
         }
     ],
     "3": [
+        {
+            "subjectCode": "ing",
+            "subjectName": "Inglés",
+            "serieCode": "none",
+            "serieName": "Inglés (Ciclo 3)",
+            "type": "none"
+        },
         {
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs3la"
+            "identifier": "gs3la",
+            "type": "book"
         },
         {
             "subjectCode": "artm",
@@ -322,7 +389,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs3la"
+            "identifier": "gs3la",
+            "type": "book"
         },
         {
             "subjectCode": "cn",
@@ -330,7 +398,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-cn-la",
-            "identifier": "gs3la"
+            "identifier": "gs3la",
+            "type": "book"
         },
         {
             "subjectCode": "ef",
@@ -338,7 +407,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-ef-la",
-            "identifier": "gs3la"
+            "identifier": "gs3la",
+            "type": "book"
         },
         {
             "subjectCode": "lm",
@@ -346,7 +416,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs3la"
+            "identifier": "gs3la",
+            "type": "book"
         },
         {
             "subjectCode": "lmb",
@@ -354,7 +425,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs3la"
+            "identifier": "gs3la",
+            "type": "book"
         },
         {
             "subjectCode": "lm",
@@ -362,7 +434,8 @@
             "serieCode": "alas",
             "serieName": "Alas de papel",
             "folder": "alas-la",
-            "identifier": "alas3"
+            "identifier": "alas3",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -370,7 +443,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-fcye-la",
-            "identifier": "lgsfcye3la"
+            "identifier": "lgsfcye3la",
+            "type": "book"
         },
         {
             "subjectCode": "ced",
@@ -378,7 +452,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "dialogo-la",
-            "identifier": "gs3la"
+            "identifier": "gs3la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -386,7 +461,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "socioemocional-la",
-            "identifier": "es3la"
+            "identifier": "es3la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -394,7 +470,8 @@
             "serieCode": "socio",
             "serieName": "Educación Socioemocional 3",
             "folder": "socioemocional-la",
-            "identifier": "es3la"
+            "identifier": "es3la",
+            "type": "book"
         },
         {
             "subjectCode": "vs",
@@ -402,7 +479,8 @@
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 3",
             "folder": "socioemocional-vs",
-            "identifier": "es3vs"
+            "identifier": "es3vs",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -410,7 +488,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-mat-la",
-            "identifier": "gs3la"
+            "identifier": "gs3la",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -418,7 +497,8 @@
             "serieCode": "detectives",
             "serieName": "Detectives matemáticos 3",
             "folder": "detectives-la",
-            "identifier": "detectives3la"
+            "identifier": "detectives3la",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -426,7 +506,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-edv-la",
-            "identifier": "gs3la"
+            "identifier": "gs3la",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -434,7 +515,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-esp",
-            "identifier": "sepesp3-"
+            "identifier": "sepesp3-",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -442,7 +524,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-esl",
-            "identifier": "sepesl3-"
+            "identifier": "sepesl3-",
+            "type": "book"
         },
         {
             "subjectCode": "cn",
@@ -450,7 +533,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-cie",
-            "identifier": "sepcie3-"
+            "identifier": "sepcie3-",
+            "type": "book"
         },
         {
             "subjectCode": "cm",
@@ -458,7 +542,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-cm",
-            "identifier": "sepcm3-"
+            "identifier": "sepcm3-",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -466,7 +551,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-mat",
-            "identifier": "sepmat3-"
+            "identifier": "sepmat3-",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -474,7 +560,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-fcye",
-            "identifier": "sepfcye3-"
+            "identifier": "sepfcye3-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -482,7 +569,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-ags-"
+            "identifier": "sepent3-ags-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -490,7 +578,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-bc-"
+            "identifier": "sepent3-bc-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -498,7 +587,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-bcs-"
+            "identifier": "sepent3-bcs-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -506,7 +596,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-cam-"
+            "identifier": "sepent3-cam-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -514,7 +605,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-chp-"
+            "identifier": "sepent3-chp-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -522,7 +614,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-chi-"
+            "identifier": "sepent3-chi-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -530,7 +623,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-cdm-"
+            "identifier": "sepent3-cdm-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -538,7 +632,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-coa-"
+            "identifier": "sepent3-coa-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -546,7 +641,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-col-"
+            "identifier": "sepent3-col-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -554,7 +650,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-dur-"
+            "identifier": "sepent3-dur-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -562,7 +659,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-gua-"
+            "identifier": "sepent3-gua-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -570,7 +668,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-hid-"
+            "identifier": "sepent3-hid-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -578,7 +677,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-jal-"
+            "identifier": "sepent3-jal-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -586,7 +686,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-mex-"
+            "identifier": "sepent3-mex-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -594,7 +695,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-mic-"
+            "identifier": "sepent3-mic-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -602,7 +704,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-nay-"
+            "identifier": "sepent3-nay-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -610,7 +713,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-nue-"
+            "identifier": "sepent3-nue-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -618,7 +722,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-oax-"
+            "identifier": "sepent3-oax-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -626,7 +731,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-que-"
+            "identifier": "sepent3-que-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -634,7 +740,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-qui-"
+            "identifier": "sepent3-qui-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -642,7 +749,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-slp-"
+            "identifier": "sepent3-slp-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -650,7 +758,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-sin-"
+            "identifier": "sepent3-sin-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -658,7 +767,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-son-"
+            "identifier": "sepent3-son-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -666,7 +776,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-tab-"
+            "identifier": "sepent3-tab-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -674,7 +785,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-tam-"
+            "identifier": "sepent3-tam-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -682,7 +794,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-ver-"
+            "identifier": "sepent3-ver-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -690,7 +803,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-yuc-"
+            "identifier": "sepent3-yuc-",
+            "type": "book"
         },
         {
             "subjectCode": "edv",
@@ -698,17 +812,26 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-ent",
-            "identifier": "sepent3-zac-"
+            "identifier": "sepent3-zac-",
+            "type": "book"
         }
     ],
     "4": [
+        {
+            "subjectCode": "ing",
+            "subjectName": "Inglés",
+            "serieCode": "none",
+            "serieName": "Inglés (Ciclo 4)",
+            "type": "none"
+        },
         {
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs4la"
+            "identifier": "gs4la",
+            "type": "book"
         },
         {
             "subjectCode": "artm",
@@ -716,7 +839,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs4la"
+            "identifier": "gs4la",
+            "type": "book"
         },
         {
             "subjectCode": "cn",
@@ -724,7 +848,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-cn-la",
-            "identifier": "gs4la"
+            "identifier": "gs4la",
+            "type": "book"
         },
         {
             "subjectCode": "ef",
@@ -732,7 +857,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-ef-la",
-            "identifier": "gs4la"
+            "identifier": "gs4la",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -740,7 +866,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs4la"
+            "identifier": "gs4la",
+            "type": "book"
         },
         {
             "subjectCode": "espb",
@@ -748,7 +875,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs4la"
+            "identifier": "gs4la",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -756,7 +884,8 @@
             "serieCode": "alas",
             "serieName": "Alas de papel 4",
             "folder": "alas-la",
-            "identifier": "alas4"
+            "identifier": "alas4",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -764,7 +893,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-fcye-la",
-            "identifier": "lgsfcye4la"
+            "identifier": "lgsfcye4la",
+            "type": "book"
         },
         {
             "subjectCode": "ced",
@@ -772,7 +902,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "dialogo-la",
-            "identifier": "gs4la"
+            "identifier": "gs4la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -780,7 +911,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "socioemocional-la",
-            "identifier": "es4la"
+            "identifier": "es4la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -788,7 +920,8 @@
             "serieCode": "socio",
             "serieName": "Educación Socioemocional 4",
             "folder": "socioemocional-la",
-            "identifier": "es4la"
+            "identifier": "es4la",
+            "type": "book"
         },
         {
             "subjectCode": "vs",
@@ -796,7 +929,8 @@
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 4",
             "folder": "socioemocional-vs",
-            "identifier": "es4vs"
+            "identifier": "es4vs",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -804,7 +938,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-mat-la",
-            "identifier": "gs4la"
+            "identifier": "gs4la",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -812,7 +947,8 @@
             "serieCode": "detectives",
             "serieName": "Detectives matemáticos 4",
             "folder": "detectives-la",
-            "identifier": "detectives4la"
+            "identifier": "detectives4la",
+            "type": "book"
         },
         {
             "subjectCode": "geo",
@@ -820,7 +956,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-g-la",
-            "identifier": "gs4la"
+            "identifier": "gs4la",
+            "type": "book"
         },
         {
             "subjectCode": "hist",
@@ -828,7 +965,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 4",
             "folder": "la-guia-santillana-h-la",
-            "identifier": "gs4la"
+            "identifier": "gs4la",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -836,7 +974,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-esp",
-            "identifier": "sepesp4-"
+            "identifier": "sepesp4-",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -844,7 +983,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-esl",
-            "identifier": "sepesl4-"
+            "identifier": "sepesl4-",
+            "type": "book"
         },
         {
             "subjectCode": "cn",
@@ -852,7 +992,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-cie",
-            "identifier": "sepcie4-"
+            "identifier": "sepcie4-",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -860,7 +1001,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-mat",
-            "identifier": "sepmat4-"
+            "identifier": "sepmat4-",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -868,7 +1010,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-fcye",
-            "identifier": "sepfcye4-"
+            "identifier": "sepfcye4-",
+            "type": "book"
         },
         {
             "subjectCode": "hist",
@@ -876,7 +1019,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-his",
-            "identifier": "sephis4-"
+            "identifier": "sephis4-",
+            "type": "book"
         },
         {
             "subjectCode": "geo",
@@ -884,7 +1028,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-geo",
-            "identifier": "sepgeo4-"
+            "identifier": "sepgeo4-",
+            "type": "book"
         },
         {
             "subjectCode": "geo",
@@ -892,7 +1037,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-atl",
-            "identifier": "sepatl4-"
+            "identifier": "sepatl4-",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -900,17 +1046,26 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de cuarto grado",
             "folder": "sep-con",
-            "identifier": "sepcon4-"
+            "identifier": "sepcon4-",
+            "type": "book"
         }
     ],
     "5": [
+        {
+            "subjectCode": "ing",
+            "subjectName": "Inglés",
+            "serieCode": "none",
+            "serieName": "Inglés (Ciclo 5)",
+            "type": "none"
+        },
         {
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs5la"
+            "identifier": "gs5la",
+            "type": "book"
         },
         {
             "subjectCode": "artm",
@@ -918,7 +1073,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs5la"
+            "identifier": "gs5la",
+            "type": "book"
         },
         {
             "subjectCode": "cn",
@@ -926,7 +1082,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-cn-la",
-            "identifier": "gs5la"
+            "identifier": "gs5la",
+            "type": "book"
         },
         {
             "subjectCode": "ef",
@@ -934,7 +1091,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-ef-la",
-            "identifier": "gs5la"
+            "identifier": "gs5la",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -942,7 +1100,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs5la"
+            "identifier": "gs5la",
+            "type": "book"
         },
         {
             "subjectCode": "espb",
@@ -950,7 +1109,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs5la"
+            "identifier": "gs5la",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -958,7 +1118,8 @@
             "serieCode": "alas",
             "serieName": "Alas de papel 5",
             "folder": "alas-la",
-            "identifier": "alas5"
+            "identifier": "alas5",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -966,7 +1127,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-fcye-la",
-            "identifier": "lgsfcye5la"
+            "identifier": "lgsfcye5la",
+            "type": "book"
         },
         {
             "subjectCode": "ced",
@@ -974,7 +1136,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "dialogo-la",
-            "identifier": "gs5la"
+            "identifier": "gs5la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -982,7 +1145,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "socioemocional-la",
-            "identifier": "es5la"
+            "identifier": "es5la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -990,7 +1154,8 @@
             "serieCode": "socio",
             "serieName": "Educación Socioemocional 5",
             "folder": "socioemocional-la",
-            "identifier": "es5la"
+            "identifier": "es5la",
+            "type": "book"
         },
         {
             "subjectCode": "vs",
@@ -998,7 +1163,8 @@
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 5",
             "folder": "socioemocional-vs",
-            "identifier": "es5vs"
+            "identifier": "es5vs",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -1006,7 +1172,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-mat-la",
-            "identifier": "gs5la"
+            "identifier": "gs5la",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -1014,7 +1181,8 @@
             "serieCode": "detectives",
             "serieName": "Detectives matemáticos 5",
             "folder": "detectives-la",
-            "identifier": "detectives5la"
+            "identifier": "detectives5la",
+            "type": "book"
         },
         {
             "subjectCode": "geo",
@@ -1022,7 +1190,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-g-la",
-            "identifier": "gs5la"
+            "identifier": "gs5la",
+            "type": "book"
         },
         {
             "subjectCode": "hist",
@@ -1030,7 +1199,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 5",
             "folder": "la-guia-santillana-h-la",
-            "identifier": "gs5la"
+            "identifier": "gs5la",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -1038,7 +1208,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-esp",
-            "identifier": "sepesp5-"
+            "identifier": "sepesp5-",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -1046,7 +1217,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-esl",
-            "identifier": "sepesl5-"
+            "identifier": "sepesl5-",
+            "type": "book"
         },
         {
             "subjectCode": "cn",
@@ -1054,7 +1226,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-cie",
-            "identifier": "sepcie5-"
+            "identifier": "sepcie5-",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -1062,7 +1235,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-mat",
-            "identifier": "sepmat5-"
+            "identifier": "sepmat5-",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -1070,7 +1244,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-fcye",
-            "identifier": "sepfcye5-"
+            "identifier": "sepfcye5-",
+            "type": "book"
         },
         {
             "subjectCode": "hist",
@@ -1078,7 +1253,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-his",
-            "identifier": "sephis5-"
+            "identifier": "sephis5-",
+            "type": "book"
         },
         {
             "subjectCode": "geo",
@@ -1086,7 +1262,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-geo",
-            "identifier": "sepgeo5-"
+            "identifier": "sepgeo5-",
+            "type": "book"
         },
         {
             "subjectCode": "geo",
@@ -1094,7 +1271,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-atl",
-            "identifier": "sepatl5-"
+            "identifier": "sepatl5-",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -1102,17 +1280,26 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de quinto grado",
             "folder": "sep-fcca",
-            "identifier": "sepfcca5-"
+            "identifier": "sepfcca5-",
+            "type": "book"
         }
     ],
     "6": [
+        {
+            "subjectCode": "ing",
+            "subjectName": "Inglés",
+            "serieCode": "none",
+            "serieName": "Inglés (Ciclo 6)",
+            "type": "none"
+        },
         {
             "subjectCode": "art",
             "subjectName": "Artes",
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs6la"
+            "identifier": "gs6la",
+            "type": "book"
         },
         {
             "subjectCode": "artm",
@@ -1120,7 +1307,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-a-la",
-            "identifier": "gs6la"
+            "identifier": "gs6la",
+            "type": "book"
         },
         {
             "subjectCode": "cn",
@@ -1128,7 +1316,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-cn-la",
-            "identifier": "gs6la"
+            "identifier": "gs6la",
+            "type": "book"
         },
         {
             "subjectCode": "ef",
@@ -1136,7 +1325,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-ef-la",
-            "identifier": "gs6la"
+            "identifier": "gs6la",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -1144,7 +1334,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs6la"
+            "identifier": "gs6la",
+            "type": "book"
         },
         {
             "subjectCode": "espb",
@@ -1152,7 +1343,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-lm-la",
-            "identifier": "gs6la"
+            "identifier": "gs6la",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -1160,7 +1352,8 @@
             "serieCode": "alas",
             "serieName": "Alas de papel 6",
             "folder": "alas-la",
-            "identifier": "alas6"
+            "identifier": "alas6",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -1168,7 +1361,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-fcye-la",
-            "identifier": "lgsfcye6la"
+            "identifier": "lgsfcye6la",
+            "type": "book"
         },
         {
             "subjectCode": "ced",
@@ -1176,7 +1370,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "dialogo-la",
-            "identifier": "gs6la"
+            "identifier": "gs6la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -1184,7 +1379,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "socioemocional-la",
-            "identifier": "es6la"
+            "identifier": "es6la",
+            "type": "book"
         },
         {
             "subjectCode": "es",
@@ -1192,7 +1388,8 @@
             "serieCode": "socio",
             "serieName": "Educación Socioemocional 6",
             "folder": "socioemocional-la",
-            "identifier": "es6la"
+            "identifier": "es6la",
+            "type": "book"
         },
         {
             "subjectCode": "vs",
@@ -1200,7 +1397,8 @@
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 6",
             "folder": "socioemocional-vs",
-            "identifier": "es6vs"
+            "identifier": "es6vs",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -1208,7 +1406,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-mat-la",
-            "identifier": "gs6la"
+            "identifier": "gs6la",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -1216,7 +1415,8 @@
             "serieCode": "detectives",
             "serieName": "Detectives matemáticos 6",
             "folder": "detectives-la",
-            "identifier": "detectives6la"
+            "identifier": "detectives6la",
+            "type": "book"
         },
         {
             "subjectCode": "geo",
@@ -1224,7 +1424,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-g-la",
-            "identifier": "gs6la"
+            "identifier": "gs6la",
+            "type": "book"
         },
         {
             "subjectCode": "hist",
@@ -1232,7 +1433,8 @@
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 6",
             "folder": "la-guia-santillana-h-la",
-            "identifier": "gs6la"
+            "identifier": "gs6la",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -1240,7 +1442,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-esp",
-            "identifier": "sepesp6-"
+            "identifier": "sepesp6-",
+            "type": "book"
         },
         {
             "subjectCode": "esp",
@@ -1248,7 +1451,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-esl",
-            "identifier": "sepesl6-"
+            "identifier": "sepesl6-",
+            "type": "book"
         },
         {
             "subjectCode": "cn",
@@ -1256,7 +1460,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-cie",
-            "identifier": "sepcie6-"
+            "identifier": "sepcie6-",
+            "type": "book"
         },
         {
             "subjectCode": "mat",
@@ -1264,7 +1469,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-mat",
-            "identifier": "sepmat6-"
+            "identifier": "sepmat6-",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -1272,7 +1478,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-fcye",
-            "identifier": "sepfcye6-"
+            "identifier": "sepfcye6-",
+            "type": "book"
         },
         {
             "subjectCode": "hist",
@@ -1280,7 +1487,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-his",
-            "identifier": "sephis6-"
+            "identifier": "sephis6-",
+            "type": "book"
         },
         {
             "subjectCode": "geo",
@@ -1288,7 +1496,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-geo",
-            "identifier": "sepgeo6-"
+            "identifier": "sepgeo6-",
+            "type": "book"
         },
         {
             "subjectCode": "geo",
@@ -1296,7 +1505,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-gca",
-            "identifier": "sepgca6-"
+            "identifier": "sepgca6-",
+            "type": "book"
         },
         {
             "subjectCode": "fcye",
@@ -1304,7 +1514,8 @@
             "serieCode": "sep",
             "serieName": "Libro de texto gratuito de sexto grado",
             "folder": "sep-fcca",
-            "identifier": "sepfcca6-"
+            "identifier": "sepfcca6-",
+            "type": "book"
         }
     ]
 }

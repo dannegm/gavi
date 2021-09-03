@@ -9,8 +9,14 @@ const SubjectItem = ({ subject, learn, books, onRemove }) => {
     return (
         <Panel bordered style={{ borderTop: '4px solid #dedede' }}>
             <FlexboxGrid>
-                <FlexboxGrid.Item colspan={24}>
-                    <h5>{subject.label}</h5>
+                <FlexboxGrid.Item colspan={16}>
+                    <h6>{subject.label}</h6>
+                </FlexboxGrid.Item>
+                <div style={{ flex: 1 }} />
+                <FlexboxGrid.Item>
+                    <Button block size='xs' onClick={onRemove}>
+                        <Icon icon='close' />
+                    </Button>
                 </FlexboxGrid.Item>
             </FlexboxGrid>
             <FlexboxGrid>
@@ -28,14 +34,6 @@ const SubjectItem = ({ subject, learn, books, onRemove }) => {
                     ))}
                 </List>
             )}
-
-            <FlexboxGrid justify='end' style={{ marginTop: 16 }}>
-                <FlexboxGrid.Item>
-                    <Button block onClick={onRemove}>
-                        <Icon icon='close' /> Quitar
-                    </Button>
-                </FlexboxGrid.Item>
-            </FlexboxGrid>
         </Panel>
     );
 };
@@ -44,13 +42,13 @@ SubjectItem.propTypes = {
     // eslint-disable-next-line react/forbid-prop-types
     subject: PropTypes.any.isRequired,
     // eslint-disable-next-line react/no-unused-prop-types
-    book: PropTypes.arrayOf(PropTypes.any),
+    books: PropTypes.arrayOf(PropTypes.any),
     learn: PropTypes.string,
     onRemove: PropTypes.func,
 };
 
 SubjectItem.defaultProps = {
-    book: [],
+    books: [],
     learn: '',
     onRemove: () => null,
 };

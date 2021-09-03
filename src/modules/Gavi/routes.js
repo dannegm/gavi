@@ -10,7 +10,7 @@ const Editor = lazy(() => import('./pages/Editor'));
 const routes = [
     {
         name: 'gavi.editor',
-        path: '/editor',
+        path: '/editor/:grade/:week',
         component: Editor,
         exact: true,
     },

@@ -18,9 +18,11 @@ const TagPicker = forwardRef(({ onChange }, $ref) => {
     };
 
     const handleTagConfirm = () => {
-        const copyTags = [...tags];
-        copyTags.push(trim(tagInput, ','));
-        setTags(copyTags);
+        if (tagInput.trim() !== '') {
+            const copyTags = [...tags];
+            copyTags.push(trim(tagInput, ','));
+            setTags(copyTags);
+        }
         setTagInput('');
         setTyping(false);
     };
@@ -66,6 +68,7 @@ const TagPicker = forwardRef(({ onChange }, $ref) => {
                     value={tagInput}
                     onChange={handleTagChange}
                     onPressEnter={handleTagConfirm}
+                    onBlur={handleTagConfirm}
                     autoFocus
                 />
             )}

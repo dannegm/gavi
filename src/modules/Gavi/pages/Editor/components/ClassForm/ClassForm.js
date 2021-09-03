@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 
-import { FlexboxGrid, Divider, Panel, Button, ButtonGroup, DatePicker, Icon } from 'rsuite';
+import { FlexboxGrid, Divider, Panel, Badge, Button, ButtonGroup, DatePicker, Icon } from 'rsuite';
 
 import { FORMAT_COMMON, formatDate } from '@helpers/dateHelpers';
 
@@ -16,7 +16,7 @@ const ClassForm = ({ onCancel, onCreate }) => {
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [datePickerOpen, setDatePickerOpen] = useState(false);
 
-    const [showSubjectForm, setShowSubjectForm] = useState(true);
+    const [showSubjectForm, setShowSubjectForm] = useState(false);
     const [canAddSubject, setCanAddSubject] = useState(false);
     const [canCreate, setCanCreate] = useState(false);
 
@@ -67,7 +67,28 @@ const ClassForm = ({ onCancel, onCreate }) => {
     }, [selectedGrade, selectedDate, subjects]);
 
     return (
-        <Panel header='Creando clase' bordered style={{ borderTop: '4px solid #334750' }}>
+        <Panel
+            header={
+                <FlexboxGrid>
+                    <FlexboxGrid.Item>Creando clase</FlexboxGrid.Item>
+                    <Spacer />
+                    <FlexboxGrid.Item>
+                        <Badge content={subjects.length}>
+                            <Button
+                                block
+                                appearance='primary'
+                                disabled={!canCreate}
+                                onClick={handleCreate}
+                            >
+                                <Icon icon='save' /> Guardar
+                            </Button>
+                        </Badge>
+                    </FlexboxGrid.Item>
+                </FlexboxGrid>
+            }
+            bordered
+            style={{ borderTop: '4px solid #334750' }}
+        >
             <FlexboxGrid>
                 <FlexboxGrid.Item colspan={6}>
                     <FormControl>
@@ -191,9 +212,23 @@ const ClassForm = ({ onCancel, onCreate }) => {
                     </Button>
                 </FlexboxGrid.Item>
                 <FlexboxGrid.Item colspan={6}>
-                    <Button block appearance='primary' disabled={!canCreate} onClick={handleCreate}>
-                        <Icon icon='save' /> Guardar
-                    </Button>
+                    <Badge
+                        block
+                        content={subjects.length}
+                        style={{
+                            display: 'block',
+                            width: '100%',
+                        }}
+                    >
+                        <Button
+                            block
+                            appearance='primary'
+                            disabled={!canCreate}
+                            onClick={handleCreate}
+                        >
+                            <Icon icon='save' /> Guardar
+                        </Button>
+                    </Badge>
                 </FlexboxGrid.Item>
             </FlexboxGrid>
         </Panel>
