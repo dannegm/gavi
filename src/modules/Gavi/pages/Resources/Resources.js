@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
-import { flattenDeep } from 'lodash';
+import { flattenDeep, trim } from 'lodash';
 
 import { buildRoute, renderTemplate } from '@gavi/helpers/utils';
 import useNavigationDate from '@gavi/hooks/useNavigationDate';
@@ -13,6 +13,7 @@ import MaterialCard from '@gavi/components/MaterialCard';
 import PageSection from '@gavi/components/PageSection';
 import Jumbotron from '@gavi/components/Jumbotron';
 import Footer from '@gavi/components/Footer';
+import DangerouslyHtml from '@components/DangerouslyHtml';
 
 import Page from '@gavi/layout/Page';
 
@@ -99,7 +100,14 @@ const Resources = () => {
                         </MaterialCardGrid>
                     )}
 
-                    <Jumbotron title='Aprendizaje esperado' content={resourceData.learn} />
+                    <Jumbotron
+                        title='Aprendizaje esperado'
+                        content={
+                            <DangerouslyHtml>
+                                {`${trim(resourceData.learn.trim(), '.')}.`}
+                            </DangerouslyHtml>
+                        }
+                    />
 
                     {Boolean(resourceData?.books) &&
                         resourceData.books.map((book) => (

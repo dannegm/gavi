@@ -54,7 +54,7 @@
         },
         {
             "subjectCode": "lmb",
-            "subjectName": "Lengua Materna. Español (clase bilingüe)",
+            "subjectName": "Lengua Materna (clase bilingüe)",
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 1",
             "folder": "la-guia-santillana-lm-la",
@@ -108,7 +108,7 @@
         },
         {
             "subjectCode": "vs",
-            "subjectName": "Vida Saludable (de Educación Socioemocional)",
+            "subjectName": "Vida Saludable",
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 1",
             "folder": "socioemocional-vs",
@@ -234,7 +234,7 @@
         },
         {
             "subjectCode": "lmb",
-            "subjectName": "Lengua Materna. Español (clase bilingüe)",
+            "subjectName": "Lengua Materna (clase bilingüe)",
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 2",
             "folder": "la-guia-santillana-lm-la",
@@ -288,7 +288,7 @@
         },
         {
             "subjectCode": "vs",
-            "subjectName": "Vida Saludable (de Educación Socioemocional)",
+            "subjectName": "Vida Saludable",
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 2",
             "folder": "socioemocional-vs",
@@ -421,7 +421,7 @@
         },
         {
             "subjectCode": "lmb",
-            "subjectName": "Lengua Materna. Español (clase bilingüe)",
+            "subjectName": "Lengua Materna (clase bilingüe)",
             "serieCode": "santillana",
             "serieName": "La Guía Santillana 3",
             "folder": "la-guia-santillana-lm-la",
@@ -475,7 +475,7 @@
         },
         {
             "subjectCode": "vs",
-            "subjectName": "Vida Saludable (de Educación Socioemocional)",
+            "subjectName": "Vida Saludable",
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 3",
             "folder": "socioemocional-vs",
@@ -925,7 +925,7 @@
         },
         {
             "subjectCode": "vs",
-            "subjectName": "Vida Saludable (de Educación Socioemocional)",
+            "subjectName": "Vida Saludable",
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 4",
             "folder": "socioemocional-vs",
@@ -1159,7 +1159,7 @@
         },
         {
             "subjectCode": "vs",
-            "subjectName": "Vida Saludable (de Educación Socioemocional)",
+            "subjectName": "Vida Saludable",
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 5",
             "folder": "socioemocional-vs",
@@ -1393,7 +1393,7 @@
         },
         {
             "subjectCode": "vs",
-            "subjectName": "Vida Saludable (de Educación Socioemocional)",
+            "subjectName": "Vida Saludable",
             "serieCode": "vidasaludable",
             "serieName": "La Guía Santillana 6",
             "folder": "socioemocional-vs",

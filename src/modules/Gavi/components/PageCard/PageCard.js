@@ -10,14 +10,14 @@ import {
     PageCardPreview,
 } from './PageCard.styled';
 
-const PageCard = ({ src }) => {
+const PageCard = ({ src, alt }) => {
     const [showPreview, setShowPreview] = useState(false);
 
     return (
         <PageCardWrapper>
             {showPreview && (
                 <PageCardOverlay onClick={() => setShowPreview(false)}>
-                    <PageCardImage src={src} onClick={(ev) => ev.stopPropagation()} />
+                    <PageCardImage src={src} alt={alt} onClick={(ev) => ev.stopPropagation()} />
                 </PageCardOverlay>
             )}
             <PageCardPreview src={src} onClick={() => setShowPreview(true)} />
@@ -25,7 +25,11 @@ const PageCard = ({ src }) => {
     );
 };
 PageCard.propTypes = {
+    alt: PropTypes.string,
     src: PropTypes.string.isRequired,
+};
+PageCard.defaultProps = {
+    alt: '',
 };
 
 export default PageCard;
