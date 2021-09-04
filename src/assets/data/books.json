@@ -501,6 +501,15 @@
             "type": "book"
         },
         {
+            "subjectCode": "geo",
+            "subjectName": "Geografía",
+            "serieCode": "santillana",
+            "serieName": "La Guía Santillana 3",
+            "folder": "la-guia-santillana-g-la",
+            "identifier": "gs3la",
+            "type": "book"
+        },
+        {
             "subjectCode": "edv",
             "subjectName": "La entidad en donde vivo",
             "serieCode": "santillana",
@@ -561,6 +570,24 @@
             "serieName": "Libro de texto gratuito de tercer grado",
             "folder": "sep-fcye",
             "identifier": "sepfcye3-",
+            "type": "book"
+        },
+        {
+            "subjectCode": "geo",
+            "subjectName": "Geografía",
+            "serieCode": "sep",
+            "serieName": "Libro de texto gratuito de tercer grado",
+            "folder": "sep-geo",
+            "identifier": "sepgeo3-",
+            "type": "book"
+        },
+        {
+            "subjectCode": "geo",
+            "subjectName": "Atlas de México",
+            "serieCode": "sep",
+            "serieName": "Libro de texto gratuito de tercer grado",
+            "folder": "sep-atl",
+            "identifier": "sepatl3-",
             "type": "book"
         },
         {
