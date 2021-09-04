@@ -36,7 +36,7 @@ export const MaterialCardLogo = styled.img`
     `)}
 `;
 
-export const MaterialCardPages = styled.p`
+export const MaterialCardPages = styled.div`
     color: ${colors.gray};
     font-size: 2rem;
     font-family: 'Centrale', sans-serif;

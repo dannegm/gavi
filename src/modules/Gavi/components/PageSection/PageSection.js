@@ -37,7 +37,7 @@ PageSection.propTypes = {
     title: PropTypes.node.isRequired,
     folder: PropTypes.string.isRequired,
     identifier: PropTypes.string.isRequired,
-    pages: PropTypes.arrayOf(PropTypes.number),
+    pages: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
     getPageUrl: PropTypes.func.isRequired,
 };
 

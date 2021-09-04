@@ -4,7 +4,6 @@ import { flattenDeep, trim } from 'lodash';
 
 import { buildRoute, renderTemplate } from '@gavi/helpers/utils';
 import useNavigationDate from '@gavi/hooks/useNavigationDate';
-import useImportGradeData from '@gavi/hooks/useImportGradeData';
 
 import Header from '@gavi/components/Header';
 import Button from '@gavi/components/Button';
@@ -16,6 +15,8 @@ import Footer from '@gavi/components/Footer';
 import DangerouslyHtml from '@components/DangerouslyHtml';
 
 import Page from '@gavi/layout/Page';
+
+import gradesData from '@assets/data/gradesData';
 
 import { NavigationWrapper, MaterialCardGrid } from './Resources.styled';
 
@@ -42,8 +43,6 @@ const Resources = () => {
 
     const [resourceData, setResourceData] = useState(null);
 
-    const [gradeData] = useImportGradeData(grade);
-
     const handleBack = () => {
         history.push(`/aprende${grade}/materias/${formatedDate}`);
     };
@@ -58,20 +57,21 @@ const Resources = () => {
     };
 
     useEffect(() => {
-        const resourcePath = gradeData?.[`${year}/${month}/${day}`]?.[subject];
+        const resourcePath = gradesData?.[`grade${grade}`]?.[`${year}/${month}/${day}`]?.[subject];
         if (!resourcePath) {
             setResourceData(null);
         } else {
-            setResourceData({
-                ...resourcePath,
+            const mappedData = {
+                learn: resourcePath.learn,
                 books: resourcePath.books.map((b) => ({
                     ...b,
                     serie: b.serieCode,
                     name: b.serieName,
                 })),
-            });
+            };
+            setResourceData(mappedData);
         }
-    }, [grade, subject, today]);
+    }, [grade, subject, year, month, day]);
 
     return (
         <Page grade={grade} title={`Material - ${grade}º GAVI`}>

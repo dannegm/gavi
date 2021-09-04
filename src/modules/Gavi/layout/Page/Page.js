@@ -29,7 +29,7 @@ const Page = ({ grade, title, children }) => {
 };
 
 Page.propTypes = {
-    grade: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
+    grade: PropTypes.oneOf(['1', '2', '3', '4', '5', '6']),
     title: PropTypes.string,
     children: PropTypes.node.isRequired,
 };

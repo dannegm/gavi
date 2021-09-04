@@ -20,7 +20,7 @@ const PageCard = ({ src, alt }) => {
                     <PageCardImage src={src} alt={alt} onClick={(ev) => ev.stopPropagation()} />
                 </PageCardOverlay>
             )}
-            <PageCardPreview src={src} onClick={() => setShowPreview(true)} />
+            <PageCardPreview src={src} alt={alt} onClick={() => setShowPreview(true)} />
         </PageCardWrapper>
     );
 };

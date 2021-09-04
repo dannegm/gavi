@@ -12,7 +12,7 @@ const fadeIn = keyframes`
 `;
 const zoomIn = keyframes`
     from {
-        transform: scale(0.25);
+        transform: scale(0.5);
     }
     to {
         transform: scale(1);
@@ -45,7 +45,7 @@ export const PageCardOverlay = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: ${fadeIn} 0.1s ease-in;
+    animation: ${fadeIn} 0.2s ease-in;
 `;
 
 export const PageCardImage = styled.img`

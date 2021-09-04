@@ -65,7 +65,9 @@ const MaterialCard = ({ type, pages }) => {
 
 MaterialCard.propTypes = {
     type: PropTypes.string.isRequired,
-    pages: PropTypes.arrayOf(PropTypes.number).isRequired,
+    pages: PropTypes.arrayOf(
+        PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string]))
+    ).isRequired,
 };
 
 export default MaterialCard;
