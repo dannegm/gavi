@@ -11,7 +11,7 @@ import { PageSectionWrapper, PageSectionTitle, PageSectionGrid } from './PageSec
 const PageSection = ({ title, folder, identifier, pages, getPageUrl }) => {
     const pagesPayload = pages.map((page) => ({
         src: getPageUrl(folder, identifier, page),
-        alt: `Folder: ${folder} | Identifier: ${identifier} | Pag: ${page}`,
+        alt: `${folder} | ${identifier} | ${page}`,
     }));
 
     const formattedTitle = title

@@ -35,12 +35,15 @@ const buildPageLabel = (pages) => {
 const MaterialCard = ({ type, pages }) => {
     const theme = useContext(ThemeContext);
 
+    const santillana = {
+        ...series.santillana,
+        logo: theme.logo,
+    };
+
     const books = {
         ...series,
-        santillana: {
-            ...series.santillana,
-            logo: theme.logo,
-        },
+        santillana,
+        vidasaludable: santillana,
     };
 
     const getPagesCaption = (p) => {

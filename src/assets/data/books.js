@@ -44,5 +44,5 @@ export default {
     sep,
     detectives,
     socio,
-    vidasaludable,
+    // vidasaludable,
 };
