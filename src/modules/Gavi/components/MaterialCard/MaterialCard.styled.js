@@ -43,7 +43,11 @@ export const MaterialCardPages = styled.div`
     font-weight: bold;
     text-align: center;
     padding: 0 2rem;
-    overflow: hidden;
+    justify-content: center;
+
+    ${({ show }) => css`
+        display: ${show ? 'flex' : 'none'};
+    `}
 
     & b {
         color: ${({ theme }) => theme.colors.main};

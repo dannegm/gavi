@@ -124,7 +124,6 @@ const ScheduleForm = ({ type, date, grade, data, onSave }) => {
             <FlexboxGrid justify='end' style={{ gap: 16 }}>
                 <FlexboxGrid.Item colspan={24}>
                     <Badge
-                        block
                         content={subjects.length}
                         style={{
                             display: 'block',

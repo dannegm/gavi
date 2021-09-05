@@ -7,6 +7,7 @@ import DangerouslyHtml from '@components/DangerouslyHtml';
 
 import { series } from '@assets/data/books';
 
+import Button from '../Button';
 import { MaterialCardWrapper, MaterialCardLogo, MaterialCardPages } from './MaterialCard.styled';
 
 const pageGroups = (groups) => {
@@ -32,7 +33,7 @@ const buildPageLabel = (pages) => {
     return `${groups.join(', ')} y ${lastGroup}`;
 };
 
-const MaterialCard = ({ type, pages }) => {
+const MaterialCard = ({ serie, pages, interactiveLink }) => {
     const theme = useContext(ThemeContext);
 
     const santillana = {
@@ -58,19 +59,29 @@ const MaterialCard = ({ type, pages }) => {
 
     return (
         <MaterialCardWrapper>
-            <MaterialCardLogo src={books[type].logo} />
-            <MaterialCardPages>
+            <MaterialCardLogo src={books[serie].logo} />
+
+            <MaterialCardPages show={Boolean(pages.length)}>
                 <DangerouslyHtml>{getPagesCaption(pages)}</DangerouslyHtml>
+            </MaterialCardPages>
+
+            <MaterialCardPages show={interactiveLink.trim() !== ''}>
+                <Button link label='Interactivo' href={interactiveLink} target='_blank' />
             </MaterialCardPages>
         </MaterialCardWrapper>
     );
 };
 
 MaterialCard.propTypes = {
-    type: PropTypes.string.isRequired,
+    serie: PropTypes.string.isRequired,
     pages: PropTypes.arrayOf(
         PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string]))
-    ).isRequired,
+    ),
+    interactiveLink: PropTypes.string,
+};
+MaterialCard.defaultProps = {
+    pages: [],
+    interactiveLink: '',
 };
 
 export default MaterialCard;

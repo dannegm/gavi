@@ -93,8 +93,9 @@ const Resources = () => {
                             {resourceData.books.map((book) => (
                                 <MaterialCard
                                     key={`book_${book.serie}`}
-                                    type={book.serie}
+                                    serie={book.serie}
                                     pages={book.pages}
+                                    interactiveLink={book.interactiveLink}
                                 />
                             ))}
                         </MaterialCardGrid>

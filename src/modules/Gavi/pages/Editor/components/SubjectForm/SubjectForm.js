@@ -146,7 +146,7 @@ const SubjectForm = ({ grade, onCancel, onCreate, style }) => {
 };
 
 SubjectForm.propTypes = {
-    grade: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
+    grade: PropTypes.oneOf(['1', '2', '3', '4', '5', '6']),
     onCancel: PropTypes.func,
     onCreate: PropTypes.func,
     // eslint-disable-next-line react/forbid-prop-types
@@ -155,7 +155,7 @@ SubjectForm.propTypes = {
 
 SubjectForm.defaultProps = {
     style: {},
-    grade: 1,
+    grade: '1',
     onCancel: () => null,
     onCreate: () => null,
 };
