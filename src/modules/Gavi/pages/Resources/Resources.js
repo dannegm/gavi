@@ -111,17 +111,20 @@ const Resources = () => {
                     />
 
                     {Boolean(resourceData?.books) &&
-                        resourceData.books.map((book) => (
-                            <PageSection
-                                key={`pages_${book.serie}`}
-                                title={book.name}
-                                book={book.serie}
-                                folder={book.folder}
-                                identifier={book.identifier}
-                                pages={flattenDeep(book.pages)}
-                                getPageUrl={getPageUrl}
-                            />
-                        ))}
+                        resourceData.books.map(
+                            (book) =>
+                                book.pages.length !== 0 && (
+                                    <PageSection
+                                        key={`pages_${book.serie}`}
+                                        title={book.name}
+                                        book={book.serie}
+                                        folder={book.folder}
+                                        identifier={book.identifier}
+                                        pages={flattenDeep(book.pages)}
+                                        getPageUrl={getPageUrl}
+                                    />
+                                )
+                        )}
                 </>
             )}
 
