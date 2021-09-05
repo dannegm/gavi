@@ -94,8 +94,8 @@ const Resources = () => {
                                 <MaterialCard
                                     key={`book_${book.serie}`}
                                     serie={book.serie}
-                                    pages={book.pages}
-                                    interactiveLink={book.interactiveLink}
+                                    pages={book.pages || []}
+                                    interactiveLink={book.interactiveLink || ''}
                                 />
                             ))}
                         </MaterialCardGrid>

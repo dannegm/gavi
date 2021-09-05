@@ -12,7 +12,7 @@ const BookItem = ({ book, canRemove, onRemove }) => {
                     <FlexboxGrid.Item colspan={24}>{book.label}</FlexboxGrid.Item>
                     <FlexboxGrid.Item
                         colspan={24}
-                        style={{ display: book.pages.length ? 'block' : 'none' }}
+                        style={{ display: (book.pages || []).length ? 'block' : 'none' }}
                     >
                         {pages.map((page) => (
                             <Tag key={`page_${page}`}>{page}</Tag>
@@ -20,7 +20,9 @@ const BookItem = ({ book, canRemove, onRemove }) => {
                     </FlexboxGrid.Item>
                     <FlexboxGrid.Item
                         colspan={24}
-                        style={{ display: book.interactiveLink.trim() !== '' ? 'block' : 'none' }}
+                        style={{
+                            display: (book.interactiveLink || '').trim() !== '' ? 'block' : 'none',
+                        }}
                     >
                         <Button color='cyan' size='xs' href={book.interactiveLink} target='_blank'>
                             Ver interactivo

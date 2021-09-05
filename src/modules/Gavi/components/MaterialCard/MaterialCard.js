@@ -61,11 +61,11 @@ const MaterialCard = ({ serie, pages, interactiveLink }) => {
         <MaterialCardWrapper>
             <MaterialCardLogo src={books[serie].logo} />
 
-            <MaterialCardPages show={Boolean(pages.length)}>
+            <MaterialCardPages show={pages && Boolean(pages.length)}>
                 <DangerouslyHtml>{getPagesCaption(pages)}</DangerouslyHtml>
             </MaterialCardPages>
 
-            <MaterialCardPages show={interactiveLink.trim() !== ''}>
+            <MaterialCardPages show={interactiveLink && interactiveLink.trim() !== ''}>
                 <Button link label='Interactivo' href={interactiveLink} target='_blank' />
             </MaterialCardPages>
         </MaterialCardWrapper>

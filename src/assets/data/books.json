@@ -296,13 +296,6 @@
             "type": "book"
         },
         {
-            "subjectCode": "vs",
-            "subjectName": "Vida Saludable (interactivo)",
-            "serieCode": "vidasaludable",
-            "serieName": "La Guía Santillana 2",
-            "type": "interactive"
-        },
-        {
             "subjectCode": "mat",
             "subjectName": "Matemáticas",
             "serieCode": "santillana",
