@@ -55,7 +55,7 @@ const BookForm = ({ grade, onCreate }) => {
     };
 
     useEffect(() => {
-        setCanCreate((pages.length !== 0 || interactiveLink.trim() !== '') && book !== null);
+        setCanCreate(book !== null && (pages.length !== 0 || interactiveLink.trim() !== ''));
     }, [interactiveLink, pages, book]);
 
     useEffect(() => {
