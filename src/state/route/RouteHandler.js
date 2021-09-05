@@ -12,7 +12,7 @@ const RouteHandler = () => (
                     <Route key={route.name} {...route} />
                 ))}
                 <Route path='*'>
-                    <Redirect to='/404' />
+                    <Redirect to='/' />
                 </Route>
             </Switch>
         </Suspense>

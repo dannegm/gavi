@@ -24,6 +24,7 @@ const Editor = () => {
         setGrade,
         upsertSchedule,
         loadScheduleData,
+        clearGradeData,
     } = useGradeData(grade);
 
     const handleSetGrade = (value) => {
@@ -49,9 +50,10 @@ const Editor = () => {
         const [importedFile] = event.target.files;
         const $fileReader = new FileReader();
         $fileReader.onloadend = () => {
-            loadScheduleData($fileReader.result);
+            loadScheduleData($fileReader.result, importedFile.type);
         };
         $fileReader.readAsText(importedFile);
+        $uploader.current.value = '';
     };
 
     const handleDownload = () => {
@@ -124,7 +126,7 @@ const Editor = () => {
                                     ref={$uploader}
                                     style={{ display: 'none' }}
                                     type='file'
-                                    accept='application/json'
+                                    accept='application/json, text/csv'
                                     onChange={handleUpload}
                                 />
                                 <Button onClick={() => $uploader.current.click()}>
@@ -137,6 +139,12 @@ const Editor = () => {
                                     <Icon icon='download' /> Exportar
                                 </Button>
                             </FlexboxGrid.Item>
+
+                            <FlexboxGrid.Item>
+                                <Button color='red' onClick={() => clearGradeData()}>
+                                    <Icon icon='trash' /> Limpiar
+                                </Button>
+                            </FlexboxGrid.Item>
                         </FlexboxGrid>
 
                         <JsonView name={`grade${grade}.json`} data={gradeData} />
@@ -146,12 +154,13 @@ const Editor = () => {
                 <FlexboxGrid style={{ gap: 20, margin: 20 }}>
                     {weeks.map((weekDay) => (
                         <FlexboxGrid.Item key={`weekDay_${weekDay}`} style={{ flex: 1 }}>
-                            {gradeData[weekDay] ? (
+                            {gradeData.data[weekDay] ? (
                                 <ScheduleForm
                                     type='update'
+                                    key={`${weekDay}_${gradeData.signature}`}
                                     date={weekDay}
                                     grade={grade}
-                                    data={gradeData[weekDay]}
+                                    data={gradeData.data[weekDay]}
                                     onSave={handleScheduleCreate}
                                 />
                             ) : (

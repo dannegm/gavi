@@ -28,3 +28,9 @@ export const GradeWrapper = styled.div`
         margin: auto;
     }
 `;
+
+export const EditorButtonWrapper = styled.div`
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+`;

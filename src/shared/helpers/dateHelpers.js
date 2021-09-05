@@ -99,11 +99,25 @@ export const getPrevWorkingDay = (d) => {
 
 export const getWeekDays = (weekNumber) => {
     const $initialDate = moment(MIN_ALLOWED_DATE);
+    $initialDate.startOf('week');
     const $selectedWeek = $initialDate.add(weekNumber - 1, 'weeks');
-    $selectedWeek.startOf('week');
 
     const weekDays = [1, 2, 3, 4, 5].map((d) => {
         return moment($selectedWeek).add(d, 'days').format('YYYY/MM/DD');
     });
     return weekDays;
+};
+
+export const getWeekYear = (weekNumber) => {
+    const $initialDate = moment(MIN_ALLOWED_DATE);
+    $initialDate.startOf('week');
+    const $selectedWeek = $initialDate.add(weekNumber - 1, 'weeks');
+    return $selectedWeek.year();
+};
+
+export const getRunningWeek = () => {
+    const $initialDate = moment(MIN_ALLOWED_DATE);
+    $initialDate.startOf('week');
+
+    return moment().week() - $initialDate.week();
 };

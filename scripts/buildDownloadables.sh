@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export REACT_APP_EDITOR_MODE=false
+
 rm -rf ./exportables || true
 mkdir ./exportables || true
 
