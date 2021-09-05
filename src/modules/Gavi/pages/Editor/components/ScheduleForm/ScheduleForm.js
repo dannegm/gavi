@@ -12,6 +12,7 @@ import SubjectForm from '../SubjectForm';
 import SubjectItem from '../SubjectItem';
 
 const ScheduleForm = ({ type, date, grade, data, onSave }) => {
+    const [hasChanges, setHasChanges] = useState(false);
     const [showSubjectForm, setShowSubjectForm] = useState(false);
 
     const [subjects, setSubjects] = useState([]);
@@ -26,11 +27,13 @@ const ScheduleForm = ({ type, date, grade, data, onSave }) => {
         });
         setSubjects(copySubjects);
         setShowSubjectForm(false);
+        setHasChanges(true);
     };
 
     const handleRemoveSubject = (subject) => {
         const filteredSubjects = subjects.filter((s) => s.id !== subject.id);
         setSubjects(filteredSubjects);
+        setHasChanges(true);
     };
 
     const handleCreate = () => {
@@ -42,6 +45,7 @@ const ScheduleForm = ({ type, date, grade, data, onSave }) => {
 
         setShowSubjectForm(false);
         setSubjects([]);
+        setHasChanges(false);
     };
 
     const handleSort = ({ oldIndex, newIndex }) => {
@@ -51,6 +55,7 @@ const ScheduleForm = ({ type, date, grade, data, onSave }) => {
             newData.splice(newIndex, 0, moveData[0]);
             return newData;
         });
+        setHasChanges(true);
     };
 
     useEffect(() => {
@@ -70,6 +75,8 @@ const ScheduleForm = ({ type, date, grade, data, onSave }) => {
         }
     }, [data]);
 
+    const editedStyles = { backgroundColor: hasChanges ? '#ffedf5' : 'white' };
+
     return (
         <Panel
             header={
@@ -82,7 +89,10 @@ const ScheduleForm = ({ type, date, grade, data, onSave }) => {
                     </FlexboxGrid.Item>
                 </FlexboxGrid>
             }
-            style={{ borderTop: `4px solid ${type !== 'create' ? '#334750' : '#dedede'}` }}
+            style={{
+                ...editedStyles,
+                borderTop: `4px solid ${type !== 'create' ? '#334750' : '#dedede'}`,
+            }}
             bordered
         >
             {showSubjectForm && (
@@ -106,9 +116,9 @@ const ScheduleForm = ({ type, date, grade, data, onSave }) => {
                         <Icon icon='plus' /> Añadir materia
                     </Button>
 
-                    <List sortable onSort={handleSort}>
+                    <List sortable onSort={handleSort} style={editedStyles}>
                         {subjects.map((subject, index) => (
-                            <List.Item key={subject.id} index={index}>
+                            <List.Item key={subject.id} index={index} style={editedStyles}>
                                 <SubjectItem
                                     onRemove={() => handleRemoveSubject(subject)}
                                     {...subject}
