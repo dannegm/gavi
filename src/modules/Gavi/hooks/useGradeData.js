@@ -4,9 +4,10 @@ import { useEffect, useState } from 'react';
 import { nanoid } from 'nanoid';
 import { HmacSHA1 } from 'crypto-js';
 import { isEmpty } from 'lodash';
+import { parse as parseCsvContent } from 'papaparse';
 
 import { getWeekYear } from '@helpers/dateHelpers';
-import { csvHeaders, parseCsvContent, pagesHumanToArray } from '@helpers/utils';
+import { csvHeaders, pagesHumanToArray } from '@helpers/utils';
 
 import { books } from '@assets/data/books';
 
@@ -103,10 +104,9 @@ const handleLoadCsvData = ({
     handleUpdateGradeData,
     rawData,
 }) => {
-    const rows = parseCsvContent(rawData);
-
-    const headers = rows[0];
-    const body = rows.splice(1);
+    const { data: resultData } = parseCsvContent(rawData, { skipEmptyLines: true });
+    const headers = resultData[0];
+    const body = [...resultData].splice(1);
 
     if (headers.join(',') !== csvHeaders) {
         alert('El archivo CSV importado tiene una estructura inválida');
@@ -118,7 +118,7 @@ const handleLoadCsvData = ({
         );
     } else {
         clearGradeData();
-        setGradeData(handleUpdateGradeData(mapCsvData(body), true));
+        setGradeData(handleUpdateGradeData(mapCsvData(body), false));
     }
 };
 

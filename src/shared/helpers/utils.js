@@ -64,7 +64,7 @@ export const pagesHumanToArray = (humanText) => {
 
 export const parseCsvRow = (row) => {
     const pattern = /,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/;
-    return row.split(pattern).map((item) => trim(item, '"'));
+    return row.split(pattern).map((item) => trim(item, '"').trim());
 };
 
 export const parseCsvContent = (rawData) => {
