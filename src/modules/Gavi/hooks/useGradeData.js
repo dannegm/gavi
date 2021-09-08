@@ -1,3 +1,5 @@
+import { Alert } from 'rsuite';
+
 /* eslint-disable no-alert */
 import useLocalStorage from '@hooks/useLocalStorage';
 import { useEffect, useState } from 'react';
@@ -33,7 +35,7 @@ const mapRowToBook = (row, cursor) => {
         serieName: bookData.serieName,
         folder: bookData.folder,
         identifier: bookData.identifier,
-        label: `${serieCode} - ${bookData.serieName}`,
+        label: `${serieCode} - ${bookData.subjectName} ${grade}`,
         type: 'book',
     };
 };
@@ -106,19 +108,16 @@ const handleLoadCsvData = ({
 }) => {
     const { data: resultData } = parseCsvContent(rawData, { skipEmptyLines: true });
     const headers = resultData[0];
-    const body = [...resultData].splice(1);
+    const body = [...resultData].splice(1).filter(([rowGrade]) => `${rowGrade}` === `${grade}`);
 
     if (headers.join(',') !== csvHeaders) {
         alert('El archivo CSV importado tiene una estructura inválida');
     } else if (body.length === 0) {
         alert('No hay datos que cargar');
-    } else if (`${body[0][0]}` !== `${grade}`) {
-        alert(
-            `Estás cargando un archivo para grado "${body[0][0]}" en un espacio de trabajo de grado "${grade}".`
-        );
     } else {
         clearGradeData();
         setGradeData(handleUpdateGradeData(mapCsvData(body), false));
+        Alert.success(`Se importaron ${body.length} registros exitosamente`);
     }
 };
 

@@ -26,7 +26,7 @@ export const MaterialCardGrid = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 4rem;
     gap: 2rem;
 

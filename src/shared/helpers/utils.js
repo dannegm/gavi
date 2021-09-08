@@ -49,6 +49,11 @@ export const downloadJson = (data, name = 'file.json') => {
 
 export const pagesHumanToArray = (humanText) => {
     const humanTextSanitized = humanText.replace(/\n/g, '').replace(/\s/g, '');
+
+    if (humanTextSanitized === '') {
+        return [];
+    }
+
     const firstLevel = flattenDeep(humanTextSanitized.split(',').map((i) => i.split('y')));
     const secondLevel = firstLevel.map((i) => {
         const thirdLevel = i.split('a').map(Number);

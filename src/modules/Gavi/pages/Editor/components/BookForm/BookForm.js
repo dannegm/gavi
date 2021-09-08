@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 
@@ -9,36 +9,43 @@ import {
     InputGroup,
     Input,
     SelectPicker,
+    Tag,
     Tooltip,
     Whisper,
 } from 'rsuite';
 
+import { pagesHumanToArray } from '@helpers/utils';
+
 import { books } from '@assets/data/books';
 
-import TagPicker from '../TagPicker';
+// import TagPicker from '../TagPicker';
 
 const grades = [1, 2, 3, 4, 5, 6].map((g) => ({ value: `${g}`, label: `${g}º Grado` }));
 
 const BookForm = ({ grade, onCreate }) => {
-    const $tags = useRef(null);
+    // const $tags = useRef(null);
     const [selectedGrade, setSelectedGrade] = useState(`${grade}`);
     const [canCreate, setCanCreate] = useState(false);
 
     const [book, setBook] = useState(null);
     const [pages, setPages] = useState([]);
+    const [pagesHuman, setPagesHuman] = useState('');
     const [interactiveLink, setInteractiveLink] = useState('');
 
     const [bookData, setBookData] = useState([]);
 
     const handleReset = () => {
-        $tags.current.reset();
+        // $tags.current.reset();
         setBook(null);
         setPages([]);
+        setPagesHuman('');
         setInteractiveLink('');
     };
 
     const handlePageChange = (value) => {
-        setPages(value);
+        if (`${value}`.match(/^[0-9]{0,}(\s|a|y|,|[0-9]{0,})*$/g)) {
+            setPagesHuman(value);
+        }
     };
 
     const handleBookSelect = (_, item) => {
@@ -49,10 +56,14 @@ const BookForm = ({ grade, onCreate }) => {
         onCreate({
             ...book,
             interactiveLink,
-            pages: pages.map((p) => p.split(',')),
+            pages, // .map((p) => p.split(',')),
         });
         handleReset();
     };
+
+    useEffect(() => {
+        setPages(pagesHumanToArray(pagesHuman));
+    }, [pagesHuman]);
 
     useEffect(() => {
         setCanCreate(book !== null && (pages.length !== 0 || interactiveLink.trim() !== ''));
@@ -95,8 +106,25 @@ const BookForm = ({ grade, onCreate }) => {
                 />
             </FlexboxGrid.Item>
 
-            <FlexboxGrid.Item colspan={24}>
+            {/* <FlexboxGrid.Item colspan={24}>
                 <TagPicker ref={$tags} tooltip='Páginas' onChange={handlePageChange} />
+            </FlexboxGrid.Item> */}
+
+            <FlexboxGrid.Item colspan={24}>
+                <InputGroup>
+                    <Whisper placement='top' speaker={<Tooltip>Páginas (formato humano)</Tooltip>}>
+                        <InputGroup.Addon>
+                            <Icon icon='file' />
+                        </InputGroup.Addon>
+                    </Whisper>
+                    <Input placeholder='Páginas' value={pagesHuman} onChange={handlePageChange} />
+                </InputGroup>
+            </FlexboxGrid.Item>
+
+            <FlexboxGrid.Item colspan={24}>
+                {pages.map((page) => (
+                    <Tag key={`page_${page}`}>{page.join(', ')}</Tag>
+                ))}
             </FlexboxGrid.Item>
 
             <FlexboxGrid.Item colspan={24}>

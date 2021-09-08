@@ -60,6 +60,10 @@ const Editor = () => {
         downloadJson(gradeData, `grade${grade}.json`);
     };
 
+    const handlePreview = () => {
+        window.open(`./#/aprende${grade}/materias/${weeks[0]}`, '_blank');
+    };
+
     useEffect(() => {
         setGrade(grade);
     }, [grade]);
@@ -77,6 +81,12 @@ const Editor = () => {
                             align='middle'
                             style={{ gap: 8, marginTop: 20, marginBottom: 10 }}
                         >
+                            <FlexboxGrid.Item>
+                                <Button onClick={handlePreview}>
+                                    <Icon icon='external-link-square' />
+                                </Button>
+                            </FlexboxGrid.Item>
+
                             <FlexboxGrid.Item>
                                 <ButtonGroup block>
                                     {[1, 2, 3, 4, 5, 6].map((g) => (

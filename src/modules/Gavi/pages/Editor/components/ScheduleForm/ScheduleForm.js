@@ -11,6 +11,8 @@ import { formatDate } from '@helpers/dateHelpers';
 import SubjectForm from '../SubjectForm';
 import SubjectItem from '../SubjectItem';
 
+import { Spacer } from './ScheduleForm.styled';
+
 const ScheduleForm = ({ type, date, grade, data, onSave }) => {
     const [hasChanges, setHasChanges] = useState(false);
     const [showSubjectForm, setShowSubjectForm] = useState(false);
@@ -58,6 +60,10 @@ const ScheduleForm = ({ type, date, grade, data, onSave }) => {
         setHasChanges(true);
     };
 
+    const handlePreview = () => {
+        window.open(`./#/aprende${grade}/materias/${date}`, '_blank');
+    };
+
     useEffect(() => {
         if (data) {
             const subs = Object.entries(data).map(([code, body]) => {
@@ -86,6 +92,14 @@ const ScheduleForm = ({ type, date, grade, data, onSave }) => {
                     </FlexboxGrid.Item>
                     <FlexboxGrid.Item>
                         <Tag color='blue'>{subjects.length}</Tag>
+                    </FlexboxGrid.Item>
+
+                    <Spacer />
+
+                    <FlexboxGrid.Item>
+                        <Button size='xs' onClick={handlePreview}>
+                            <Icon icon='external-link-square' /> Preview
+                        </Button>
                     </FlexboxGrid.Item>
                 </FlexboxGrid>
             }
