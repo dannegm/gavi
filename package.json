@@ -5,7 +5,7 @@
     "homepage": "./",
     "scripts": {
         "dev": "ESLINT_NO_DEV_ERRORS=true craco start",
-        "build": "craco build",
+        "build": "REACT_APP_EDITOR_MODE=false craco build",
         "build:exportables": "sh ./scripts/buildDownloadables.sh",
         "eject": "react-scripts eject",
         "serve": "yarn build && npx serve ./build",
