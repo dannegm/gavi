@@ -19,7 +19,9 @@ const GAVI_LS_KEY_GRADE = 'GAVI_LS_KEY_GRADE';
 const mapRowToBook = (row, cursor) => {
     const copyRow = [...row];
     const [grade, subjectCode, serieCode, interactiveLink, pages] = copyRow.splice(cursor);
-    const bookData = books[grade]?.find((book) => book.subjectCode === subjectCode);
+    const bookData = books[grade]?.find(
+        (book) => book.subjectCode === subjectCode && book.serieCode === serieCode
+    );
 
     if (!bookData) {
         return null;

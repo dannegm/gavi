@@ -57,7 +57,7 @@ export const PageCardImage = styled.img`
 `;
 
 export const PageCardPreview = styled.img`
-    object-fit: cover;
+    /* object-fit: cover; */
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1.4142;
