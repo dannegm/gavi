@@ -1,4 +1,5 @@
 import { flattenDeep, range, trim } from 'lodash';
+import { unparse as csvToJson } from 'papaparse';
 
 export const csvHeaders = [
     'grade',
@@ -27,6 +28,32 @@ export const csvHeaders = [
 
 export const downloadJson = (data, name = 'file.json') => {
     const jsonBlob = new Blob([JSON.stringify(data)]);
+    const blobUrl = URL.createObjectURL(jsonBlob);
+
+    const link = document.createElement('a');
+
+    link.href = blobUrl;
+    link.download = name;
+
+    document.body.appendChild(link);
+
+    link.dispatchEvent(
+        new MouseEvent('click', {
+            bubbles: true,
+            cancelable: true,
+            view: window,
+        })
+    );
+
+    document.body.removeChild(link);
+};
+
+export const downloadCsv = (data, name = 'file.csv') => {
+    const rawCsv = csvToJson(data, {
+        delimiter: ',',
+        header: true,
+    });
+    const jsonBlob = new Blob([rawCsv]);
     const blobUrl = URL.createObjectURL(jsonBlob);
 
     const link = document.createElement('a');

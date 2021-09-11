@@ -13,6 +13,7 @@ import { csvHeaders, pagesHumanToArray } from '@helpers/utils';
 
 import { books } from '@assets/data/books';
 
+const PACKAGE_VERSION = process.env.REACT_APP_PACKAGE_VERSION;
 const SECRET_KEY = process.env.REACT_APP_SECRET_KEY;
 const GAVI_LS_KEY_GRADE = 'GAVI_LS_KEY_GRADE';
 
@@ -92,8 +93,9 @@ const getSignature = (data) => {
     return HmacSHA1(JSON.stringify(data), SECRET_KEY).toString();
 };
 
-const getDefaultContent = (grade, defaultContent = {}) => {
+const getDocContent = (grade, defaultContent = {}) => {
     return {
+        scheme_version: PACKAGE_VERSION,
         grade,
         updated_at: new Date(),
         signature: getSignature(defaultContent),
@@ -136,6 +138,8 @@ const handleLoadJsonData = ({
         alert('Archivo de datos inválido');
     } else if (jsonData.signature !== getSignature(jsonData.data)) {
         alert('El archivo fue modificado externamente');
+    } else if (jsonData.scheme_version !== PACKAGE_VERSION) {
+        alert('La estrutura del archivo no es compatible con la versión actual de la plataforma');
     } else if (`${jsonData.grade}` !== `${grade}`) {
         alert(
             `Estás cargando un archivo para grado "${jsonData.grade}" en un espacio de trabajo de grado "${grade}".`
@@ -151,7 +155,7 @@ const useGradeData = (defaultGrade = 1, defaultContent = {}) => {
 
     const [gradeData, setGradeData, clearGradeData, setKey] = useLocalStorage(
         `${GAVI_LS_KEY_GRADE}_${defaultGrade}`,
-        getDefaultContent(grade, defaultContent)
+        getDocContent(grade, defaultContent)
     );
 
     const handleUpdateGradeData =
@@ -164,12 +168,7 @@ const useGradeData = (defaultGrade = 1, defaultContent = {}) => {
 
             const generatedData = replace ? newData : modifiedData;
 
-            return {
-                grade,
-                updated_at: new Date(),
-                signature: getSignature(generatedData),
-                data: generatedData,
-            };
+            return getDocContent(grade, generatedData);
         };
 
     const upsertSchedule = (schedule) => {
