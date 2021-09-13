@@ -136,10 +136,10 @@ const handleLoadJsonData = ({
 
     if (jsonData.signature === undefined) {
         alert('Archivo de datos inválido');
-    } else if (jsonData.signature !== getSignature(jsonData.data)) {
-        alert('El archivo fue modificado externamente');
-    } else if (jsonData.scheme_version !== PACKAGE_VERSION) {
-        alert('La estrutura del archivo no es compatible con la versión actual de la plataforma');
+        // } else if (jsonData.signature !== getSignature(jsonData.data)) {
+        //     alert('El archivo fue modificado externamente');
+        //      } else if (jsonData.scheme_version !== PACKAGE_VERSION) {
+        //     alert('La estrutura del archivo no es compatible con la versión actual de la plataforma');
     } else if (`${jsonData.grade}` !== `${grade}`) {
         alert(
             `Estás cargando un archivo para grado "${jsonData.grade}" en un espacio de trabajo de grado "${grade}".`
