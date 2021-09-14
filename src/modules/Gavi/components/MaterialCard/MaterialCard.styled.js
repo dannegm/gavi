@@ -12,8 +12,7 @@ export const MaterialCardWrapper = styled.div`
     box-sizing: content-box;
     border-radius: 2rem;
     box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 40%);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
     gap: 3rem;
 
     ${breakpoints.tablet(css`
