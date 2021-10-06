@@ -47,4 +47,4 @@ rm -rf ./gavi-aprende6
 
 unset REACT_APP_DEFAULT_GRADE
 
-open ./exportables
+# open ./exportables
