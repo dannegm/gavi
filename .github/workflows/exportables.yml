@@ -1,0 +1,45 @@
+name: Exportables
+
+on:
+    create:
+        tags:
+            - semana*
+            - test-semana*
+
+jobs:
+
+    buildAndUpload:
+
+        runs-on: ubuntu-latest
+
+        steps:
+            # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+            - uses: actions/checkout@v1
+
+            - name: Install dependencies
+              run: |
+                  npm install -g yarn
+                  yarn install
+
+            - name: Build exportables
+              env:
+                  REACT_APP_PACKAGE_VERSION: $npm_package_version
+                  REACT_APP_EDITOR_MODE: ${{secrets.REACT_APP_EDITOR_MODE}}
+                  REACT_APP_SECRET_KEY: ${{secrets.REACT_APP_SECRET_KEY}}
+                  REACT_APP_MIN_ALLOWED_DATE: ${{secrets.REACT_APP_MIN_ALLOWED_DATE}}
+                  REACT_APP_MAX_ALLOWED_DATE: ${{secrets.REACT_APP_MAX_ALLOWED_DATE}}
+                  REACT_APP_YEAR_LIST: ${{secrets.REACT_APP_YEAR_LIST}}
+                  REACT_APP_PAGE_URL_TEMPLATE: ${{secrets.REACT_APP_PAGE_URL_TEMPLATE}}
+              run: |
+                  yarn exportables:build
+
+            - name: Upload exportables
+              env:
+                  FIREBASE_SERVICE_ACCOUNT_KEY: ${{secrets.FIREBASE_SERVICE_ACCOUNT_KEY}}
+                  FIREBASE_STORAGE_BUCKET: ${{secrets.FIREBASE_STORAGE_BUCKET}}
+                  MAILGUN_API_KEY: ${{secrets.MAILGUN_API_KEY}}
+                  MAILGUN_DOMAIN: ${{secrets.MAILGUN_DOMAIN}}
+                  CICD_NOTIFICATION_SENDER: ${{secrets.CICD_NOTIFICATION_SENDER}}
+                  CICD_NOTIFICATION_SUSCRIPTORS: ${{secrets.CICD_NOTIFICATION_SUSCRIPTORS}}
+              run: |
+                  yarn exportables:upload --folder ${GITHUB_REF/refs\/tags\//}

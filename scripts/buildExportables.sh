@@ -6,8 +6,9 @@ rm -rf ./exportables || true
 mkdir ./exportables || true
 
 yarn build
-mv ./build ./exportables/gavi-public
-zip -r ./exportables/gavi-public.zip ./exportables/gavi-public
+mv ./build ./gavi-public
+zip -r ./exportables/gavi-public.zip ./gavi-public
+rm -rf ./gavi-public
 
 export REACT_APP_DEFAULT_GRADE=1
 yarn build
@@ -47,4 +48,4 @@ rm -rf ./gavi-aprende6
 
 unset REACT_APP_DEFAULT_GRADE
 
-open ./exportables
+# open ./exportables
