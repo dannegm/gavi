@@ -75,7 +75,7 @@ export const downloadCsv = (data, name = 'file.csv') => {
 };
 
 export const pagesHumanToArray = (humanText) => {
-    const humanTextSanitized = humanText.replace(/\n/g, '').replace(/\s/g, '');
+    const humanTextSanitized = humanText.toLowerCase().replace(/\n/g, '').replace(/\s/g, '');
 
     if (humanTextSanitized === '') {
         return [];
