@@ -7,8 +7,11 @@ const moment = require('moment');
 const mailgunBuilder = require('mailgun-js');
 const { startCase } = require('lodash');
 
+console.log(process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
+console.log(process.env);
+
 const firebaseConfig = {
-    credential: admin.credential.cert(process.env.FIREBASE_SERVICE_ACCOUNT_KEY),
+    credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY)),
     storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
 };
 
@@ -51,12 +54,12 @@ ${resourceUrl}
 
 const packages = [
     'gavi-public.zip',
-    // 'gavi-aprende1.zip',
-    // 'gavi-aprende2.zip',
-    // 'gavi-aprende3.zip',
-    // 'gavi-aprende4.zip',
-    // 'gavi-aprende5.zip',
-    // 'gavi-aprende6.zip',
+    'gavi-aprende1.zip',
+    'gavi-aprende2.zip',
+    'gavi-aprende3.zip',
+    'gavi-aprende4.zip',
+    'gavi-aprende5.zip',
+    'gavi-aprende6.zip',
 ];
 
 const uploadFile = async (folder, file) => {
