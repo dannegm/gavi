@@ -22,6 +22,14 @@ jobs:
                   yarn install
 
             - name: Build exportables
+              env:
+                  REACT_APP_PACKAGE_VERSION: $npm_package_version
+                  REACT_APP_EDITOR_MODE: ${{secrets.REACT_APP_EDITOR_MODE}}
+                  REACT_APP_SECRET_KEY: ${{secrets.REACT_APP_SECRET_KEY}}
+                  REACT_APP_MIN_ALLOWED_DATE: ${{secrets.REACT_APP_MIN_ALLOWED_DATE}}
+                  REACT_APP_MAX_ALLOWED_DATE: ${{secrets.REACT_APP_MAX_ALLOWED_DATE}}
+                  REACT_APP_YEAR_LIST: ${{secrets.REACT_APP_YEAR_LIST}}
+                  REACT_APP_PAGE_URL_TEMPLATE: ${{secrets.REACT_APP_PAGE_URL_TEMPLATE}}
               run: |
                   yarn exportables:build
 
