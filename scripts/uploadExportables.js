@@ -53,12 +53,12 @@ ${resourceUrl}
 
 const packages = [
     'gavi-public.zip',
-    'gavi-aprende1.zip',
-    'gavi-aprende2.zip',
-    'gavi-aprende3.zip',
-    'gavi-aprende4.zip',
-    'gavi-aprende5.zip',
-    'gavi-aprende6.zip',
+    // 'gavi-aprende1.zip',
+    // 'gavi-aprende2.zip',
+    // 'gavi-aprende3.zip',
+    // 'gavi-aprende4.zip',
+    // 'gavi-aprende5.zip',
+    // 'gavi-aprende6.zip',
 ];
 
 const uploadFile = async (folder, file) => {
