@@ -7,8 +7,6 @@ const moment = require('moment');
 const mailgunBuilder = require('mailgun-js');
 const { startCase } = require('lodash');
 
-console.log('FIREBASE_SERVICE_ACCOUNT_KEY: ', process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
-
 const firebaseConfig = {
     credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY)),
     storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
@@ -83,9 +81,10 @@ const uploadFile = async (folder, file) => {
             file,
             resourceUrl,
         };
-    } catch (e) {
+    } catch (error) {
         console.log(`[${file}] unexpected error`);
-        return e;
+        console.log(error);
+        return error;
     }
 };
 
