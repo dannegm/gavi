@@ -7,8 +7,7 @@ const moment = require('moment');
 const mailgunBuilder = require('mailgun-js');
 const { startCase } = require('lodash');
 
-console.log(process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
-console.log(process.env);
+console.log('FIREBASE_SERVICE_ACCOUNT_KEY: ', process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
 
 const firebaseConfig = {
     credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY)),
