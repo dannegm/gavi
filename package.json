@@ -1,6 +1,6 @@
 {
     "name": "gavi",
-    "version": "3.1.0",
+    "version": "4.1.0",
     "private": true,
     "homepage": "./",
     "scripts": {
@@ -16,12 +16,15 @@
         "prettier:fix": "yarn prettier -- --write",
         "make:component": "node ./scripts/makeComponent.js make",
         "exportables:build": "sh ./scripts/buildExportables.sh",
-        "exportables:upload": "node ./scripts/uploadExportables.js upload"
+        "exportables:upload": "node ./scripts/uploadExportables.js upload",
+        "migrate": "node ./scripts/migrate.js migrate"
     },
     "dependencies": {
         "@craco/craco": "^6.2.0",
+        "cli-highlight": "^2.1.11",
         "craco-alias": "^3.0.1",
         "crypto-js": "^4.1.1",
+        "dotenv": "^10.0.0",
         "eslint": "^7.32.0",
         "eslint-config-airbnb": "^18.2.1",
         "eslint-config-prettier": "^8.3.0",

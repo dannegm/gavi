@@ -49,7 +49,7 @@ const Subjects = () => {
         if (!resourcePath) {
             setResourceData(null);
         } else {
-            setResourceData(Object.keys(resourcePath));
+            setResourceData(resourcePath.map((subject) => subject.subjectCode));
         }
     }, [grade, year, month, day]);
 

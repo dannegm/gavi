@@ -66,11 +66,11 @@ const ScheduleForm = ({ type, date, grade, data, onSave }) => {
 
     useEffect(() => {
         if (data) {
-            const subs = Object.entries(data).map(([code, body]) => {
+            const subs = data.map(({ subjectCode: code, books, learn }) => {
                 return {
                     id: nanoid(),
-                    books: body.books,
-                    learn: body.learn,
+                    books,
+                    learn,
                     subject: {
                         code,
                         label: `${code} - ${subjectsData[code]?.name}`,
