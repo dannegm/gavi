@@ -40,8 +40,8 @@ const Subjects = () => {
         history.push(`/aprende${grade}`);
     };
 
-    const handleBadgeClick = (index) => (subjectCode) => {
-        history.push(`/aprende${grade}/material/${formatedDate}/${subjectCode}/${index}`);
+    const handleBadgeClick = ({ code, index }) => {
+        history.push(`/aprende${grade}/material/${formatedDate}/${code}/${index}`);
     };
 
     useEffect(() => {
@@ -49,7 +49,7 @@ const Subjects = () => {
         if (!resourcePath) {
             setResourceData(null);
         } else {
-            setResourceData(resourcePath.map((subject) => subject.subjectCode));
+            setResourceData(resourcePath);
         }
     }, [grade, year, month, day]);
 
@@ -68,12 +68,12 @@ const Subjects = () => {
                 />
             ) : (
                 <SubjectsGrid>
-                    {resourceData.map((subjectCode, index) => (
+                    {resourceData.map(({ subjectCode, subjectIndex }) => (
                         <SubjectBadge
-                            // eslint-disable-next-line react/no-array-index-key
-                            key={`subject_${subjectCode}_${index}`}
+                            key={`subject_${subjectCode}_${subjectIndex}`}
                             code={subjectCode}
-                            onClick={handleBadgeClick(index)}
+                            index={subjectIndex}
+                            onClick={handleBadgeClick}
                         />
                     ))}
                 </SubjectsGrid>

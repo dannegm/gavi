@@ -5,12 +5,12 @@ import subjects from '@assets/data/subjects';
 
 import { SubjectBadgeWrapper, SubjectBadgeIcon, SubjectBadgeLabel } from './SubjectBadge.styled';
 
-const SubjectBadge = ({ code, onClick }) => {
+const SubjectBadge = ({ code, index, onClick }) => {
     const { name, color, icon } = subjects[code];
 
     const handleClick = (ev) => {
         ev.preventDefault();
-        onClick?.(code);
+        onClick?.({ code, index });
     };
 
     return (

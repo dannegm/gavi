@@ -33,8 +33,10 @@ const getDocContent = (grade, defaultContent = {}) => {
 };
 
 // Trabajar con las materias
-const mapSubjects = ([subjectCode, data]) => {
+const mapSubjects = ([subjectCodeKey, data]) => {
+    const [subjectCode, subjectIndex = '1'] = subjectCodeKey.split('-');
     return {
+        subjectIndex: Number(subjectIndex),
         subjectCode,
         ...data,
     };

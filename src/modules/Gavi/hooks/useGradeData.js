@@ -78,8 +78,22 @@ const mapCsvData = (rows) => {
     return data;
 };
 
+const indexGenerator = () => {
+    const subjects = {};
+    return (subjectCode) => {
+        if (subjects[subjectCode] === undefined) {
+            subjects[subjectCode] = 0;
+        }
+
+        subjects[subjectCode] += 1;
+        return subjects[subjectCode];
+    };
+};
+
 const mapSubjects = (originalSubjects) => {
+    const getIndex = indexGenerator();
     return originalSubjects.map((sub) => ({
+        subjectIndex: getIndex(sub.subject.code),
         subjectCode: sub.subject.code,
         learn: sub.learn,
         books: sub.books,
