@@ -9,6 +9,7 @@ import {
     buildDate,
     formatDate,
     isValidDate,
+    getCurrenFormatedDate,
 } from '@helpers/dateHelpers';
 
 import Button from '../Button';
@@ -17,14 +18,17 @@ import Dropdown from '../Dropdown';
 import { DatePickerWrapper, Description, Row, Col } from './DatePicker.styled';
 
 const DatePicker = ({ onSubmit }) => {
-    const [day, setDay] = useState(undefined);
-    const [month, setMonth] = useState(undefined);
-    const [year, setYear] = useState(undefined);
+    const [currentDay, currentMonth, currentYear] = getCurrenFormatedDate();
+
+    const [day, setDay] = useState(currentDay);
+    const [month, setMonth] = useState(currentMonth);
+    const [year, setYear] = useState(currentYear);
     const [date, setDate] = useState(false);
     const [canSubmit, setCanSubmit] = useState(false);
 
     useEffect(() => {
         const d = buildDate(year, month?.value, day);
+
         if (isValidDate(d)) {
             setDate(d);
             setCanSubmit(true);

@@ -57,13 +57,14 @@ const Resources = () => {
     };
 
     useEffect(() => {
-        const resourcePath = gradesData?.[`grade${grade}`]?.[`${year}/${month}/${day}`]?.[subject];
-        if (!resourcePath) {
+        const resourcePath = gradesData?.[`grade${grade}`]?.[`${year}/${month}/${day}`];
+        const subjectResource = resourcePath.find(({ subjectCode }) => subjectCode === subject);
+        if (!resourcePath || !subjectResource) {
             setResourceData(null);
         } else {
             const mappedData = {
-                learn: resourcePath.learn,
-                books: resourcePath.books.map((b) => ({
+                learn: subjectResource.learn,
+                books: subjectResource.books.map((b) => ({
                     ...b,
                     serie: b.serieCode,
                     name: b.serieName,

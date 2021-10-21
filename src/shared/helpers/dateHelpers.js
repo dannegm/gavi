@@ -121,3 +121,15 @@ export const getRunningWeek = () => {
 
     return moment().week() - $initialDate.week();
 };
+
+export const getCurrenFormatedDate = () => {
+    const date = new Date();
+    return [
+        formatDate(date, 'DD'),
+        {
+            label: formatDate(date, 'MMMM'),
+            value: date.getMonth(),
+        },
+        formatDate(date, 'YYYY'),
+    ];
+};
