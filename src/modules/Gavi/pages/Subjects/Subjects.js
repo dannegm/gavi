@@ -40,8 +40,8 @@ const Subjects = () => {
         history.push(`/aprende${grade}`);
     };
 
-    const handleBadgeClick = (subjectCode) => {
-        history.push(`/aprende${grade}/material/${formatedDate}/${subjectCode}`);
+    const handleBadgeClick = (index) => (subjectCode) => {
+        history.push(`/aprende${grade}/material/${formatedDate}/${subjectCode}/${index}`);
     };
 
     useEffect(() => {
@@ -68,11 +68,12 @@ const Subjects = () => {
                 />
             ) : (
                 <SubjectsGrid>
-                    {resourceData.map((subjectCode) => (
+                    {resourceData.map((subjectCode, index) => (
                         <SubjectBadge
-                            key={`subject_${subjectCode}`}
+                            // eslint-disable-next-line react/no-array-index-key
+                            key={`subject_${subjectCode}_${index}`}
                             code={subjectCode}
-                            onClick={handleBadgeClick}
+                            onClick={handleBadgeClick(index)}
                         />
                     ))}
                 </SubjectsGrid>

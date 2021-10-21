@@ -27,7 +27,7 @@ const gradeTitles = ['none', 'Primer', 'Segundo', 'Tercer', 'Cuarto', 'Quinto', 
 
 const Resources = () => {
     const history = useHistory();
-    const { subject } = useParams();
+    const { subject, index = 0 } = useParams();
 
     const {
         // breakline
@@ -58,13 +58,16 @@ const Resources = () => {
 
     useEffect(() => {
         const resourcePath = gradesData?.[`grade${grade}`]?.[`${year}/${month}/${day}`];
-        const subjectResource = resourcePath.find(({ subjectCode }) => subjectCode === subject);
-        if (!resourcePath || !subjectResource) {
+        const subjectResource = resourcePath.filter(({ subjectCode }) => subjectCode === subject);
+
+        console.log(subjectResource);
+
+        if (!resourcePath || !subjectResource || !subjectResource[index]) {
             setResourceData(null);
         } else {
             const mappedData = {
-                learn: subjectResource.learn,
-                books: subjectResource.books.map((b) => ({
+                learn: subjectResource[index].learn,
+                books: subjectResource[index].books.map((b) => ({
                     ...b,
                     serie: b.serieCode,
                     name: b.serieName,
