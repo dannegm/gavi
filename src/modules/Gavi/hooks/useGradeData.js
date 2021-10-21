@@ -17,6 +17,18 @@ const PACKAGE_VERSION = process.env.REACT_APP_PACKAGE_VERSION;
 const SECRET_KEY = process.env.REACT_APP_SECRET_KEY;
 const GAVI_LS_KEY_GRADE = 'GAVI_LS_KEY_GRADE';
 
+const indexGenerator = () => {
+    const subjects = {};
+    return (subjectCode) => {
+        if (subjects[subjectCode] === undefined) {
+            subjects[subjectCode] = 0;
+        }
+
+        subjects[subjectCode] += 1;
+        return subjects[subjectCode];
+    };
+};
+
 const mapRowToBook = (row, cursor) => {
     const copyRow = [...row];
     const [grade, subjectCode, serieCode, interactiveLink, pages] = copyRow.splice(cursor);
@@ -62,32 +74,24 @@ const mapRowToSubject = (row) => {
 
 const mapCsvData = (rows) => {
     const data = {};
+    const getIndex = indexGenerator();
+
     rows.forEach((row) => {
         const $row = mapRowToSubject(row);
         const $date = `${getWeekYear($row.week)}/${$row.date}`;
 
         if (data[$date] === undefined) {
-            data[$date] = {};
+            data[$date] = [];
         }
 
-        data[$date][$row.subjectCode] = {
+        data[$date].push({
             learn: $row.learn,
             books: $row.books,
-        };
+            subjectCode: $row.subjectCode,
+            subjectIndex: getIndex(`${$row.date}-${$row.subjectCode}`),
+        });
     });
     return data;
-};
-
-const indexGenerator = () => {
-    const subjects = {};
-    return (subjectCode) => {
-        if (subjects[subjectCode] === undefined) {
-            subjects[subjectCode] = 0;
-        }
-
-        subjects[subjectCode] += 1;
-        return subjects[subjectCode];
-    };
 };
 
 const mapSubjects = (originalSubjects) => {
