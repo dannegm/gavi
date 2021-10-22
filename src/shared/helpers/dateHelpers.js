@@ -128,7 +128,7 @@ export const getCurrenFormatedDate = () => {
         formatDate(date, 'DD'),
         {
             label: formatDate(date, 'MMMM'),
-            value: date.getMonth(),
+            value: date.getMonth() + 1,
         },
         formatDate(date, 'YYYY'),
     ];
