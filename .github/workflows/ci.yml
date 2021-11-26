@@ -40,7 +40,7 @@ jobs:
                   REACT_APP_FIREBASE_APP_ID: ${{secrets.REACT_APP_FIREBASE_APP_ID}}
 
                   # Settings
-                  REACT_APP_SETTINGS_KEY: NhENVlxt070TZKcju6yD
+                  REACT_APP_SETTINGS_KEY: ${{secrets.REACT_APP_SETTINGS_KEY}}
               run: |
                   npm install
                   npm run build
