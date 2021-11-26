@@ -9,6 +9,8 @@ import { getGradeString } from '@gavi/helpers/utils';
 
 import { PageWrapper } from './Page.styled';
 
+import UnpaidScreen from '../../components/UnpaidScreen';
+
 const Page = ({ grade, title, children }) => {
     const helmetOptions = {
         encodeSpecialCharacters: true,
@@ -23,7 +25,9 @@ const Page = ({ grade, title, children }) => {
             <Helmet {...helmetOptions}>
                 <title>{title}</title>
             </Helmet>
-            <PageWrapper>{children}</PageWrapper>
+            <UnpaidScreen>
+                <PageWrapper>{children}</PageWrapper>
+            </UnpaidScreen>
         </ThemeProvider>
     );
 };
