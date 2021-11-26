@@ -34,6 +34,9 @@ ${bucketUrlList}
 ---
 
 Los enlaces tienen una vigencia de 30 días a partir del momento en el que se reciba este email.
+
+---
+Este es un mensaje automatizado.
     `,
 });
 
