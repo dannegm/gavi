@@ -20,7 +20,7 @@ import gradesData from '@assets/data/gradesData';
 
 import { NavigationWrapper, MaterialCardGrid } from './Resources.styled';
 
-const ROUTE_TEMPLATE = '/aprende{grade}/material/{date}/{subject}';
+const ROUTE_TEMPLATE = '/aprende{grade}/material/{date}/{subject}/{index}';
 const PAGE_URL_TEMPLATE = process.env.REACT_APP_PAGE_URL_TEMPLATE;
 
 const gradeTitles = ['none', 'Primer', 'Segundo', 'Tercer', 'Cuarto', 'Quinto', 'Sexto'];

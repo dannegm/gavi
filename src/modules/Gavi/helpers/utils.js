@@ -19,11 +19,12 @@ export const renderTemplate = (template, data) => {
     return renderedTemplate;
 };
 
-export const buildRoute = ({ routeTemplate, grade, subject = '' }) => {
+export const buildRoute = ({ routeTemplate, grade, subject = '', index = 1 }) => {
     return (date) => {
         const routeData = {
             grade,
             subject,
+            index,
             date: formatDate(date, FORMAT_COMMON),
             year: date.getFullYear(),
             month: date.getMonth() + 1,

@@ -16,13 +16,14 @@ import { buildRoute } from '@gavi/helpers/utils';
 
 const useNavigationDate = (routeTemplate) => {
     const history = useHistory();
-    const { grade, year, month, day, subject = '' } = useParams();
+    const { grade, year, month, day, subject = '', index = 1 } = useParams();
 
     const today = buildDate(year, month, day);
     const getRoute = buildRoute({
         routeTemplate,
         grade,
         subject,
+        index,
     });
 
     const handleNext = (date) => {
