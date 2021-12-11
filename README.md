@@ -1,5 +1,39 @@
 # Gavi
 
+## Cómo ejecutar localmente
+
+Para ejecutar el proyecto de forma local y dar mantenimiento así como extender el desarrollo, es necesario seguir los siguientes pasos:
+
+1. Crear un archivo en la raíz del proyecto llamado `.env` tomando como referencia el archivo `.env.example`.
+
+```bash
+$ cp .env.example .env
+```
+
+2. Instalar todas las dependencias
+
+```bash
+$ yarn install
+```
+
+3. Ejecutar el proyecto
+
+```bash
+$ yarn dev
+```
+
+**NOTA**
+
+- Es importante mencionar que se debe tener instalado [NodeJS v14+](https://nodejs.org/en/) y [YARN](https://yarnpkg.com/getting-started) para poder ejecutar el proyecto.
+- Todos los scripts de línea de comandos fueron escritos para ser compatibles con **BASH** y **ZSH**
+- Se recomienda utilizar sistemas operativos Linux o Mac para su desarrollo y/o distribución. En caso de utilizar Windows, se recomienda el uso de PowerShell y la máquina virtual de Ubuntu disponible desde Windows 10.
+
+**NOTA**
+
+- El proyecto ha sido escrito siguiendo buenas prácticas de código por lo que, es probable que, si no está acostumbrado a seguir dichas prácticas, durante el desarrollo y compilación del programa puedan aparecer advertencias sobre violaciones del código. Es importante resolverlas antes de continuar codigicando.
+- Para más información puede referir en los sitios de [ESLint](https://eslint.org/docs/user-guide/getting-started), [StyleLint](https://stylelint.io/user-guide/get-started) y [Prettier](https://prettier.io/docs/en/index.html).
+- También puede buscar más información acerca de las reglas de código en la página de referencia del estandar [Airbnb](https://github.com/airbnb/javascript) para Javascript.
+
 ## Cómo actualizar los datos
 
 La aplicación utiliza una base de datos NoSQL local que opta por seguir una esructura definida para favorecer la navegación entre fechas, grados y materias.
